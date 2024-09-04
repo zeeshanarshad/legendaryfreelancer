@@ -1,0 +1,30 @@
+	/* Make the entire card clickable */
+	.card-link {
+	display: block; /* Makes the entire link area clickable */
+	text-decoration: none; /* Removes underline from the link */
+	color: inherit; /* Ensures the link color matches the surrounding text */
+	}
+
+	/* Ensure card styling is applied properly */
+	.card {
+	border: 1px solid #ddd; /* Example border, adjust as needed */
+	border-radius: .25rem; /* Example border radius */
+	overflow: hidden; /* Ensures no content overflows the card */
+	}
+
+	.card-img-top {
+	width: 100%; /* Ensures the image fills the card width */
+	height: auto; /* Maintains aspect ratio */
+	}
+
+	.card-body {
+	padding: 1.25rem; /* Adjust padding as needed */
+	}
+
+	/* Optional: Add hover effect for the card */
+	.card-link:hover {
+	text-decoration: none; /* Ensures no underline on hover */
+	color: inherit; /* Maintains text color */
+	background-color: #f8f9fa; /* Light background on hover, adjust as needed */
+	}
+ 
