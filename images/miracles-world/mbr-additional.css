@@ -165,7 +165,6 @@ body {
 }
 .btn-primary,
 .btn-primary:active {
-  background-color: #f3b700 !important;
   border-color: #f3b700 !important;
   color: #ffffff !important;
   box-shadow: none;
@@ -619,7 +618,6 @@ a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-cap
 .nav-tabs .nav-link {
   border-radius: 100px !important;
 }
-a,
 a:hover {
   color: #f3b700;
 }
