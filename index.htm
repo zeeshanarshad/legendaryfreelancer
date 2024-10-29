@@ -9,15 +9,60 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link href="custom.css" rel="stylesheet" type="text/css" />	
+	
+    <style>
+		html {
+			scroll-padding-top: 100px; /* Adjust based on your navbar height */
+		}
+	
+        /* Adjust the padding-top based on the navbar height */
+        .banner {
+            padding-top: 56px; /* Adjust this if your navbar height changes */
+        }
+
+        /* Optional: Adjust the padding for smaller screens */
+        @media (max-width: 767.98px) {
+            .banner {
+                padding-top: 56px; /* Keep this padding for mobile */
+            }
+        }
+    </style>	
+	
+	
 </head>
 <body>
  
 
-<img src="images/banner-legendary-freelancer.jpg" alt="" class="img-fluid" width="100%"/>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                <li class="nav-item"><a class="nav-link" href="#meetings">Meetings</a></li>
+                <li class="nav-item"><a class="nav-link" href="#interviews">Interviews</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Banner Image with padding-top to offset navbar -->
+<div class="banner">
+    <img src="images/banner-legendary-freelancer.jpg" alt="Banner Image" class="img-fluid w-100">
+</div>
+ 
 
 <div class="container">
     
-    <section id="about" class="mt-3">
+    <section id="about" class="mt-5">
       <div class="row align-items-center">
             <div class="col-md-3">
                 <p align="center"><img src="images/zeeshan-arshad-legendary-freelancer.jpg" alt="" class="img-fluid"/></p>
@@ -31,64 +76,7 @@
 			 <p align="right">میرا نام ذیشان ارشد ہے اور میں ایک لیجنڈری فری لانسر ہوں ۔ میں اپنے کلائنٹس کے مسائل حل کرنے میں ان کی مدد کرتا ہوں  اور مجھے بہت ساری اسکلز کے ساتھ کام کرنا آتا ہے۔میں گزشتہ بیس سال سے زائد عرصہ سے انٹرنیٹ کے ذریعے اپنےانٹرنیشنل کلائنٹس کے ساتھ کام کررہا ہوں اور انٹرنیشنل لیول پر اپنے اسٹوڈنٹس کو تعلیم بھی دیتا ہوں۔اگر آپ کو اپنے کاروبار یا ذاتی مسائل کے حوالے سے کوئی بھی مسئلہ مسائل ہیں تو آپ مجھ سے رابطہ کریں۔میں آپ کے مسائل حل کرنے میں آپ کی بھرپور مدد کروں گا۔  </p>
         </div>
       </div>
-    </section>
-    
-    <section id="services" class="mt-3">    
-    <h2 class="mt-5">My Services</h2>
-	
-	<p>I am providing the legendary services of transforming mindsets through conversation and healing incurable ventilator patients, transforming weather and raising the dead through prayers. Apart from this I also do website designing and development, graphic designing, video editing, YouTube consulting, freelancing business consulting, content writing, career counseling, relationship counseling, confidence coaching and spiritual healing.</p>
-	
-	<p align="right">میں گفتگو کے ذریعے مائنڈسیٹ تبدیل کرنے اور دعا کے ذریعے لاعلاج وینٹیلیٹر مریض کو شفا دلوانے، موسم کو تبدیل کرنے اور مردے کو زندہ کرنے کی لیجنڈری سروسز بھی فراہم کررہا ہوں۔ اس کے علاوہ میں ویب سائٹ ڈیزائننگ اینڈ ڈیویلپمنٹ، گرافک ڈیزائننگ، ویڈیو ایڈیٹنگ، یوٹیوب کنسلٹنگ، فری لانسنگ بزنس کنسلٹنگ، کانٹینٹ رائٹنگ ، کیریئر کاونسلنگ، ریلیشن شپ کاونسلنگ، کانفیڈینس کوچنگ اور روحانی علاج بھی کرتا ہوں۔</p>
-	
-	<div class="row mt-3">
-		
-	  <div class="col-md-3 col-6 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LyOBbxPBJuSnvxa3sLlOXem" class="card-link">
-			<div class="card">
-				<img src="images/services/mindset-transformation.jpg" class="card-img-top">
-				<div class="card-body">
-				  <p class="lead card-title">Legendary Chat</p>
-			  </div>
-		</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 col-6 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LzxI5DUyeOnwP4fvFBSADgz" class="card-link">
-			<div class="card">
-				<img src="images/services/spiritual-treatment.jpg" class="card-img-top">
-				<div class="card-body">
-				  <p class="lead card-title">Legendary Cure</p>
-			  </div>
-		</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 col-6 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LzBnBc3J6R03A6GPWS1NdwW" class="card-link">
-			<div class="card">
-				<img src="images/services/weather-transformation.jpg" class="card-img-top">
-				<div class="card-body">
-				  <p class="lead card-title">Legendary Weather</p>
-			  </div>
-		</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 col-6 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-Lz0qQFqpXERzQm7BahBPl5Q" class="card-link">
-			<div class="card">
-				<img src="images/services/resurrection-of-dead.jpg" class="card-img-top">
-				<div class="card-body">
-				  <p class="lead card-title">Legendary Resurrection</p>
-			  </div>
-		</div>
-		</a>
-	  </div>
-    </div>
-    </section>    
-    
-    <section id="skills" class="mt-3">
+	  
     <h2 class="mt-5">My Skills</h2>
         <span class="badge text-bg-light">PHP</span>
         <span class="badge text-bg-light">ASP</span>
@@ -165,12 +153,70 @@
         <span class="badge text-bg-light">Mindset Transformation</span>
         <span class="badge text-bg-light">Weather Transformation</span>
         <span class="badge text-bg-light">Resurrection of Dead</span>
-  </section>    
- 
-    <section id="certs" class="mt-3">
+
+  
     <h2 class="mt-5">Certifications / Awards / Recognitions</h2>
-        <img src="images/certifications-legendary-freelancer.jpg" alt="" class="img-fluid" width="100%"/>
+    <img src="images/certifications-legendary-freelancer.jpg" alt="" class="img-fluid" width="100%"/>
+	  
+	  
     </section>
+	
+    <section id="services" class="mt-3">    
+    <h2 class="mt-5">Services</h2>
+	
+	<p>I am providing the legendary services of transforming mindsets through conversation and healing incurable ventilator patients, transforming weather and raising the dead through prayers. Apart from this I also do website designing and development, graphic designing, video editing, YouTube consulting, freelancing business consulting, content writing, career counseling, relationship counseling, confidence coaching and spiritual healing.</p>
+	
+	<p align="right">میں گفتگو کے ذریعے مائنڈسیٹ تبدیل کرنے اور دعا کے ذریعے لاعلاج وینٹیلیٹر مریض کو شفا دلوانے، موسم کو تبدیل کرنے اور مردے کو زندہ کرنے کی لیجنڈری سروسز بھی فراہم کررہا ہوں۔ اس کے علاوہ میں ویب سائٹ ڈیزائننگ اینڈ ڈیویلپمنٹ، گرافک ڈیزائننگ، ویڈیو ایڈیٹنگ، یوٹیوب کنسلٹنگ، فری لانسنگ بزنس کنسلٹنگ، کانٹینٹ رائٹنگ ، کیریئر کاونسلنگ، ریلیشن شپ کاونسلنگ، کانفیڈینس کوچنگ اور روحانی علاج بھی کرتا ہوں۔</p>
+	
+	<div class="row mt-3">
+		
+	  <div class="col-md-3 col-6 mb-4">
+		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LyOBbxPBJuSnvxa3sLlOXem" class="card-link">
+			<div class="card">
+				<img src="images/services/mindset-transformation.jpg" class="card-img-top">
+				<div class="card-body">
+				  <p class="lead card-title">Legendary Chat</p>
+			  </div>
+		</div>
+		</a>
+	  </div>
+		
+	  <div class="col-md-3 col-6 mb-4">
+		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LzxI5DUyeOnwP4fvFBSADgz" class="card-link">
+			<div class="card">
+				<img src="images/services/spiritual-treatment.jpg" class="card-img-top">
+				<div class="card-body">
+				  <p class="lead card-title">Legendary Cure</p>
+			  </div>
+		</div>
+		</a>
+	  </div>
+		
+	  <div class="col-md-3 col-6 mb-4">
+		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LzBnBc3J6R03A6GPWS1NdwW" class="card-link">
+			<div class="card">
+				<img src="images/services/weather-transformation.jpg" class="card-img-top">
+				<div class="card-body">
+				  <p class="lead card-title">Legendary Weather</p>
+			  </div>
+		</div>
+		</a>
+	  </div>
+		
+	  <div class="col-md-3 col-6 mb-4">
+		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-Lz0qQFqpXERzQm7BahBPl5Q" class="card-link">
+			<div class="card">
+				<img src="images/services/resurrection-of-dead.jpg" class="card-img-top">
+				<div class="card-body">
+				  <p class="lead card-title">Legendary Resurrection</p>
+			  </div>
+		</div>
+		</a>
+	  </div>
+    </div>
+    </section>    
+    
+
     
     
     <section id="portfolio" class="mt-3">
@@ -192,20 +238,7 @@
 		</div>
 		</a>
 	  </div>	  
-	  
-	  
-	  <div class="col-md-3 mb-4">
-        <p><span class="badge text-bg-light">Social Media Ad</span></p>
-		<a href="images/portfolio/social-media-ad-hajira-roohani-ilaj-center-legendary-freelancer.jpg" class="card-link" target="_blank">
-			<div class="card">
-				<img src="images/portfolio/social-media-ad-hajira-roohani-ilaj-center-legendary-freelancer.jpg" class="card-img-top">
-				<div class="card-body">
-				  <p class="lead card-title">Ad for Spiritual Healing Center</p>
-			  </div>
-		</div>
-		</a>
-	  </div>	 	  
-	  
+
 	  
 	  <div class="col-md-3 mb-4">
         <p><span class="badge text-bg-light">Healing</span></p>
@@ -626,6 +659,21 @@
 			</div>
 		</a>
 	  </div>
+	  
+	  
+	  
+	  <div class="col-md-3 mb-4">
+        <p><span class="badge text-bg-light">Pamphlet</span></p>
+		<a href="images/portfolio/social-media-ad-hajira-roohani-ilaj-center-legendary-freelancer.jpg" class="card-link" target="_blank">
+			<div class="card">
+				<img src="images/portfolio/social-media-ad-hajira-roohani-ilaj-center-legendary-freelancer.jpg" class="card-img-top">
+				<div class="card-body">
+				  <p class="lead card-title">Desigend Pamphlet for Hajra Spiritual Healing Center</p>
+			  </div>
+		</div>
+		</a>
+	  </div>	 	  
+	  	  
 		
 	  <div class="col-md-3 mb-4">
         <p><span class="badge text-bg-light">Healing</span></p>
@@ -1369,7 +1417,9 @@
     </section>		
         
 
-	<h2 class="mt-5 mb-4">1-1 Meetings</h2>
+    <section id="meetings" class="mt-5">
+	
+	<h2 class="mt-5 mb-4">Meetings</h2>
 	
 	<p>People talk to me about different topics and I guide them. These are recordings of some of the sessions. If you also want to book your appointment with me online, contact me now via Skype: <strong>realisticzee</strong></p>
 	
@@ -1654,12 +1704,13 @@
 		</a>
 		</div>
 	</div>
+	</section>
  
-	<h2 class="mt-5">Guest Appearance  / Interviews</h2>
-	
-	<p>These are my interviews recorded by other professionals or industry experts or sent directly to me with questions to answer via video recording.</p>
-	
-	<p align="right">یہ میرے وہ انٹرویوز ہیں جو دوسرے پروفیشنلز یا انڈسٹری ایکسپرٹس نے ریکارڈ کیے یا براہ راست مجھ سے ویڈیو پر ریکارڈنگ کے ذریعے جوابات دینے کے لیے سوالات بھیجے۔</p>
+ 
+     <section id="interviews" class="mt-5">
+
+	<h2 class="mt-5">Interviews</h2>
+	<p class="text-danger"><strong>Guest Interviews</strong></p>
 	
 	<div class="row">
 		
@@ -1710,103 +1761,105 @@
 			</div>
 		</a>
 	  </div>
+	  
+	<p class="text-danger"><strong>Interviews of Professionals / Freelancers / Skilled Women and Children</strong></p>
+	  
+
+	 
+		<div class="row">
+			
+		  <div class="col-md-3 mb-4">
+		  <p><span class="badge text-bg-light">Karachi</span></p>
+			<a href="https://www.youtube.com/watch?v=BG4ztbayPrA" class="card-link">
+				<div class="card">
+					<img src="https://img.youtube.com/vi/BG4ztbayPrA/0.jpg" class="card-img-top">
+					<div class="card-body">
+						<p class="lead card-title">Interview of Ustaani Naseem (Quran Teacher)</p>
+					</div>
+				</div>
+			</a>
+			</div>
+			
+		  <div class="col-md-3 mb-4">
+		  <p><span class="badge text-bg-light">Karachi</span></p>
+			<a href="https://www.youtube.com/watch?v=bp9qMyXS1bU" class="card-link">
+				<div class="card">
+					<img src="https://img.youtube.com/vi/bp9qMyXS1bU/0.jpg" class="card-img-top">
+					<div class="card-body">
+						<p class="lead card-title">Interview of Moulana Abrar Alam (Spiritual Doctor)</p>
+					</div>
+				</div>
+			</a>
+			</div>
+			
+		  <div class="col-md-3 mb-4">
+		  <p><span class="badge text-bg-light">Lahore</span></p>
+			<a href="https://www.youtube.com/watch?v=Ogi_RA5tYRk" class="card-link">
+				<div class="card">
+					<img src="https://img.youtube.com/vi/Ogi_RA5tYRk/0.jpg" class="card-img-top">
+					<div class="card-body">
+						<p class="lead card-title">Interview of Neurosurgeon Lady Doctor on Coronavirus</p>
+					</div>
+				</div>
+			</a>
+			</div>
+			
+		  <div class="col-md-3 mb-4">
+		  <p><span class="badge text-bg-light">Online</span></p>
+			<a href="https://www.youtube.com/watch?v=d5c2PQOQOP4" class="card-link">
+				<div class="card">
+					<img src="https://img.youtube.com/vi/d5c2PQOQOP4/0.jpg" class="card-img-top">
+					<div class="card-body">
+						<p class="lead card-title">Interview of Dr. Humaira Shahid (Clinical Psychologist)</p>
+					</div>
+				</div>
+			</a>
+			</div>
+			
+		  <div class="col-md-3 mb-4">
+		  <p><span class="badge text-bg-light">Online</span></p>
+			<a href="https://www.youtube.com/watch?v=k2kBaU2Sxgs" class="card-link">
+				<div class="card">
+					<img src="https://img.youtube.com/vi/k2kBaU2Sxgs/0.jpg" class="card-img-top">
+					<div class="card-body">
+						<p class="lead card-title">Interview of Farhat Sayed (Transformational Coach)</p>
+					</div>
+				</div>
+			</a>
+			</div>
+			
+		  <div class="col-md-3 mb-4">
+		  <p><span class="badge text-bg-light">Online</span></p>
+			<a href="https://www.youtube.com/watch?v=bAvrQhmXU1c" class="card-link">
+				<div class="card">
+					<img src="https://img.youtube.com/vi/bAvrQhmXU1c/0.jpg" class="card-img-top">
+					<div class="card-body">
+						<p class="lead card-title">Interview of Dr. Sheetel (Transformational Coach)</p>
+					</div>
+				</div>
+			</a>
+			</div>
+			
+		  <div class="col-md-3 mb-4">
+		  <p><span class="badge text-bg-light">Online</span></p>
+			<a href="https://www.youtube.com/watch?v=AnPetVtjDmo" class="card-link">
+				<div class="card">
+					<img src="https://img.youtube.com/vi/AnPetVtjDmo/0.jpg" class="card-img-top">
+					<div class="card-body">
+						<p class="lead card-title">Interview of Gwen Ayala (Virtual Assistant)</p>
+					</div>
+				</div>
+			</a>
+			</div>
+		
+	  </div>	  
+	  
+	  
  		
   </div>    
     
  
-	
-  <h2 class="mt-5 mb-4">Interviews of Professionals / Skilled Workers</h2>
-  
-	<p>I occasionally interview other professionals, freelancers or skilled women/children. Here are their videos.</p>
-	<p align="right">میں وقتا فوقتا دوسرے پروفیشنلز ، فری لانسرز یا ہنرمند خواتین/بچوں کا انٹرویو ریکارڈ کرتا ہوں۔ یہ ان کی ویڈیوز ہیں۔</p>
-  
-	<div class="row">
-		
-	  <div class="col-md-3 mb-4">
-	  <p><span class="badge text-bg-light">Karachi</span></p>
-		<a href="https://www.youtube.com/watch?v=BG4ztbayPrA" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/BG4ztbayPrA/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Interview of Ustaani Naseem (Quran Teacher)</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-	  <p><span class="badge text-bg-light">Karachi</span></p>
-		<a href="https://www.youtube.com/watch?v=bp9qMyXS1bU" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/bp9qMyXS1bU/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Interview of Moulana Abrar Alam (Spiritual Doctor)</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-	  <p><span class="badge text-bg-light">Lahore</span></p>
-		<a href="https://www.youtube.com/watch?v=Ogi_RA5tYRk" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/Ogi_RA5tYRk/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Interview of Neurosurgeon Lady Doctor on Coronavirus</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-	  <p><span class="badge text-bg-light">Online</span></p>
-		<a href="https://www.youtube.com/watch?v=d5c2PQOQOP4" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/d5c2PQOQOP4/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Interview of Dr. Humaira Shahid (Clinical Psychologist)</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-	  <p><span class="badge text-bg-light">Online</span></p>
-		<a href="https://www.youtube.com/watch?v=k2kBaU2Sxgs" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/k2kBaU2Sxgs/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Interview of Farhat Sayed (Transformational Coach)</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-	  <p><span class="badge text-bg-light">Online</span></p>
-		<a href="https://www.youtube.com/watch?v=bAvrQhmXU1c" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/bAvrQhmXU1c/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Interview of Dr. Sheetel (Transformational Coach)</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-	  <p><span class="badge text-bg-light">Online</span></p>
-		<a href="https://www.youtube.com/watch?v=AnPetVtjDmo" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/AnPetVtjDmo/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Interview of Gwen Ayala (Virtual Assistant)</p>
-				</div>
-			</div>
-		</a>
-		</div>
- 	
-  </div>
+ 
 		
  
   <section id="contact" class="mt-3">
