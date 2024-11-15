@@ -1,3 +1,8 @@
+body {
+		font-size:125%;
+}
+	
+
 	/* Make the entire card clickable */
 	.card-link {
 	display: block; /* Makes the entire link area clickable */
@@ -28,3 +33,40 @@
 	background-color: #f8f9fa; /* Light background on hover, adjust as needed */
 	}
  
+.profile-img {
+	max-width: 500px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 3%;ا
+}
+
+/* Optional CSS styles */
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.playlist-thumbnail {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.playlist-container {
+  margin-top: 20px;
+}
+
+.urdu {
+	font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+	font-size: 20px;
+	line-height: 40px;
+	direction: rtl;
+}
+
+/* Add hover effect on image */
+.hover-effect {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
