@@ -2,10 +2,11 @@
 <html lang="en"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" --><head>
 	
 	<!-- InstanceBeginEditable name="doctitle" -->
-	<title>Testimonials - Legendary Freelancer</title>
-	<meta name="description" content="Read authentic testimonials from satisfied clients who have experienced exceptional freelance services. Learn how my services have helped individuals and businesses." />
-	<meta name="keywords" content="freelancer testimonials, client reviews, freelance feedback, satisfied clients, customer experiences, business success stories, professional services, freelance expertise, client satisfaction" />
-	<!-- InstanceEndEditable -->
+	<title>Multipotentialite Mentor Pakistan - Legendary Freelancer</title>
+    <meta name="description" content="Unleash your true potential with The Multipotentialite Mentor Pakistan. Conquer your fears and become the best version of yourself. Apply now!" />
+    <meta name="keywords" content="multipotentialite mentor pakistan, multipotentialite mentor, multipotentialite" />
+
+<!-- InstanceEndEditable -->
 
 	<!-- InstanceBeginRepeat name="Meta Data" --><!-- InstanceBeginRepeatEntry -->
 	<meta charset="utf-8">
@@ -65,339 +66,255 @@
 
 
 	<!-- InstanceBeginEditable name="Body" -->
-	<div class="container">
-	<div class="row mt-5">
-		<div class="col-12">
-		  <h1 align="center" class="section-headline">TESTIMONIALS</h1>
-		  <p align="center">The fact is that it is not the eyes that turn blind, but what turns blind is the hearts contained in the chests. <br>
-	      Legendary Holy Quran (22.46)</p>
-		</div>
-	  </div>
-	</div>
-    
-    <div class="container">
+	
+<header class="text-center py-5">
+  <div class="container">
+    <h1>Multipotentialite Mentor Pakistan</h1>
+	<p align="center">The fact is that it is not the eyes that turn blind, but what turns blind is the hearts contained in the chests. (Quran 22.46)</p>
+    <p align="center"><img src="images/mentoring-legendary-freelancer-zeeshan-arshad.jpg" class="img-fluid"></p>
+  </div>
+</header>	
+
+	
+<div class="container">
+
+	<h2 class="text-danger" align="center">Career, Life, Business, Gaming, Freelancing and Much More</h2>
+	<p align="center">With 20+ years of freelancing experience, 500+ testimonials on Freelancer.com, along with my 25+ years of gaming background, and 13+ years of religious background, I bring multiple variations of life experiences to guide beginners and experienced freelancers for further growth.</p>
+	<div class="row mt-5" id="videos"></div>
+
+    <script>
+      // Array of video codes and URLs
+		var videos = [
+		  { "code": "vzVGV4NS0_Q", "url": "https://www.youtube.com/watch?v=vzVGV4NS0_Q" },
+		  { "code": "idibxZenDNc", "url": "https://www.youtube.com/watch?v=idibxZenDNc" },
+		  { "code": "ncsR78FsutM", "url": "https://www.youtube.com/watch?v=ncsR78FsutM" },
+		  { "code": "aUYmHVZ8cuw", "url": "https://www.youtube.com/watch?v=aUYmHVZ8cuw" },
+		  { "code": "jvw77EKojis", "url": "https://www.youtube.com/watch?v=jvw77EKojis" },
+		  { "code": "Y98FYuGbElg", "url": "https://www.youtube.com/watch?v=Y98FYuGbElg" },
+		  { "code": "iFNObceGgJk", "url": "https://www.youtube.com/watch?v=iFNObceGgJk" },
+		  { "code": "fwSzxV-eNUw", "url": "https://www.youtube.com/watch?v=fwSzxV-eNUw" },
+		  { "code": "jjh3IqsQlL0", "url": "https://www.youtube.com/watch?v=jjh3IqsQlL0" },
+		  { "code": "vRJyo2xOhC4", "url": "https://www.youtube.com/watch?v=vRJyo2xOhC4" },
+		  { "code": "NWUZJLUTauw", "url": "https://www.youtube.com/watch?v=NWUZJLUTauw" },
+		  { "code": "O57j87LNm3s", "url": "https://www.youtube.com/watch?v=O57j87LNm3s" },
+		  { "code": "h_ndgde08uM", "url": "https://www.youtube.com/watch?v=h_ndgde08uM" },
+		  { "code": "_YATMfSqJp8", "url": "https://www.youtube.com/watch?v=_YATMfSqJp8" },
+		  { "code": "ccmDwEp4SP0", "url": "https://www.youtube.com/watch?v=ccmDwEp4SP0" },
+		  { "code": "YTP1_o5kwwc", "url": "https://www.youtube.com/watch?v=YTP1_o5kwwc" },
+		  { "code": "DQwbz30yVQQ", "url": "https://www.youtube.com/watch?v=DQwbz30yVQQ" },
+		  { "code": "xDCowjb8Stk", "url": "https://www.youtube.com/watch?v=xDCowjb8Stk" },
+		  { "code": "cPjjEqh6Qc0", "url": "https://www.youtube.com/watch?v=cPjjEqh6Qc0" },
+		  { "code": "1gIGBkJiWx0", "url": "https://www.youtube.com/watch?v=1gIGBkJiWx0" },
+		  { "code": "KQFwVZTMu-s", "url": "https://www.youtube.com/watch?v=KQFwVZTMu-s" },
+		  { "code": "I0d4u1I0RZw", "url": "https://www.youtube.com/watch?v=I0d4u1I0RZw" },
+		  { "code": "eNE5QfHAJnY", "url": "https://www.youtube.com/watch?v=eNE5QfHAJnY" },
+		  { "code": "K5jZdC25Z9Q", "url": "https://www.youtube.com/watch?v=K5jZdC25Z9Q" },
+		  { "code": "UoMKoRiUczI", "url": "https://www.youtube.com/watch?v=UoMKoRiUczI" }
+		];
+
+      // Reference to the row element where the video thumbnails will be placed
+      var rowElement = document.getElementById('videos');
+
+      // Loop to create and append columns for each video
+      videos.forEach(video => {
+        // Create a column for each video
+        var colDiv = document.createElement('div');
+        colDiv.className = 'col-12 col-md-4 mb-4';
+
+        // Create a link for the video
+        var link = document.createElement('a');
+        link.href = video.url;
+        link.className = 'd-block';
+        link.target = '_blank';
+
+        // Create an image thumbnail for the video
+        var img = document.createElement('img');
+        img.src = 'https://img.youtube.com/vi/' + video.code + '/0.jpg'; // YouTube thumbnail image
+        img.alt = 'Video Thumbnail';
+        img.className = 'img-fluid rounded shadow-sm hover-effect';
+
+        // Append image to link, then append link to column
+        link.appendChild(img);
+        colDiv.appendChild(link);
+
+        // Append column to the row
+        rowElement.appendChild(colDiv);
+      });
+    </script>    
+ </div>
+ 
+ 
+ 
+	<h2 class="text-danger mt-5 mb-5" align="center">Testimonials</h2>
+
+ 
+     <div class="container">
         
         <div class="row">
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Mindset & Jinn</span></p>
             <a href="https://www.youtube.com/watch?v=iuudiswGH-0" class="card-link">
                 <div class="card">
                   <img src="https://img.youtube.com/vi/iuudiswGH-0/0.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="lead card-title">The Difference in Mindset on Arrival of Legendary Freelancer</p>
+                        <p class="lead card-title">Pakistan</p>
                   </div>
                 </div>
             </a>
           </div>
 
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">Prayer</span></p>
-            <a href="https://www.youtube.com/watch?v=o1ZuLH60ADs" class="card-link">
-                <div class="card">
-                    <img src="https://img.youtube.com/vi/o1ZuLH60ADs/0.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <p class="lead card-title">Solved 30-Days Stuck Issue in 3 Days (Karachi)</p>
-                    </div>
-                </div>
-            </a>
-          </div>
-
-
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">Hearing Issue</span></p>
-            <a href="https://www.youtube.com/watch?v=0QCMg6jWc_w" class="card-link">
-                <div class="card">
-                    <img src="https://img.youtube.com/vi/0QCMg6jWc_w/0.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <p class="lead card-title">Healed &amp; Fixed Hearing Issue in 24 Hours (Karachi)</p>
-                    </div>
-                </div>
-            </a>
-          </div>
-
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Depression</span></p>
             <a href="https://www.youtube.com/watch?v=zeihK6OgkQg" class="card-link">
                 <div class="card">
                     <img src="https://img.youtube.com/vi/zeihK6OgkQg/0.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="lead card-title">Healed  5 Year Old Depression in 5 Minutes (Karachi)</p>
+                        <p class="lead card-title">Pakistan</p>
                     </div>
                 </div>
             </a>
           </div>
 
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Public Speaking Fear</span></p>
             <a href="https://www.youtube.com/watch?v=zy4HHVk5uRs" class="card-link">
                 <div class="card">
                     <img src="https://img.youtube.com/vi/zy4HHVk5uRs/0.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="lead card-title">Destroyed Video Speaking Fear in 2 Hours (Lahore)</p>
+                        <p class="lead card-title">Pakistan</p>
                     </div>
                 </div>
             </a>
           </div>	  
-
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">ICU Patient</span></p>
-            <a href="https://www.youtube.com/watch?v=Xch3M7tb-RA" class="card-link">
-                <div class="card">
-                    <img src="https://img.youtube.com/vi/Xch3M7tb-RA/0.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <p class="lead card-title">Healed Unstable Incurable Ventilator Patient in 7 Hours (Lahore)</p>
-                    </div>
-                </div>
-            </a>
-          </div>
-
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">ICU Patient</span></p>
-            <a href="https://www.youtube.com/watch?v=yfykuaQGlbM" class="card-link">
-                <div class="card">
-                    <img src="https://img.youtube.com/vi/yfykuaQGlbM/0.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <p class="lead card-title">Saved Incurable ICU Patient from Hospital in 24 Hours (Karachi)</p>
-                    </div>
-                </div>
-            </a>
-          </div>
-
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">ICU Patient</span></p>
-            <a href="https://www.youtube.com/watch?v=yaPHGRgNLjs" class="card-link">
-                <div class="card">
-                    <img src="https://img.youtube.com/vi/yaPHGRgNLjs/0.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <p class="lead card-title">Healed Incurable ICU Patient in Hospital in 7 Days (Dubai)</p>
-                    </div>
-                </div>
-            </a>
-          </div>
-
-          <div class="col-md-3 mb-4">
+ 
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Depression / Anxiety</span></p>
             <a href="https://www.youtube.com/watch?v=-qpAkFyb3wc" class="card-link">
                 <div class="card">
                     <img src="https://img.youtube.com/vi/-qpAkFyb3wc/0.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="lead card-title">Healed Stress, Confusion and Fears in 2 Hours (Pakistan)</p>
+                        <p class="lead card-title">Pakistan</p>
                     </div>
                 </div>
             </a>
           </div>
-
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">Coronavirus</span></p>
-            <a href="https://www.youtube.com/watch?v=9I-GypbynHE" class="card-link">
-                <div class="card">
-                    <img src="https://img.youtube.com/vi/9I-GypbynHE/0.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <p class="lead card-title">Healed Incurable Corona Patient in 7 Days (Karachi)</p>
-                    </div>
-                </div>
-            </a>
-          </div>
-
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">Brain Damage</span></p>
-            <a href="https://www.youtube.com/watch?v=dLhHcyv9Xo0" class="card-link">
-                <div class="card">
-                    <img src="https://img.youtube.com/vi/dLhHcyv9Xo0/0.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <p class="lead card-title">Healed Incurable Brain Damage Patient by 50% in 30 Days</p>
-                    </div>
-                </div>
-            </a>
-          </div>
-
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">Lost Smell & Taste</span></p>
-            <a href="https://www.youtube.com/watch?v=Kkplq5QVABw" class="card-link">
-                <div class="card">
-                    <img src="https://img.youtube.com/vi/Kkplq5QVABw/0.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <p class="lead card-title">Restored 1-Week Lost Smell & Taste by Coronavirus (Lahore)</p>
-                    </div>
-                </div>
-            </a>
-          </div>
-
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">Neck & Temple Pain</span></p>
-            <a href="https://www.youtube.com/watch?v=gf_3d7cPw6c" class="card-link">
-                <div class="card">
-                    <img src="https://img.youtube.com/vi/gf_3d7cPw6c/0.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <p class="lead card-title">Healed 1-Month Old Neck & Temple Pain in 60 Minutes (Lahore)</p>
-                    </div>
-                </div>
-            </a>
-          </div>
-
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">Hand Sensations</span></p>
-            <a href="https://www.youtube.com/watch?v=RP-fqAvXhbo" class="card-link">
-                <div class="card">
-                    <img src="https://img.youtube.com/vi/RP-fqAvXhbo/0.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <p class="lead card-title">Improved 6-Month Old Hand Sensation by 10-Seconds in 60 Minutes (Lahore)</p>
-                    </div>
-                </div>
-            </a>
-          </div>
-
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">Chronic Back Pain</span></p>
-            <a href="https://www.youtube.com/watch?v=9usrB6UU_CI" class="card-link">
-                <div class="card">
-                    <img src="https://img.youtube.com/vi/9usrB6UU_CI/0.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <p class="lead card-title">Healed 8-Years Old Chronic Back Pain by 50% in 60 Minutes (Lahore)</p>
-                    </div>
-                </div>
-            </a>
-          </div>
-
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">Nasal / Dry Cough</span></p>
-            <a href="https://www.youtube.com/watch?v=huGeqCvxHKc" class="card-link">
-                <div class="card">
-                    <img src="https://img.youtube.com/vi/huGeqCvxHKc/0.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <p class="lead card-title">Healed 2-Days Old Nasal Congestion & Dry Cough in Few Hours (Lahore)</p>
-                    </div>
-                </div>
-            </a>
-          </div>
-
-          <div class="col-md-3 mb-4">
+ 
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Insecurities</span></p>
             <a href="images/testimonials/legendary-freelancer-testimonial1.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-testimonial1.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">In an hour, he made more progress with me and my insecurities than years of therapy.</p>
+                      <p class="lead card-title">USA</p>
                     </div>
                 </div>
             </a>
           </div>
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Love Deception / Trauma</span></p>
             <a href="images/testimonials/legendary-freelancer-testimonial2.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-testimonial2.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">You are the best counselor I have ever met and I'm so thankful for your help.</p>
+                      <p class="lead card-title">Kashmir</p>
                     </div>
                 </div>
             </a>
           </div>
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Childhood Fear / Trauma</span></p>
             <a href="images/testimonials/legendary-freelancer-testimonial3.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-testimonial3.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">ik insaan kay kuch alfazo nay badal dia</p>
+                      <p class="lead card-title">Pakistan</p>
                   </div>
             </div>
             </a>
           </div>
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Fear / Depression / Suicidal</span></p>
             <a href="images/testimonials/legendary-freelancer-testimonial5.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-testimonial5.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">aap se meri 1st conversation main mujhe wazeh kardia kay Legend waqiye Powered by ALLAHﷻ hota hai.</p>
+                      <p class="lead card-title">Pakistan</p>
                   </div>
             </div>
             </a>
           </div>
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Depression / Stress</span></p>
             <a href="images/testimonials/legendary-freelancer-testimonial6.jpg" target="_blank" class="card-link">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-testimonial6.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">Thanks God he send me a person like you to help me grow.</p>
+                      <p class="lead card-title">Pakistan</p>
                   </div>
             </div>
             </a>
           </div>
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Depression / Anxiety</span></p>
             <a href="images/testimonials/legendary-freelancer-testimonial7.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-testimonial7.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">I openly shared my feelings with you aur ap ne mujhe kisi taur judge nhi kya bulkay mujhe ek umeed dikhai hai.</p>
+                      <p class="lead card-title">Pakistan</p>
                   </div>
             </div>
             </a>
           </div>
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Suicidal</span></p>
             <a href="images/testimonials/legendary-freelancer-testimonial8.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-testimonial8.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">He is a light of hope for those who think about suicide &amp; fell failure....he also changed my mindset &amp; now I feel peaceful.</p>
+                      <p class="lead card-title">Pakistan</p>
                   </div>
             </div>
             </a>
           </div>
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">YouTube Channel Growth</span></p>
             <a href="images/testimonials/legendary-freelancer-testimonial9.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-testimonial9.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">It helped me see clearly things I hadn't seen before.</p>
+                      <p class="lead card-title">Romania</p>
                   </div>
             </div>
             </a>
           </div>
+ 
 
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">Custom YouTube Management System</span></p>
-            <a href="images/testimonials/legendary-freelancer-technical-testimonial4.jpg" class="card-link" target="_blank">
-                <div class="card">
-                    <img src="images/testimonials/legendary-freelancer-technical-testimonial4.jpg" class="card-img-top">
-                    <div class="card-body">
-                      <p class="lead card-title">I can say with certainty that he is excellent to work with, always maintains excellent communication, and best of all, he has a high standard for quality for all his work, a very rare thing to find today. He was a huge asset to have onboard.</p>
-                  </div>
-            </div>
-            </a>
-          </div>	  
-
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Mindset Transformation</span></p>
             <a href="images/testimonials/legendary-freelancer-testimonial10.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-testimonial10.jpg" class="card-img-top">
-                    <div class="card-body"></div>
+                    <div class="card-body">N/A</div>
             </div>
             </a>
           </div>
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Mindset Transformation</span></p>
             <a href="images/testimonials/legendary-freelancer-testimonial11.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-testimonial11.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">It changed something in me.</p>
+                      <p class="lead card-title">India</p>
                   </div>
             </div>
             </a>
@@ -409,154 +326,116 @@
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-review12.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">That is so amazing!! You are so nice. No one has ever been!</p>
+                      <p class="lead card-title">USA</p>
                   </div>
             </div>
             </a>
           </div>
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Anger Issue</span></p>
             <a href="images/testimonials/legendary-freelancer-testimonial4.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-testimonial4.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">بہت غصہ آنے کا مسئلہ حل ہوگیا صرف 15 منٹ کے اندر ایک فون کال پر</p>
+                      <p class="lead card-title">Pakistan</p>
                   </div>
             </div>
             </a>
           </div>		
 
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Low Self-Esteem</span></p>
             <a href="images/testimonials/legendary-freelancer-review13.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-review13.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">From Low Self-Esteem and Sadness to Laughing Mode in One Conversation</p>
+                      <p class="lead card-title">N/A</p>
                   </div>
             </div>
             </a>
           </div>		
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Sleep Paralyze / Fear</span></p>
             <a href="images/testimonials/legendary-freelancer-review14.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-review14.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">From Sleep Fear to Slept Long Hours After One Conversation</p>
+                      <p class="lead card-title">N/A</p>
                   </div>
             </div>
             </a>
           </div>		
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Self-Esteem</span></p>
             <a href="images/testimonials/legendary-freelancer-review15.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-review15.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">From Feeling Not Good Enough to Satisfied</p>
+                      <p class="lead card-title">N/A</p>
                   </div>
             </div>
             </a>
           </div>		
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Depression / Self-Esteem</span></p>
             <a href="images/testimonials/legendary-freelancer-review16.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-review16.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">خود کو ناکام اور بدصورت سمجھنے سے بدل کر بہادر اور خوبصورت عورت بنادیا صرف 50 منٹ کے اندر</p>
+                      <p class="lead card-title">Pakistan</p>
                   </div>
             </div>
             </a>
           </div>		
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Unlocked Mindset</span></p>
             <a href="images/testimonials/legendary-freelancer-review18.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-review18.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">From Feeling Anger to Moving On Just in One Converssation</p>
+                      <p class="lead card-title">N/A</p>
                   </div>
             </div>
             </a>
           </div>		
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Childhood Trauma / Fear</span></p>
             <a href="images/testimonials/legendary-freelancer-review19.jpg" title="Conversion of Mindset More than 40% in Just One Conversation" target="_blank" class="card-link">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-review19.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">Conversion of Mindset More than 40% in Just One Conversation			  </p>
+                      <p class="lead card-title">Pakistan</p>
                   </div>
             </div>
             </a>
           </div>		
 
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Hatred in Heart</span></p>
             <a href="images/testimonials/legendary-freelancer-review20.jpg" class="card-link" target="_blank">
                 <div class="card">
                     <img src="images/testimonials/legendary-freelancer-review20.jpg" class="card-img-top">
                     <div class="card-body">
-                      <p class="lead card-title">From Hate of Mother to Changed Perspective in Just One Conversation</p>
+                      <p class="lead card-title">N/A</p>
                   </div>
             </div>
             </a>
           </div>		
 
-
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">Custom Real Estate Management System</span></p>
-            <a href="images/testimonials/legendary-freelancer-technical-testimonial3.jpg" class="card-link" target="_blank">
-                <div class="card">
-                    <img src="images/testimonials/legendary-freelancer-technical-testimonial3.jpg" class="card-img-top">
-                    <div class="card-body">
-                      <p class="lead card-title">Zeeshan Arshad does Excellent work! Responsive and Good Project Manager.</p>
-                  </div>
-            </div>
-            </a>
-          </div>
-
-
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">YouTube Clock / Highlighter</span></p>
-            <a href="images/testimonials/legendary-freelancer-technical-testimonial2.jpg" class="card-link" target="_blank">
-                <div class="card">
-                    <img src="images/testimonials/legendary-freelancer-technical-testimonial2.jpg" class="card-img-top">
-                    <div class="card-body">
-                      <p class="lead card-title">This project turned out to be pretty complicated, but he worked through each issue and got everything working to specification.</p>
-                  </div>
-            </div>
-            </a>
-          </div>	  
-
-          <div class="col-md-3 mb-4">
-            <p><span class="badge text-bg-light">Custom Software / Admin Panel</span></p>
-            <a href="images/testimonials/legendary-freelancer-technical-testimonial1.jpg" class="card-link" target="_blank">
-                <div class="card">
-                    <img src="images/testimonials/legendary-freelancer-technical-testimonial1.jpg" class="card-img-top">
-                    <div class="card-body">
-                      <p class="lead card-title">Zeeshan Arshaad is a great programmer, with great skill and good common sense. He is sure way to get your project done in best way possible.</p>
-                  </div>
-            </div>
-            </a>
-          </div>	  
-
-          <div class="col-md-3 mb-4">
+          <div class="col-md-4 mb-4">
             <p><span class="badge text-bg-light">Freelancing Consultation</span></p>
             <a href="https://www.youtube.com/watch?v=6QGxPo1pDTk" class="card-link">
                 <div class="card">
                     <img src="https://img.youtube.com/vi/6QGxPo1pDTk/0.jpg" class="card-img-top">
                     <div class="card-body">
-                        <p class="lead card-title">Recovered 3-Months Old Stuck Payment from Lazy Client in Few Hours (Karachi)</p>
+                        <p class="lead card-title">Pakistan</p>
                     </div>
                 </div>
             </a>
@@ -564,9 +443,15 @@
 
 
     </div>        
+	
+		<p align="center" class="cta-section">
+			<a href="contact.htm" class="btn btn-lg btn-danger">Contact Me</a>
+		</p>	
+		
 
     </div> 
-
+ 
+ 
     <!-- InstanceEndEditable -->
 
 	<!-- InstanceBeginRepeat name="Footer" --><!-- InstanceBeginRepeatEntry -->
