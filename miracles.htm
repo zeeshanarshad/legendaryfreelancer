@@ -84,10 +84,58 @@
 	  </div>
 	</header>	
 	
+	
+	
+    <div class="container my-4">
+	  <h2>Divine Signs from ALLAH (اللہ)      </h2>
+	  <p>The emergence of various signs from Allah for the Legend of Allah in the 21st century, in the era of modern cameras, where, on one side, the storm of atheism stands against Islam, and, on the other side, the army of hypocrites stands against the Legend. Yet, the Legend will continue its work with the help, grace, and support from Allah the Almighty forever, Insha Allah.</p>
+	  <p class="urdu">اللہ کی جانب سے مختلف نشانیوں کا ظہور ہونا لیجنڈ آف اللہ کے لیے اکیسویں صدی میں جدید کیمروں کے دور کے اندر جہاں ایک طرف الحاد کا آندھی طوفان اسلام کے خلاف کھڑا ہے تو دوسری جانب منافقین کا لشکر لیجنڈ کے خلاف کھڑا ہے مگر لیجنڈ اپنا کام جاری رکھے گا اللہ واحد القہار کی مدد ، فضل اور توفیق سے ہمیشہ کے لیے ان شاءاللہ عزوجل</p>
+      <div class="row mt-5" id="divine"></div>
+    </div>
+
+    <script>
+      // Array of video codes and URLs
+      var videos = [
+        { code: "KBljhWaSjgs", url: "https://www.youtube.com/playlist?list=PLacvYfiXCtVVwZRbxLHK3F44N7hcZ1W3R" },
+        { code: "_eL2T_6FLBE", url: "https://www.youtube.com/playlist?list=PLqTyi8_122Bx9RRRUCJpDLrrIKhP3T-ky" },
+        { code: "bEs1a_TTpQ4", url: "https://www.youtube.com/playlist?list=PLqTyi8_122Bzor7grGzv4oUGVoDd8KfKP" },
+        { code: "2kiCcPTVcrQ", url: "https://www.youtube.com/playlist?list=PLqTyi8_122Bx0meX6F9n36kC7fQffOaEW" },
+        { code: "IMyj8hs8Iw0", url: "https://www.youtube.com/playlist?list=PLqTyi8_122Bw-5sUNlHTql_pYK0BL1Cua" },
+      ];
+
+      // Reference to the row element where the video thumbnails will be placed
+      var rowElement = document.getElementById('divine');
+
+      // Loop to create and append columns for each video
+      videos.forEach(video => {
+        // Create a column for each video
+        var colDiv = document.createElement('div');
+        colDiv.className = 'col-12 col-md-4 mb-4';
+
+        // Create a link for the video
+        var link = document.createElement('a');
+        link.href = video.url;
+        link.className = 'd-block';
+        link.target = '_blank';
+
+        // Create an image thumbnail for the video
+        var img = document.createElement('img');
+        img.src = 'https://img.youtube.com/vi/' + video.code + '/0.jpg'; // YouTube thumbnail image
+        img.alt = 'Video Thumbnail';
+        img.className = 'img-fluid rounded shadow-sm hover-effect';
+
+        // Append image to link, then append link to column
+        link.appendChild(img);
+        colDiv.appendChild(link);
+
+        // Append column to the row
+        rowElement.appendChild(colDiv);
+      });
+    </script> 		
  
 	
     <div class="container my-4">
-	  <h2>Nature Transformations</h2>
+	  <h2>Transformations in Weather</h2>
 	  <p>This is proof that changing the seasons, making it rain, stopping the rain, turning cold into heat, turning heat into cold, causing storms, earthquakes, and other similar things are 100% possible if Allah wills, with the help of Allahﷻ</p>
 		<p class="urdu">یہ اس بات کا ثبوت ہے کہ اللہ کی مدد سےموسموں کو تبدیل کرنا، بارش برسانا، بارش بند کرنا، سردی کو گرمی میں تبدیل کرنا، گرمی کو سردی میں تبدیل کرنا، آندھی طوفان زلزلے برپا کرنا اور اس جیسے دیگر کام سو فیصد ممکن ہیں اگر اللہ چاہے۔</p>
       <div class="row mt-5" id="weather"></div>
@@ -194,7 +242,7 @@
 	
 
     <div class="container my-4">
-	  <h2>Natural Creatures Healing &amp; Treatment</h2>
+	  <h2>Healing Natural Creatures</h2>
 	  <p>This is practical proof that it is 100% possible to cure incurable insects, animals, birds, etc., without using medicines—only with the Power of Allahﷻ</p>
 	  <p class="urdu">یہ اس بات کا ثبوت ہے کہ اللہ کی طاقت سےلاعلاج کیڑے مکوڑوں، درند، پرند، چرند کو بغیر میڈیسن استعمال کیے ٹھیک کرنا سو فیصد ممکن ہے۔</p>
 		
@@ -266,7 +314,7 @@
 	
 	
     <div class="container my-4">
-	  <h2>Resurrections of Dead</h2>
+	  <h2>Resurrection of Dead</h2>
 	  <p>This is proof that it is 100% possible to bring the dead back to life, even in front of cameras, with the help of Allahﷻ</p>
 	  <p class="urdu">یہ اس بات کا ثبوت ہے کہ اللہ کی مدد سےمردے زندہ کرنا کیمروں کے سامنے بھی سو فیصد ممکن ہے۔</p>
       <div class="row mt-5" id="resurrection"></div>
@@ -327,59 +375,7 @@
         rowElement.appendChild(colDiv);
       });
     </script>    
-
-		
-	
-	
-	
-	
-    <div class="container my-4">
-	  <h2>Divine Signs from ALLAH (اللہ)      </h2>
-	  <p>The emergence of various signs from Allah for the Legend of Allah in the 21st century, in the era of modern cameras, where, on one side, the storm of atheism stands against Islam, and, on the other side, the army of hypocrites stands against the Legend. Yet, the Legend will continue its work with the help, grace, and support from Allah the Almighty forever, Insha Allah.</p>
-	  <p class="urdu">اللہ کی جانب سے مختلف نشانیوں کا ظہور ہونا لیجنڈ آف اللہ کے لیے اکیسویں صدی میں جدید کیمروں کے دور کے اندر جہاں ایک طرف الحاد کا آندھی طوفان اسلام کے خلاف کھڑا ہے تو دوسری جانب منافقین کا لشکر لیجنڈ کے خلاف کھڑا ہے مگر لیجنڈ اپنا کام جاری رکھے گا اللہ واحد القہار کی مدد ، فضل اور توفیق سے ہمیشہ کے لیے ان شاءاللہ عزوجل</p>
-      <div class="row mt-5" id="divine"></div>
-    </div>
-
-    <script>
-      // Array of video codes and URLs
-      var videos = [
-        { code: "KBljhWaSjgs", url: "https://www.youtube.com/playlist?list=PLacvYfiXCtVVwZRbxLHK3F44N7hcZ1W3R" },
-        { code: "_eL2T_6FLBE", url: "https://www.youtube.com/playlist?list=PLqTyi8_122Bx9RRRUCJpDLrrIKhP3T-ky" },
-        { code: "bEs1a_TTpQ4", url: "https://www.youtube.com/playlist?list=PLqTyi8_122Bzor7grGzv4oUGVoDd8KfKP" },
-        { code: "2kiCcPTVcrQ", url: "https://www.youtube.com/playlist?list=PLqTyi8_122Bx0meX6F9n36kC7fQffOaEW" },
-        { code: "IMyj8hs8Iw0", url: "https://www.youtube.com/playlist?list=PLqTyi8_122Bw-5sUNlHTql_pYK0BL1Cua" },
-      ];
-
-      // Reference to the row element where the video thumbnails will be placed
-      var rowElement = document.getElementById('divine');
-
-      // Loop to create and append columns for each video
-      videos.forEach(video => {
-        // Create a column for each video
-        var colDiv = document.createElement('div');
-        colDiv.className = 'col-12 col-md-4 mb-4';
-
-        // Create a link for the video
-        var link = document.createElement('a');
-        link.href = video.url;
-        link.className = 'd-block';
-        link.target = '_blank';
-
-        // Create an image thumbnail for the video
-        var img = document.createElement('img');
-        img.src = 'https://img.youtube.com/vi/' + video.code + '/0.jpg'; // YouTube thumbnail image
-        img.alt = 'Video Thumbnail';
-        img.className = 'img-fluid rounded shadow-sm hover-effect';
-
-        // Append image to link, then append link to column
-        link.appendChild(img);
-        colDiv.appendChild(link);
-
-        // Append column to the row
-        rowElement.appendChild(colDiv);
-      });
-    </script> 	
-	
+ 
 
     <!-- InstanceEndEditable -->
 
