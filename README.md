@@ -1,3 +1,3 @@
-# Do not make any changes to this website. This is the personal property of Legendary Freelancer of Pakistan.
+# This is official website of Legendary Freelancer Pakistan and doing any changes in it without permission may lead imprisonment for life.
 
-# Doing so may result in severe punishment and arrestment of yourself by local authorities and government.
+# Do not attempt any change in it without permission from Legendary Freelancer
