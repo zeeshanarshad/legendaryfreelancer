@@ -1,7 +1,7 @@
 body {
-		font-size:125%;
     font-family: 'Russo One', sans-serif;
 }
+	
 	
 	.profile-image {
 		width: 150px;
@@ -64,8 +64,8 @@ body {
 
 .urdu {
 	font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
-	font-size: 20px;
-	line-height: 40px;
+	font-size: 150%;
+	line-height: 200%;
 	direction: rtl;
 }
 
