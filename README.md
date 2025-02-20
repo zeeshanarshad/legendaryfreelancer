@@ -1,3 +1,1 @@
-# This is official website of Legendary Freelancer Pakistan and doing any changes in it without permission may lead imprisonment for life.
-
-# Do not attempt any change in it without permission from Legendary Freelancer
+# This is official website of Legendary Freelancer Pakistan and doing any changes in it without permission may lead imprisonment for life. Do not attempt any change in it without permission from Legendary Freelancer
