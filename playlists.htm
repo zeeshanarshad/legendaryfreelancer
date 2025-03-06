@@ -2,10 +2,10 @@
 <html lang="en"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" --><head>
 	
 	<!-- InstanceBeginEditable name="doctitle" -->
-    <title>Contact - Legendary Freelancer</title>
-    <meta name="description" content="Multi-Skilled Mentor and Legendary Freelancer of Pakistan Available for Hire">
-    <meta name="keywords" content="Cotact Legendary Freelancer, How to Contact Legendary Freelancer, Contact Numbers of Legendary Freelancer"/>
-	
+	<title>Playlists - Legendary Freelancer</title>
+	<meta name="description" content="Explore the successful results and outcomes achieved through dedicated freelance work." />
+	<meta name="keywords" content="islamic website developer, custom cms developer, logo designer, dynamic website creator, e-commerce developer, wordpress developer, remote spiritual healer, healing expert, quranic healer, spiritual counselor, psychic, psychologist, transformational coach, mindset coach, business consultant, freelancing mentor, vr game tester, web developer, graphics designer, video editor, udemy course creator, online business consultant, freelancer from pakistan, legendary freelancer" />
+
 <!-- InstanceEndEditable -->
 
 	<!-- InstanceBeginRepeat name="Meta Data" --><!-- InstanceBeginRepeatEntry -->
@@ -70,41 +70,72 @@
 
 
 	<!-- InstanceBeginEditable name="Body" -->
-	<div class="container">
-	<div class="row mt-5">
-	  <div class="col-12">
-	    <h1 align="center" class="section-headline">Contact</h1>
-	    <p align="center">Surely Allah does what He intends.  (Legendary Quran 22.14)</p>
-		</div>
+
+	<header class="text-center py-5">
+	  <div class="container">
+		<h1><strong>Gaming</strong></h1>
+		<p align="center">A Treasure for Learners (آنکھ والوں کے لیے عبرت اور نصیحت)</p>
+		<p align="center"><img src="images/legendary-gamer.jpg" class="img-fluid"></p>
 	  </div>
+	</header>		
+	
+	<div class="container">
+      <div class="row mt-5" id="videos"></div>
+		
+    <script>
+      // Array of video codes and URLs
+      var videos = [
+        { code: "paDpXXOU93U", url: "https://www.youtube.com/playlist?list=PLacvYfiXCtVUS3pz9lFWa6m_mfEBISvHS" },
+        { code: "Gw_jTcqCCvs", url: "https://www.youtube.com/playlist?list=PLacvYfiXCtVWwXdcqHU9rwsFSbqZmXcTo" },
+        { code: "xCpfOU7YJQ4", url: "https://www.youtube.com/playlist?list=PLacvYfiXCtVX89U8QU089kEOfTsl0vid4" },
+        { code: "xxx", url: "xxx" },
+        { code: "xxx", url: "xxx" },
+        { code: "xxx", url: "xxx" },
+        { code: "xxx", url: "xxx" },
+        { code: "xxx", url: "xxx" },
+        { code: "xxx", url: "xxx" },
+        { code: "xxx", url: "xxx" },
+        { code: "xxx", url: "xxx" },
+        { code: "xxx", url: "xxx" },
+        { code: "xxx", url: "xxx" },
+        { code: "xxx", url: "xxx" },
+      ];
+		
+      // Reference to the row element where the video thumbnails will be placed
+      var rowElement = document.getElementById('videos');
 
-        <div class="row">
-            <!-- Left Column: Text Info -->
-          <div class="col-md-6">
-            <p><strong>For paid services, message me on Skype:</strong> realisticzee</p>
-            <ul>
-              <li><strong>Free Listening</strong> – listening to your problem is completely free of charge.</li>
-              <li><strong>Payment Required</strong> – if you want me to work on your project.</li>
-              <li><strong>Charges </strong>– depending upon your requirements and complexity of your project.</li>
-              <li><strong>Availability</strong> – according to your time zone once you become my client.</li>
-              <li><strong>Refund </strong> – if you don't get the result within deadline, you will get your money back.</li>
-            </ul>
-            <p>&nbsp;</p>
-            <div data-tf-live="01JEKDZ4XT4MVWDQJREGBH8DR5"></div><script src="//embed.typeform.com/next/embed.js"></script>
-          </div>
+      // Loop to create and append columns for each video
+      videos.forEach(video => {
+        // Create a column for each video
+        var colDiv = document.createElement('div');
+        colDiv.className = 'col-12 col-md-3 mb-4';
 
-            <!-- Right Column: Image -->
-            <div class="col-md-6">
-                <p align="center"><img src="images/doctor-legend-zeeshan-arshad-legendary-freelancer.jpg" class="img-fluid" alt="RightfulReligion.com - Your One Stop Platform to Find One True Religion"></p>
-            </div>
-        </div>
+        // Create a link for the video
+        var link = document.createElement('a');
+        link.href = video.url;
+        link.className = 'd-block';
+        link.target = '_blank';
 
-        
-        
-        
-	</div>    
- 
-	<!-- InstanceEndEditable -->
+        // Create an image thumbnail for the video
+        var img = document.createElement('img');
+        img.src = 'https://img.youtube.com/vi/' + video.code + '/0.jpg'; // YouTube thumbnail image
+        img.alt = 'Video Thumbnail';
+        img.className = 'img-fluid rounded shadow-sm hover-effect';
+
+        // Append image to link, then append link to column
+        link.appendChild(img);
+        colDiv.appendChild(link);
+
+        // Append column to the row
+        rowElement.appendChild(colDiv);
+      });
+    </script>			
+		
+    </div>	
+
+  
+
+    <!-- InstanceEndEditable -->
 
 	<!-- InstanceBeginRepeat name="Footer" --><!-- InstanceBeginRepeatEntry -->
 	
