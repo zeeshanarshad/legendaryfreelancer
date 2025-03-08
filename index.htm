@@ -7,98 +7,27 @@
     <meta name="keywords" content="world of warcraft, dota 2, programming, full stack web development, online earning, freelancing, passive income, spiritual healing, spiritual freelancer, technical freelancer, IT freelancer"/>
 	
     <style>
-    .luxury-section {
-        background: linear-gradient(135deg, #1a1a1a, #2c3e50);
-        color: #fff;
-        padding: 40px 0;
-        border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        overflow: hidden;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .luxury-section:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
-    }
-
-    .luxury-img {
-        border-radius: 15px;
-        overflow: hidden;
-        transition: transform 0.3s ease;
-    }
-
-    .luxury-img:hover {
-        transform: scale(1.05);
-    }
-
-    .luxury-headline {
-        font-family: 'Playfair Display', serif;
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: #ffd700;
-        margin-bottom: 20px;
-    }
-
-    .luxury-description {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.1rem;
-        line-height: 1.8;
-        color: #ddd;
-    }
-
-    .luxury-link {
-        color: #ffd700;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-    .luxury-link:hover {
-        color: #fff;
-    }
-		
-    .hero-section {
-      background: url('images/legendary-gamer.jpg') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-    .cta-button {
-      margin: 10px;
-    }		
-		
-        .hero {
-            background: url('images/30-years.jpg') no-repeat center center/cover;
-            min-height: 100vh;
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/legendary-holy-quran-legendary-freelancer.jpg') center/cover;
+            height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-        .hero-overlay {
-            background: rgba(0, 0, 0, 0.6);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2;
+            color: white;
             text-align: center;
         }
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #004085;
+        .video-container {
+            margin-bottom: 30px;
+        }
+        .gaming-section {
+            background: #1a1a1a;
+            padding: 50px 0;
         }
     </style>		
 	<!-- InstanceEndEditable -->
@@ -122,7 +51,7 @@
 	<!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat -->
 	
 </head>
-<body>
+<body class="bg-dark text-light">
 
 	<!-- InstanceBeginRepeat name="Header" --><!-- InstanceBeginRepeatEntry -->
     
@@ -165,57 +94,214 @@
 
 
 	<!-- InstanceBeginEditable name="Body" -->
+	
+	
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Transform Your Life Forever!</h1>
+            <p class="lead mb-4">Mentoring for Gamers and Freelancers by Zeeshan Arshad, the Legend of Allahﷻ</p>
+            <a href="#booking" class="btn btn-lg btn-outline-light">Book Your Session</a>
+        </div>
+    </section>
 
-	<header class="text-center py-5">
-	  <div class="container">
+    <!-- Spirituality of Islam Through Gaming Section -->
+    <section class="gaming-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Spirituality of Islam Through Gaming</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <p class="lead">Gaming is more than just entertainment—it’s a tool for learning, growth, and connection. As the Legendary Gamer of Islam, I use gaming metaphors to teach Islamic principles and help you navigate life’s challenges. Whether you’re a gamer, freelancer, or truth-seeker, my mentoring sessions will help you level up your faith and skills.</p>
+                    <a href="#booking" class="btn btn-lg btn-outline-light">Start Your Quest</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="booking" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Pricing</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card bg-black text-light p-4">
+                        <h3>Local Clients</h3>
+                        <p class="fs-4">10,000 PKR</p>
+                        <p>Affordable mentoring for students and beginners in Pakistan.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-black text-light p-4">
+                        <h3>International Clients</h3>
+                        <p class="fs-4">500 USD</p>
+                        <p>Premium mentoring for professionals and freelancers worldwide.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>Contact me on Skype: <strong>realisticzee</strong> to book your meeting.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentoring Videos -->
+    <section class="py-5">
+        <div class="container">
+			<h2 class="text-center mb-5">Learn from Legendary Freelancer</h2>
+			<p class="lead text-center mb-5">Explore my free videos on freelancing, gaming, personal development, and more.</p>
+
+		  <div class="row" id="videos"></div>
+	  <script>
+			  // Array of video codes and URLs
+			  var videos = [
+
+				  // Freelancing
+				  { "code": "hgkrId8_W4U", "url": "https://www.youtube.com/watch?v=hgkrId8_W4U" },
+				  { "code": "pUFWacZKcgI", "url": "https://www.youtube.com/watch?v=pUFWacZKcgI" },
+				  { "code": "sJpgQXq8FPA", "url": "https://www.youtube.com/watch?v=sJpgQXq8FPA" },
+				  { "code": "EklR8V7xfto", "url": "https://www.youtube.com/watch?v=EklR8V7xfto" },
+
+				  // Gaming
+				  { "code": "0moUGXSNJuA", "url": "https://www.youtube.com/watch?v=0moUGXSNJuA" },
+				  { "code": "J7VFr1MMqas", "url": "https://www.youtube.com/watch?v=J7VFr1MMqas" },
+				  { "code": "k-NVD0evyAg", "url": "https://www.youtube.com/watch?v=k-NVD0evyAg" },
+				  { "code": "fBCh4mM1Y50", "url": "https://www.youtube.com/watch?v=fBCh4mM1Y50" },
+				  
+				  // Personal Development
+				  { "code": "4CDZQ_U1JrU", "url": "https://www.youtube.com/watch?v=4CDZQ_U1JrU" },
+				  { "code": "BGbjeCwrGi8", "url": "https://www.youtube.com/watch?v=BGbjeCwrGi8" },
+				  { "code": "sIQJvLmPYfc", "url": "https://www.youtube.com/watch?v=sIQJvLmPYfc" },
+				  { "code": "5j8NmYOgcdU", "url": "https://www.youtube.com/watch?v=5j8NmYOgcdU" },
+				  
+				  // Islam
+				  { "code": "rZTBmStNVH8", "url": "https://www.youtube.com/watch?v=rZTBmStNVH8" },
+				  { "code": "8nrP1e2Yktw", "url": "https://www.youtube.com/watch?v=8nrP1e2Yktw" },
+				  { "code": "jvw77EKojis", "url": "https://www.youtube.com/watch?v=jvw77EKojis" },
+				  { "code": "Y98FYuGbElg", "url": "https://www.youtube.com/watch?v=Y98FYuGbElg" },
+				  
+				  // Spirituality
+				  { "code": "EVU2Z5afy_4", "url": "https://www.youtube.com/watch?v=EVU2Z5afy_4" },
+				  { "code": "QKbdGMo5sJM", "url": "https://www.youtube.com/watch?v=QKbdGMo5sJM" },
+				  { "code": "AF4uQb98XWc", "url": "https://www.youtube.com/watch?v=AF4uQb98XWc" },
+				  { "code": "2KRJvhOIRes", "url": "https://www.youtube.com/watch?v=2KRJvhOIRes" },
+				  
+				  // Misc
+				  { "code": "fSjDFgjM7z8", "url": "https://www.youtube.com/watch?v=fSjDFgjM7z8" },
+				  { "code": "jyeNWg8JKhg", "url": "https://www.youtube.com/watch?v=jyeNWg8JKhg" },
+				  { "code": "cfNlA0y-yq4", "url": "https://www.youtube.com/watch?v=cfNlA0y-yq4" },
+				  { "code": "f1pl8iqBc9Y", "url": "https://www.youtube.com/watch?v=f1pl8iqBc9Y" },
+			  ];
+
+			  // Reference to the row element where the video thumbnails will be placed
+			  var rowElement = document.getElementById('videos');
+
+			  // Loop to create and append columns for each video
+			  videos.forEach(video => {
+				// Create a column for each video
+				var colDiv = document.createElement('div');
+				colDiv.className = 'col-12 col-md-3 mb-4';
+
+				// Create a link for the video
+				var link = document.createElement('a');
+				link.href = video.url;
+				link.className = 'd-block';
+				link.target = '_blank';
+
+				// Create an image thumbnail for the video
+				var img = document.createElement('img');
+				img.src = 'https://img.youtube.com/vi/' + video.code + '/0.jpg'; // YouTube thumbnail image
+				img.alt = 'Video Thumbnail';
+				img.className = 'img-fluid rounded shadow-sm hover-effect';
+
+				// Append image to link, then append link to column
+				link.appendChild(img);
+				colDiv.appendChild(link);
+
+				// Append column to the row
+				rowElement.appendChild(colDiv);
+			  });
+			</script> 				
+ 
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-black">
+        <div class="container">
+            <h2 class="text-center mb-5">What People Are Saying</h2>
+			
+		  <div class="row" id="reviews"></div>
+	  <script>
+			  // Array of video codes and URLs
+			  var videos = [
+				  { "code": "6QGxPo1pDTk", "url": "https://www.youtube.com/watch?v=6QGxPo1pDTk" },
+				  { "code": "-qpAkFyb3wc", "url": "https://www.youtube.com/watch?v=-qpAkFyb3wc" },
+				  { "code": "zy4HHVk5uRs", "url": "https://www.youtube.com/watch?v=zy4HHVk5uRs" },
+ 			  ];
+
+			  // Reference to the row element where the video thumbnails will be placed
+			  var rowElement = document.getElementById('reviews');
+
+			  // Loop to create and append columns for each video
+			  videos.forEach(video => {
+				// Create a column for each video
+				var colDiv = document.createElement('div');
+				colDiv.className = 'col-12 col-md-4 mb-4';
+
+				// Create a link for the video
+				var link = document.createElement('a');
+				link.href = video.url;
+				link.className = 'd-block';
+				link.target = '_blank';
+
+				// Create an image thumbnail for the video
+				var img = document.createElement('img');
+				img.src = 'https://img.youtube.com/vi/' + video.code + '/0.jpg'; // YouTube thumbnail image
+				img.alt = 'Video Thumbnail';
+				img.className = 'img-fluid rounded shadow-sm hover-effect';
+
+				// Append image to link, then append link to column
+				link.appendChild(img);
+				colDiv.appendChild(link);
+
+				// Append column to the row
+				rowElement.appendChild(colDiv);
+			  });
+			</script> 			
+			
+			
+			
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>“main freelance kaam karta hon, teesra mahina kaam ka start hua tha aur pese abhi tak aey nahi the, mujhe ye problem tha k pese client bhej nahi raha aur kaam de raha hai -> bhai se mene pocha, help li to bhai ne mujhe ek email message type karwake dia, wo mene client ko bheja, uske ek ghante baad hi usne pese bhej diay.”</p>
+                        <p class="text-end">– Usman, UI/UX Designer - Pakistan</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>“mene sir zeeshan se live session lia hai 2 ghante ka, main pehle kafi zyada confuse thi apni life ke bare main, main kia achieve karna chati hon, mere kuch fears the jinko mene inke sath discuss kia -&gt; main bohut zyada relax feel kar rahi hon, fear kuch bhi nahi hai, female kuch bhi kar sakti hain, sir zeeshan thank you so much”</p>
+                        <p class="text-end">– Female, Job Professional - Pakistan</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p>“I'm kind of shy person, main abhi tak video upload karne se 10 min pehle keh rahi thi yaar nahi karni nahi karni nahi karni -&gt; ab I'm feeling so nice so nice ke haan k mere youtube channel par meri pehli voice ke sath video chali gai”</p>
+                        <p class="text-end">– Female, Student - Pakistan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>	
+	
+ 
+	
+	  <div class="container text-center py-5">
 		<h1><strong>The Gamer of ALLAH (اللہ)</strong></h1>
 		<p align="center">It was not for a messenger to come with a sign except by permission of Allah (Legendary Quran 13.38)</p>
 		<p align="center"><img src="images/legendary-gamer.jpg" class="img-fluid"></p>
 		<p align="center"><a href="https://www.youtube.com/@TheGameofLegendbyALLAH/playlists" target="_blank" class="btn btn-primary">Game of Legend with ALLAH (اللہ) WAHID AL-QAHAR</a></p>
 	  </div>
-	</header>
- 
-<div class="container">
-    <div class="row mt-4 mb-5 align-items-center">
-        <div class="col-md-6">
-            <a href="skills.htm">
-                <img src="images/legendary-freelancer-courses.jpg" class="img-fluid luxury-img" alt="Legendary Machine by Legendary Freelancer">
-            </a>
-        </div>
-        <div class="col-md-6">
-            <h2><strong><a href="skills.htm">Learn Powerful Skills</a></strong></h2>
-            <p>From coding, gaming and freelancing to spirituality and more.</p>
-      </div>
-    </div>
-
-    <!-- Section -->
-    <div class="row mt-4 mb-5 align-items-center">
-        <div class="col-md-6">
-            <a href="freelancers.htm">
-                <img src="images/legendary-machine-legendary-freelancer.jpg" class="img-fluid luxury-img" alt="Legendary Machine by Legendary Freelancer">
-            </a>
-        </div>
-        <div class="col-md-6">
-            <h2><strong><a href="https://www.youtube.com/watch?v=C-6Hm9wfKDk" target="_blank">Build Legendary Machine</a></strong></h2>
-            <p>Heal from your incurable diseases automatically by the Powers of Allah.</p>
-        </div>
-    </div>
-	
-    <!-- Section -->
-    <div class="row mt-4 mb-5 align-items-center">
-        <div class="col-md-6">
-            <a href="freelancers.htm">
-                <img src="images/30-years.jpg" class="img-fluid luxury-img" alt="Legendary Machine by Legendary Freelancer">
-            </a>
-        </div>
-        <div class="col-md-6">
-            <h2><strong><a href="resources_free-ilaj-service.htm">Avail Free Treatment</a></strong></h2>
-            <p>Get connected to the institutes and hospitals offering free treatment services.</p>
-        </div>
-    </div>	
- 
-</div>	
-	
  
 	<!-- InstanceEndEditable -->
 
