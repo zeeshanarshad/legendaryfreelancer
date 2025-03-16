@@ -53,11 +53,11 @@
 			  <li><a class="dropdown-item" href="message.htm">Message 📜</a></li>
 			</ul>
 		  </li>
-		  <li class="nav-item"><a class="nav-link" href="mentoring.htm">Mentoring</a></li>
 		  <li class="nav-item"><a class="nav-link" href="services.htm">Services</a></li>
-		  <li class="nav-item"><a class="nav-link" href="shop.htm">Shop</a></li>
 		  <li class="nav-item"><a class="nav-link" href="portfolio.htm">Portfolio</a></li>
 		  <li class="nav-item"><a class="nav-link" href="testimonials.htm">Testimonials</a></li>
+		  <li class="nav-item"><a class="nav-link" href="shop.htm">Shop</a></li>
+		  <li class="nav-item"><a class="nav-link" href="interviews.htm">Interviews</a></li>
 		  <li class="nav-item"><a class="nav-link" href="contact.htm">Contact</a></li>
 		</ul>
         </div>
@@ -80,9 +80,8 @@
 
 	<div class="container my-4">    
 		
-
-      <div class="row" id="guest-interviews"></div>
-
+	<h2 class="py-5"><strong>My Interviews</strong></h2>
+	<div class="row" id="interviews"></div>
     <script>
       // Array of video codes and URLs
       var videos = [
@@ -90,14 +89,10 @@
         { code: "zjAqcQ5HhzE", url: "https://www.youtube.com/watch?v=zjAqcQ5HhzE" },
         { code: "BdXxOI8Aou0", url: "https://www.youtube.com/watch?v=BdXxOI8Aou0" },
         { code: "ajkGZJPrQko", url: "https://www.youtube.com/watch?v=ajkGZJPrQko" },
-        { code: "Ogi_RA5tYRk", url: "https://www.youtube.com/watch?v=Ogi_RA5tYRk" },
-        { code: "d5c2PQOQOP4", url: "https://www.youtube.com/watch?v=d5c2PQOQOP4" },
-        { code: "k2kBaU2Sxgs", url: "https://www.youtube.com/watch?v=k2kBaU2Sxgs" },
-        { code: "bAvrQhmXU1c", url: "https://www.youtube.com/watch?v=bAvrQhmXU1c" },
       ];
 
       // Reference to the row element where the video thumbnails will be placed
-      var rowElement = document.getElementById('guest-interviews');
+      var rowElement = document.getElementById('interviews');
 
       // Loop to create and append columns for each video
       videos.forEach(video => {
@@ -125,6 +120,50 @@
         rowElement.appendChild(colDiv);
       });
     </script>            		
+		
+	<h2 class="py-5"><strong>Other Interviews</strong></h2>
+	<div class="row" id="other-interviews"></div>
+    <script>
+      // Array of video codes and URLs
+      var videos = [
+        { code: "BG4ztbayPrA", url: "https://www.youtube.com/watch?v=BG4ztbayPrA" },
+        { code: "bp9qMyXS1bU", url: "https://www.youtube.com/watch?v=bp9qMyXS1bU" },
+        { code: "AnPetVtjDmo", url: "https://www.youtube.com/watch?v=AnPetVtjDmo" },
+        { code: "Ogi_RA5tYRk", url: "https://www.youtube.com/watch?v=Ogi_RA5tYRk" },
+        { code: "d5c2PQOQOP4", url: "https://www.youtube.com/watch?v=d5c2PQOQOP4" },
+        { code: "k2kBaU2Sxgs", url: "https://www.youtube.com/watch?v=k2kBaU2Sxgs" },
+        { code: "bAvrQhmXU1c", url: "https://www.youtube.com/watch?v=bAvrQhmXU1c" },
+      ];
+
+      // Reference to the row element where the video thumbnails will be placed
+      var rowElement = document.getElementById('other-interviews');
+
+      // Loop to create and append columns for each video
+      videos.forEach(video => {
+        // Create a column for each video
+        var colDiv = document.createElement('div');
+        colDiv.className = 'col-12 col-md-4 mb-4';
+
+        // Create a link for the video
+        var link = document.createElement('a');
+        link.href = video.url;
+        link.className = 'd-block';
+        link.target = '_blank';
+
+        // Create an image thumbnail for the video
+        var img = document.createElement('img');
+        img.src = 'https://img.youtube.com/vi/' + video.code + '/0.jpg'; // YouTube thumbnail image
+        img.alt = 'Video Thumbnail';
+        img.className = 'img-fluid rounded shadow-sm hover-effect';
+
+        // Append image to link, then append link to column
+        link.appendChild(img);
+        colDiv.appendChild(link);
+
+        // Append column to the row
+        rowElement.appendChild(colDiv);
+      });
+    </script>     		
 		
  
         
