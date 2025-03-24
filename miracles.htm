@@ -33,7 +33,8 @@
     
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+   	
     <!-- Google Code -->
 <!--    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">-->
 	<meta name="ahrefs-site-verification" content="b48856b81bdf6da4a1fecdf5397be54865cffb3b8a87be029c273633732f6542">
@@ -47,53 +48,74 @@
 
 	<!-- InstanceBeginRepeat name="Header" --><!-- InstanceBeginRepeatEntry -->
     
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="index.htm"><img src="images/logo.png" class="img-fluid"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-		<ul class="navbar-nav ms-auto">
-		  <!-- Home -->
-		  <li class="nav-item"><a class="nav-link" href="index.htm">Home</a></li>
 
-		  <!-- About (Dropdown) -->
-		  <li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-			  <li><a class="dropdown-item" href="Allah.htm">ALLAHﷻ 🕋</a></li>
-			  <li><a class="dropdown-item" href="zeeshan.htm">Zeeshan ☣️</a></li>
-			  <li><a class="dropdown-item" href="story.htm">Story 📖</a></li>
-			  <li><a class="dropdown-item" href="miracles.htm">Miracles 📜</a></li>
-			  <li><a class="dropdown-item" href="message.htm">Message 📜</a></li>
-			</ul>
-		  </li>
-		  <li class="nav-item"><a class="nav-link" href="services.htm">Services</a></li>
-		  <li class="nav-item"><a class="nav-link" href="portfolio.htm">Portfolio</a></li>
-		  <li class="nav-item"><a class="nav-link" href="testimonials.htm">Testimonials</a></li>
-		  <li class="nav-item"><a class="nav-link" href="shop.htm">Shop</a></li>
-		  <li class="nav-item"><a class="nav-link" href="interviews.htm">Interviews</a></li>
-		  <li class="nav-item"><a class="nav-link" href="contact.htm">Contact</a></li>
-		</ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo on the left -->
+        <a class="navbar-brand d-flex align-items-center" href="index.htm">
+            <img src="images/logo.png" class="img-fluid me-2" alt="Logo">
+        </a>
+
+        <!-- Navbar links in the middle -->
+        <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.htm">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Allah.htm">ALLAHﷻ 🕋</a></li>
+                        <li><a class="dropdown-item" href="zeeshan.htm">Zeeshan ☣️</a></li>
+                        <li><a class="dropdown-item" href="story.htm">Story 📖</a></li>
+                        <li><a class="dropdown-item" href="message.htm">Message 📜</a></li>
+                        <li><a class="dropdown-item" href="contact.htm">Contact 📞</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="miracles.htm">Miracles</a></li>
+                <li class="nav-item"><a class="nav-link" href="challenges.htm">Challenges</a></li>
+                <li class="nav-item"><a class="nav-link" href="interviews.htm">Interviews</a></li>
+				
+                <li class="nav-item"><a class="nav-link" href="services.htm">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.htm">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="testimonials.htm">Testimonials</a></li>
+				
+                <li class="nav-item"><a class="nav-link" href="https://udemy.com/u/zeeshanarshad" target="_blank">Courses <span class="bi bi-arrow-up-right"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.kobo.com/au/en/author/zeeshan-arshad" target="_blank">Books <span class="bi bi-arrow-up-right"></span></a></li>
+            </ul>
+        </div>
+        
+        <!-- Language Selector on the right -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                🌐 Language
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item" href="index.htm">English</a></li>
+                <li><a class="dropdown-item" href="urdu.htm">اردو</a></li>
+            </ul>
         </div>
     </div>
-</nav>        
+</nav>
+	
+	
     
 	<!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat -->
 
 
 	<!-- InstanceBeginEditable name="Body" -->	
 	
-	<header class="text-center mt-3 mb-3">
-	  <div class="container">
-		<h1><strong>Miracles of Allah (اللہ)</strong></h1>
+	<div class="container">
+	<div class="row mt-5">
+		<div class="col-12">
+		  <h1 align="center" class="section-headline"> <strong>Miracles of Allah (اللہ)</strong></h1>
 		  <p align="center">If We had sent down to them the angels, and the dead had spoken to them, and We had gathered everything before them face to face, still, they were not to believe, unless Allah would have so willed. But, most of them adopt the way of ignorance. (Legendary Quran 6.111)</p>
             <div class="row">
               <div class="col-md-6 offset-md-3"><iframe width="100%" height="400" src="https://www.youtube.com/embed/I8NfUBUetZw" title="The Invincible Spiritual Warrior of ALLAH (اللہ) WAHID AL-QAHAR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
+		</div>
 	  </div>
-	</header>	
+	</div>		
+	
+	
 	
     <div class="container">
 	  <p dir="ltr">All the miracles, wonders and signs on this page have appeared in the 21st century by the command of Allah against the false gods and false religions of the infidels and against all those who insult the Muslim Saints of Islam and demonstrate ignorance against the Powers of Allah (اللہ)</p>
@@ -109,8 +131,9 @@
 	  <p class="urdu" align="right">چونکہ میں ایک انسان ہوں، غلطیاں ہو سکتی ہیں۔ اگر آپ کو لگتا ہے کہ کوئی معجزہ محض اتفاق تھا یا فطری عمل تھا (جیسے کہ خاموش جانوروں کا علاج)، تو آپ مجھے اطلاع دے سکتے ہیں۔ اگر آپ کی رپورٹ ثبوتوں کے ساتھ سو فیصد درست ثابت ہوئی، تو میں اپنی غلطی کو تسلیم کرکے اس ویڈیو کو سوشل میڈیا سے ختم کردوں گا کیونکہ میری تمام کوششیں اللہ کے فضل سے اسلام کی عظمت کے لیے ہیں اور میں نہیں چاہتا کہ کوئی اتفاق ہو جو حقیقی معجزہ نہ ہو تو اس سے دین اسلام پر کوئی حرف آسکے بشرطیکہ مجھے پریکٹیکل ثبوتوں سے ثابت کردیا جائے کہ میرے ساتھ پیش آنے والا معجزہ کوئی معجزہ نہ تھا بلکہ محض قدرتی عمل تھا۔</p>
 	  <p class="urdu" align="right">اللہ ہی کائنات کا سچا خدا اور بادشاہ ہے نیز اللہ ہی ساری کائنات کا اکیلا واحد حکمران و رب ذوالجلال ہے۔</p>
 	  <p><b>Zeeshan Arshad <br>
-	  Legend of ALLAH (اللہ) </b></p>
-	    
+	  Legend of ALLAH (اللہ) </b>
+	  <hr>
+	  
 	  <h2 align="center"><strong>Miracles Library</strong></h2>
 	  <p align="center">#<a href="#signatures">signatures</a> #<a href="#confirmations">confirmations</a> #<a href="#weather">weather</a> #<a href="#healings">healings</a> #<a href="#resurrections">resurrections</a></p>
 		
@@ -448,7 +471,7 @@
         <div class="row justify-content-center mt-3">
             <div class="col-12 text-center">
               <p class="mb-0"><a href="https://www.youtube.com/playlist?list=PLqTyi8_122Bw-5sUNlHTql_pYK0BL1Cua" class="playlist-link" target="_blank">Prophet Muhammadﷺ Resurrection Approval! By ALLAH (اللہ)</a></p>
-                <p class="urdu mb-0">اللہ کی جانب سے حضرت محمدﷺ کو دوبارہ زندہ کرنے کی اجازت</p>
+                <p class="urdu mb-0">اللہ کی جانب سے حضرت محمد صلی اللہ علیہ وسلم کو دوبارہ زندہ کرنے کی اجازت</p>
             </div>
         </div>
 
@@ -1158,12 +1181,11 @@
  
 	  <h2><strong>Need More Miracles? (<span class="urdu">مزید معجزات دیکھنے ہیں؟</span>)</strong></h2>
 	  <p>For more miracles, visit these YouTube channels and share with your friends, family and social circle:</p>
-	  <p align="right" class="urdu">مزید معجزات کے لیے، ان یوٹیوب چینلز پر جائیں اور اپنے دوستوں، خاندان اور سماجی حلقوں کے ساتھ شئیر کریں: </p>
+	  <p align="right" class="urdu"> میرے معجزات اور نشانیاں اور لیکچرز سننے دیکھنے کے لیے ان یوٹیوب چینلز پر جاو اور اپنے تمام دوستوں، خاندان والوں اور دنیا کے تمام انسانوں کے ساتھ شیئر کردو۔</p>
 	  <ul>
+	    <li><a href="https://www.youtube.com/@LegendofAllah">Legend of Allah</a></li>
 	    <li><a href="https://www.youtube.com/@LegendMuhammadZeeshanArshad">Legend Muhammad Zeeshan Arshad</a></li>
-	    <li><a href="https://www.youtube.com/@TheGameofLegendbyALLAH/playlists">The Game of Legend</a></li>
-	    <li><a href="https://www.youtube.com/@godofnature/playlists">God of Nature</a></li>
-	    <li><a href="https://www.youtube.com/@prophetofnature/playlists">Prophet of Nature</a></li>
+        <li><a href="https://www.youtube.com/@TheGameofLegendbyALLAH/playlists">The Game of Legend by ALLAH (اللہ) WAHID AL-QAHAR</a></li>
       </ul>
 	  <h4><strong>How to Seek Allah&rsquo;s Help</strong></h4>
 	  <p>Miracles are not magic—they are the result of sincere faith, dua, and trust in Allah. If you are facing a challenge, here&rsquo;s how you can seek His help:</p>
@@ -1178,17 +1200,14 @@
 	      <p><strong>Recite Quranic Verses</strong>: Surah Fatiha, Ayatul Kursi, and other verses have immense power.</p>
         </li>
 	    <li>
-	      <p><strong>Seek Spiritual Healing</strong>: If you need guidance or healing, contact <strong>professionals</strong>.</p>
+	      <p><strong>Seek Spiritual Healing</strong>: If you need guidance or healing, reach out to me through the <strong>Contact Page</strong>.</p>
         </li>
       </ol>
 	  <hr>
 	  <h4><strong>Join the Journey of Faith</strong></h4>
-	  <p>These miracles are not just stories—they are proof that Allah is real, His power is limitless, and He is always listening. If you have experienced a miracle or need Allah&rsquo;s help, I invite you to share your story or request assistance. Together, let&rsquo;s strengthen our faith and prove that with Allah, nothing is impossible.</p>
-	  <p>&nbsp;</p>
-	  <p>&nbsp;</p>
-	  <p>&nbsp;</p>
-		
-    </div><!-- container -->
+	  <p>These miracles are not just stories—they are proof that Allah is real, His power is limitless, and He is always listening. If you have experienced a miracle or need Allah&rsquo;s help, I invite you to share your story or request assistance. Together, let&rsquo;s strengthen our faith and prove that with Allah, nothing is impossible.    </p>
+    </div>
+    <!-- container -->
 
   		
  
@@ -1198,8 +1217,7 @@
 	<!-- InstanceBeginRepeat name="Footer" --><!-- InstanceBeginRepeatEntry -->
 	
     <footer class="bg-dark text-white text-center py-3">
-		<p>&copy; 2018 Legendary Freelancer</p>
-		<p><a href="Allah.htm" class="text-warning">Powered by ALLAHﷻ</a></p>
+		<p>&copy; 2018 Legendary Freelancer [Powered by ALLAH]</p>
     </footer>	
 	
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
