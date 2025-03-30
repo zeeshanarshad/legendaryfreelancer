@@ -2,10 +2,10 @@
 <html lang="en"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <!-- InstanceBeginEditable name="doctitle" -->
-    <title>Books - Legendary Freelancer</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-
+    <title>Cases - Legendary Freelancer</title>
+    <meta name="keywords" content="incurable treatment, weather transformations, resurrections of dead, mindset transformations">
+    <meta name="description" content="See the work of Legendary Freelancer of Pakistan by the Powers of ALLAH (اللہ)">
+	
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginRepeat name="Meta Data" --><!-- InstanceBeginRepeatEntry -->
 <meta charset="utf-8">
@@ -72,54 +72,43 @@
 	<div class="container">
 	<div class="row mt-5">
 		<div class="col-12">
-		  <h1 align="center" class="section-headline"> <strong>Books</strong></h1>
-		  <p align="center">Above every man of knowledge, there is someone more knowledgeable. (Legendary Quran 12.76)</p>
-            <div class="row">
-              <div class="col-md-6 offset-md-3"><img src="https://images.pexels.com/photos/1809340/pexels-photo-1809340.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img-fluid"></div>
-            </div>
+		  <h1 align="center" class="section-headline"> <strong>Cases of Legendary Freelancer</strong></h1>
+		  <p align="center">No disaster strikes upon the earth or among yourselves except that it is in a register before We bring it into being – indeed that, for Allah, is easy. (Legendary Quran 57.22)</p>
 		</div>
 	  </div>
-	</div>	
+	
+		<div class="row" id="cases"></div>
+		<script>
+			  var videos = [
+				  { "code": "riX1FSTPA_s", "url": "https://www.youtube.com/playlist?list=PLqTyi8_122By6nz86rHhF5M1M_QsroeA5" },
+				  { "code": "61566wGnzUM", "url": "https://www.youtube.com/playlist?list=PLqTyi8_122BzMq4cagOzKMJcUZFbpa00R" },
+				  { "code": "E_jCZ0m7OS0", "url": "https://www.youtube.com/playlist?list=PLqTyi8_122Bylmtp70Rb1Sk3kEG2DEKnQ" },
+				  { "code": "mBE6TcY6iAY", "url": "https://www.youtube.com/playlist?list=PLqTyi8_122By-f5BK5gPf3v7qX1g8wiRc" },
+				  { "code": "yCiHVW_B7TM", "url": "https://www.youtube.com/playlist?list=PLqTyi8_122Bw-AOnoPXlbknNyxW4nZqSI" },
+				  { "code": "6R97NNzpIw8", "url": "https://www.youtube.com/playlist?list=PLqTyi8_122BwK7EQL5qvQpWvI3eiWKAWV" },
 
-    <div class="container mt-5">
-        <h1></h1>
-        <p></p>
+			  ];
 
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <!-- Book 1 -->
-            <div class="col">
-                <div class="card">
-                    <img src="https://cdn.kobo.com/book-images/65fea50c-3152-4dc8-843e-0e353fdc9086/353/569/90/False/life-after-death-fresh-dead-bodies.jpg" class="card-img-top img-fluid" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Life After Death: Fresh Dead Bodies</h5>
-                        <p class="card-text">This book contains the incidents of fresh dead bodies of Muslim Martyrs of Islam who are preserved in fresh and healthy condition even with fresh blood in their bodies after decades and centuries by the Command & Power of ALLAH (اللہ)</p>
-                        <div class="d-flex justify-content-between">
-                            <a href="https://www.kobo.com/au/en/ebook/life-after-death-fresh-dead-bodies" target="_blank" class="btn btn-outline-primary">Buy on Kobo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Book 2 -->
-            <div class="col">
-                <div class="card">
-                    <img src="https://ia902205.us.archive.org/BookReader/BookReaderImages.php?zip=/15/items/the-rightful-religion-crash-guide/The%20Rightful%20Religion%20Crash%20Guide_jp2.zip&file=The%20Rightful%20Religion%20Crash%20Guide_jp2/The%20Rightful%20Religion%20Crash%20Guide_0000.jp2&id=the-rightful-religion-crash-guide&scale=4&rotate=0" class="card-img-top img-fluid" alt="Book Title 2">
-                    <div class="card-body">
-                        <h5 class="card-title">The Rightful Religion Crash Guide</h5>
-                        <p class="card-text">A crash guide one existence of God and His true religion through behavior of nature for the modern age.</p>
-                        <div class="d-flex justify-content-between">
-                            <a href="https://archive.org/details/the-rightful-religion-crash-guide" target="_blank" class="btn btn-outline-primary">Download for Free</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Add more books here -->
-        </div>
+			  var rowElement = document.getElementById('cases');
+			  videos.forEach(video => {
+				var colDiv = document.createElement('div');
+				colDiv.className = 'col-12 col-md-4 mb-4';
+				var link = document.createElement('a');
+				link.href = video.url;
+				link.className = 'd-block';
+				link.target = '_blank';
+				var img = document.createElement('img');
+				img.src = 'https://img.youtube.com/vi/' + video.code + '/0.jpg'; // YouTube thumbnail image
+				img.alt = 'Video Thumbnail';
+				img.className = 'img-fluid rounded shadow-sm hover-effect';
+				link.appendChild(img);
+				colDiv.appendChild(link);
+				rowElement.appendChild(colDiv);
+			  });
+			</script>				
+ 
     </div>
-  
-
-
+    
 	<!-- InstanceEndEditable --> <!-- InstanceBeginRepeat name="Footer" --><!-- InstanceBeginRepeatEntry -->
 <footer class="bg-dark text-white text-center py-3">
   <p>&copy; 2018 Legendary Freelancer [Powered by ALLAH]</p>
