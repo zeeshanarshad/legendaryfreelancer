@@ -63,21 +63,19 @@ body {
 }
 
 .urdu {
-	font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
-	font-size: 150%;
+	font-family: 'Noto Nastaliq Urdu', Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+	font-size: 1.2em;
+	color: #333;
 	line-height: 200%;
 	direction: rtl;
 }
 
 .urdu-headline {
-	font-family: Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
+	font-family: 'Noto Nastaliq Urdu', Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
 	font-size: 50px;
 	line-height: 200%;
 	direction: rtl;
 }
-
-
-
 
 /* Add hover effect on image */
 .hover-effect {
@@ -88,3 +86,43 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 transform: scale(1.05);
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+
+
+        .playlist-link {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .playlist-link:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .custom-card {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+			padding-bottom:10px;
+        }
+
+        .custom-card img {
+            transition: transform 0.3s ease-in-out;
+            width: 100%;
+        }
+
+        .custom-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .custom-card .card-title {
+            background-color: black;
+			font-weight:bold;
+			text-transform: uppercase;
+			font-style:italic;
+            color: white;
+            padding: 13px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
