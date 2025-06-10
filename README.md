@@ -33,7 +33,7 @@ Whether you're a:
 - ✅ Keep your promises with clients
 - ✅ Use your income to support Islamic efforts
 - ✅ Represent Islam through character and business ethics
-- ❌ No shortcuts, lies, or injustice — ever
+- ❌ No lies, or injustice — ever
 
 > “Our goal is not just to earn — it’s to **earn rightly**.”
 
