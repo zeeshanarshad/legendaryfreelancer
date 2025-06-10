@@ -49,7 +49,7 @@ Whether you're a:
 
 ## 🏷️ Founder
 
-**🦁 Zeeshan Arshad**
+**🦁 Zeeshan Arshad**  
 _Also known as Dr. Legend / Legend of Allah_
 
 A developer, researcher, and believer striving to build a generation of legendary freelancers who live, earn, and grow with Imaan.
