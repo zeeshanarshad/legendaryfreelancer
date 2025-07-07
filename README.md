@@ -20,10 +20,10 @@ Whether you're a:
 
 ## 🌟 Vision
 
-- Show the signs of Allah openly and boldly
-- Inspire freelancers to serve Islam while serving clients
-- Prove you can **earn with honesty** and **live with purpose**
-- Stop the shameful stereotype that Muslims cut corners — prove the opposite with excellence
+- Show miracles openly and boldly
+- Inspire freelancers to serve Islam while working with clients
+- Prove **you can earn money** while you **work for Islam**
+- Stop being shameful as a gamer and demonstrate your expertise with excellence
 
 ---
 
@@ -31,18 +31,18 @@ Whether you're a:
 
 - ✅ Work with honesty, integrity, and faith
 - ✅ Keep your promises with clients
-- ✅ Use your income to support Islamic efforts
-- ✅ Represent Islam through character and business ethics
+- ✅ Use your income to support Islam
+- ✅ Preach Islam through miracles
 - ❌ No lies, or injustice — ever
 
-> “Our goal is not just to earn — it’s to **earn rightly**.”
+> “Our goal is not just to earn — it’s to **earn with dignity**.”
 
 ---
 
 ## 🧠 Belief
 
-- Stop doubting the **existence of Allah** — He is the **One True Creator**
-- Believe that **Muhammad ﷺ** is the **Final and True Messenger**
+- Stop doubting the **Existence of Allah** — He is the **King of Universe**
+- Believe that **Prophet Muhammadﷺ** is the **Last and Final Messenger**
 - You are never alone — Allah sees your work and effort
 
 ---
@@ -50,7 +50,7 @@ Whether you're a:
 ## 🏷️ Founder
 
 **🦁 Zeeshan Arshad**  
-_Also known as Dr. Legend / Legend of Allah_
+_Also known as Doctor Legend / Legend of Allah_
 
 A developer, researcher, and believer striving to build a generation of legendary freelancers who live, earn, and grow with Imaan.
 
@@ -58,7 +58,7 @@ A developer, researcher, and believer striving to build a generation of legendar
 
 ## 💬 Final Reminder
 
-> “Live by Deen. Earn with Ikhlaas. Lead with Taqwa. Become the freelancer Allah wants you to be.”  
+> “Live with Emaan. Earn with Ikhlaas. Lead with TAQWA. Become the freelancer Allah wants you to be.”  
 > — **Legendary Freelancer Initiative**
 
 ---
@@ -68,13 +68,13 @@ A developer, researcher, and believer striving to build a generation of legendar
 **Website**: www.legendaryfreelancer.com
 
 
-اس ویب سائٹ کا مقصد اللہ کی نشانیوں کو کھلے عام دکھانا ہے تاکہ گیمرز یہ جان لیں کہ وہ بھی اللہ کے حکم و مدد سے بہت کچھ کرسکتے ہیں اگر وہ اللہ کے دین کے لیے ایمانداری اور اخلاص کے ساتھ کام کریں اور بے شک اللہ اپنے مخلص بندوں کی محنت کو ضائع نہیں ہونے دیتا۔وہ ہر کام کرنے پر پوری قدرت رکھتا ہے جو بھی وہ خود کرنا چاہے۔ اس پر کسی کی پابندی نہیں۔ وہ کسی کا محتاج و پابند نہیں۔ اللہ اکبر
+اس ویب سائٹ کا مقصد اللہ کی نشانیوں کو کھلے عام دکھانا ہے تاکہ گیمرز یہ جان لیں کہ وہ بھی اللہ کے حکم اور مدد سے بہت کچھ کرسکتے ہیں اگر وہ اللہ کے دین کے لیے ایمانداری اور اخلاص کے ساتھ کام کریں اور بے شک اللہ اپنے مخلص بندوں کی محنت کو ضائع نہیں ہونے دیتا۔ وہ ہر کام کرنے پر پوری قدرت رکھتا ہے۔ اللہ کسی کا محتاج نہیں۔ اللہ اکبر
 
-تمام فری لانسرز ایمان کے ساتھ کام کریں۔دین کے مطابق زندگی بسر کریں اور دنیا میں اپنا حصہ وصول کرنا ہرگز نہ بھولیں۔ کلائنٹس کے ساتھ کام کریں اور پیسوں کے ذریعے دین کی خدمت کریں۔
+تمام فری لانسرز سو فیصد یقین سے کام کریں۔ دین کے مطابق زندگی بسر کریں اور دنیا سے اپنا حصہ ضرور وصول کریں۔ کلائنٹس کے لیے کام کریں اور پیسوں سے دین کی خدمت کریں۔
 
-جس سے جتنا ممکن ہوسکے وہ غلبہ اسلام کے لیے کام کرے۔غیرمسلموں کو اپنے حسن اخلاق، برتاو، بزنس میں ایمانداری، بہترین کسٹمر سپورٹ، پراجیکٹ ایمانداری سے مکمل کرنے اور دیگر تمام باتوں کا مکمل ذمہ داری سے خیال رکھے تاکہ اسلام کی بدنامی نہ ہوسکے کہ مسلمان دو نمبری کرتے ہیں۔ ہمارا مقصد صرف پیسہ کمانا نہیں بلکہ ایمانداری سے پیسہ کمانا ہے۔پھر چاہے ہم اپنے کلائنٹس سے اپنے کام کے بدلے جتنا مرضی فیس وصول کریں ، وہ آپس کے معاہدے اور ایگریمنٹ پر ڈیپینڈ کرتا ہے۔
+جس سے جتنا ممکن ہوسکے وہ اپنی آمدنی غلبہ اسلام کے لیے وقف کرے اور غیر مسلموں کو اسلام میں داخل کرنے کے لیے بھرپور کوشش کرے۔
 
-تمام مسلم فری لانسرز اللہ کے وجود پر شک کرنا بند کردیں۔بے شک اللہ سچا خدا ہے۔بے شک حضرت محمد رسول اعظم صلی اللہ علیہ وسلم اللہ کے آخری اور سچے رسول ہیں۔
+تمام فری لانسرز اللہ کے وجود پر شک کرنا بند کردیں۔ بے شک اللہ سچا خدا ہے۔ بے شک حضرت محمد رسول اعظم صلی اللہ علیہ وسلم اللہ کے آخری اور سچے رسول ہیں۔
 
 اللہ اکبر
 لیجنڈری فری لانسر
