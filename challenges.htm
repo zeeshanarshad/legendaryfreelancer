@@ -156,10 +156,57 @@ Islam is Religion of Allahﷻ
 </section>	
 	
 	
+
+
+<!-- Gamer in Action Section -->
+<section id="media" class="bg-black text-white py-5">
+  <div class="container text-center">
+    <h2 class="display-5 fw-bold text-danger">☣️ Gamer in Action ⚔️</h2>
+    <p class="lead mb-5">Countering and Defeating Enemies of Islam</p>
+
+    <div class="row" id="enemies"></div>
+
+    <a href="victories.htm" class="btn btn-primary mt-4">📺 More Victories</a>
+
+    <h2 class="urdu mt-5 fs-4 text-white">
+      اللہ جسے چاہے عزت دے، جسے چاہے ذلت دے، اسی کے قبضے میں سب بھلائیاں ہیں۔
+    </h2>
+  </div>
+
+  <script>
+    var videos = [
+      { code: "9OxWzUBauRE", url: "https://www.youtube.com/watch?v=9OxWzUBauRE" },
+      { code: "TkVbMIAL05E", url: "https://www.youtube.com/watch?v=TkVbMIAL05E" },
+      { code: "js31BSUqSDA", url: "https://www.youtube.com/watch?v=js31BSUqSDA" }
+    ];
+
+    var rowElement = document.getElementById('enemies');
+
+    videos.forEach(video => {
+      var colDiv = document.createElement('div');
+      colDiv.className = 'col-12 col-md-4 mb-4';
+
+      var link = document.createElement('a');
+      link.href = video.url;
+      link.target = '_blank';
+
+      var img = document.createElement('img');
+      img.src = 'https://img.youtube.com/vi/' + video.code + '/0.jpg';
+      img.alt = 'Video Thumbnail';
+      img.className = 'img-fluid rounded shadow-sm';
+
+      link.appendChild(img);
+      colDiv.appendChild(link);
+      rowElement.appendChild(colDiv);
+    });
+  </script>
+</section>
+	
+	
     <!-- Main Content -->
     <div class="container">
 
-
+ 
 	<h2 class="py-3"><strong>Challenged & Defeated Non-Muslims</strong></h2>		
 	<p><strong>Defeated false gods and their followers with the help of Allah.</strong></p>
 	<p class="urdu">کافروں کے جھوٹے خداوں اور پیروکاروں کو اللہ کی مدد سے شکست فاش کردیا۔</p>
@@ -308,6 +355,26 @@ Islam is Religion of Allahﷻ
  
     </div>
 	</div>
+
+	
+
+ 
+<!-- WHO I AM Section -->
+<section id="about" class="bg-dark text-white py-5">
+  <div class="container text-center">
+    <h2 class="display-5 fw-bold mb-3">Demonstration of Miracles</h2>
+    <p class="lead mb-3">Efforts by Legend — Miracles by ALLAH (اللہ)</p>
+    <a href="https://www.youtube.com/@TheGameofLegendbyALLAH/playlists" target="_blank" class="btn btn-primary mb-4">🎮 Watch the Game of Legend</a>
+
+    <h2 class="urdu fs-4 text-white">
+      اللہ اکبر<br>
+      اللہ واحد القہار<br>
+      الحمدللہ رب العالمین
+    </h2>
+  </div>
+</section>	
+	
+	
 
     
 	<!-- InstanceEndEditable --> <!-- InstanceBeginRepeat name="Footer" --><!-- InstanceBeginRepeatEntry -->
