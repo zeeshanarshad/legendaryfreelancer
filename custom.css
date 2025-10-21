@@ -1,7 +1,13 @@
 body {
     font-family: 'Russo One', sans-serif;
 }
-	
+
+
+@media (min-width: 992px) {
+  .container:not(.navbar-container):not(.footer-container) {
+    font-size: 125%;
+  }
+}
 	
 	.profile-image {
 		width: 150px;
