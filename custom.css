@@ -1,14 +1,87 @@
-body {
-    font-family: 'Russo One', sans-serif;
+:root {
+  /* ===== Primary Brand Colors ===== */
+  --brand-primary: #1a73e8;      /* Royal Blue - main brand color */
+  --brand-primary-dark: #0d47a1; /* Deep blue for hover / emphasis */
+  --brand-primary-light: #e3f2fd;/* Soft tint background */
+
+  /* ===== Secondary & Accent Colors ===== */
+  --brand-accent: #f9a825;       /* Gold accent – symbolizes success / value */
+  --brand-secondary: #00bcd4;    /* Cyan accent – modern tech feel */
+
+  /* ===== Neutrals ===== */
+  --brand-dark: #0f172a;         /* Dark navy / background */
+  --brand-light: #f8fafc;        /* Off-white background */
+  --brand-text: #1e293b;         /* Default text */
+  --brand-text-light: #ffffff;   /* Light text on dark bg */
 }
 
+/* ===== Utility Classes ===== */
 
-@media (min-width: 992px) {
-  .container:not(.navbar-container):not(.footer-container) {
-    font-size: 125%;
-  }
+.bg-brand       { background-color: var(--brand-primary) !important; }
+.bg-brand-dark  { background-color: var(--brand-primary-dark) !important; }
+.bg-brand-light { background-color: var(--brand-primary-light) !important; }
+
+.text-brand        { color: var(--brand-primary) !important; }
+.text-brand-accent  { color: var(--brand-accent) !important; }
+.text-brand-light   { color: var(--brand-light) !important; }
+
+.btn-brand {
+  background-color: var(--brand-primary);
+  color: var(--brand-text-light);
+  border: none;
+  transition: all 0.3s ease;
 }
-	
+.btn-brand:hover {
+  background-color: var(--brand-primary-dark);
+  color: var(--brand-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(26, 115, 232, 0.4);
+}
+
+.btn-accent {
+  background-color: var(--brand-accent);
+  color: var(--brand-dark);
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-accent:hover {
+  background-color: #f57f17;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(249, 168, 37, 0.4);
+}
+
+/* ===== Card & Section Styles ===== */
+
+.card-brand {
+  background-color: var(--brand-light);
+  border: 1px solid var(--brand-primary-light);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.section-dark {
+  background-color: var(--brand-dark);
+  color: var(--brand-text-light);
+  padding: 4rem 0;
+}
+
+.section-light {
+  background-color: var(--brand-light);
+  color: var(--brand-text);
+  padding: 4rem 0;
+}
+
+/* ===== Links ===== */
+a.text-brand:hover {
+  color: var(--brand-accent);
+  text-decoration: none;
+}
+
+.urdu {
+		text-align:right;
+}
+ 
+ 
 	.profile-image {
 		width: 150px;
 		height: 150px;
@@ -67,20 +140,7 @@ body {
 .playlist-container {
   margin-top: 20px;
 }
-
-.urdu {
-	font-family: 'Noto Nastaliq Urdu', Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
-	font-size: 1em;
-	line-height: 200%;
-	direction: rtl;
-}
-
-.urdu-headline {
-	font-family: 'Noto Nastaliq Urdu', Jameel Noori Nastaleeq, mBILALmNastaleeq, Tahoma, Arial;
-	font-size: 50px;
-	line-height: 200%;
-	direction: rtl;
-}
+ 
 
 /* Add hover effect on image */
 .hover-effect {
@@ -94,71 +154,40 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
 
 
-        .playlist-link {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #007bff;
-        }
-        .playlist-link:hover {
-            color: #0056b3;
-            text-decoration: underline;
-        }
-
-        .custom-card {
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-			padding-bottom:10px;
-        }
-
-        .custom-card img {
-            transition: transform 0.3s ease-in-out;
-            width: 100%;
-        }
-
-        .custom-card:hover img {
-            transform: scale(1.1);
-        }
-
-        .custom-card .card-title {
-            background-color: black;
-			font-weight:bold;
-			text-transform: uppercase;
-			font-style:italic;
-            color: white;
-            padding: 13px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-
-#footer a {
-    color: #fff;
+.playlist-link {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #007bff;
+}
+.playlist-link:hover {
+	color: #0056b3;
+	text-decoration: underline;
 }
 
-#footer .headline-links a {
-	text-decoration:none;
-	font-size:0.8em;
+.custom-card {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	padding-bottom:10px;
 }
 
-#footer .headline-links h4 {
-	font-size:1em;
+.custom-card img {
+	transition: transform 0.3s ease-in-out;
+	width: 100%;
+}
+
+.custom-card:hover img {
+	transform: scale(1.1);
+}
+
+.custom-card .card-title {
+	background-color: black;
 	font-weight:bold;
+	text-transform: uppercase;
+	font-style:italic;
+	color: white;
+	padding: 13px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
-
-
-#footer a:hover {
-    color: #ffff81;
-}
-  
-  
- #footer  .text-yellow {
-    color: #ffff81;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-#footer  .text-yellow:hover {
-    text-decoration: underline;
-    color: #ffffe0; /* Optional: brighter yellow on hover */
-  }
