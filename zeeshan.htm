@@ -5,38 +5,9 @@
     <title>Zeeshan Arshad - Legendary Freelancer</title>
     <meta name="description" content="Meet Legendary Freelancer of Pakistan the Multipotentialite Mentor of Islam." />
     <meta name="keywords" content="renaissance business, multi-talent coach, multi skilled mentor, multipotentialite business owner, multipotentialite freelancer" />
-	
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-    }
-    .hero {
-      background: url('images/home-video-games.jpg?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      color: white;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-      padding: 120px 0;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
-    .section-title {
-      margin-bottom: 40px;
-      text-align: center;
-    }
-    .card-img-top {
-      height: 250px;
-      object-fit: cover;
-    }
-    footer {
-      background: #212529;
-      color: white;
-      padding: 40px 0;
-    }
-  </style>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -46,7 +17,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 <!-- Google Code --> 
-<!--    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">-->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
 <meta name="ahrefs-site-verification" content="b48856b81bdf6da4a1fecdf5397be54865cffb3b8a87be029c273633732f6542">
 <link href="custom.css" rel="stylesheet" type="text/css" />
 	
@@ -58,1408 +30,742 @@
   gtag('js', new Date());
 
   gtag('config', 'G-3X812LCJR9');
-</script></head>
+</script>
+
+ 
+    <style>
+        :root {
+            --gold: #d4af37;
+            --dark-bg: #0a0a0a;
+            --card-bg: #151515;
+            --accent: #ffcc00;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .urdu { font-family: 'Noto Nastaliq Urdu', serif; line-height: 2.2; direction: rtl; }
+
+        /* Navigation */
+        .navbar { background: rgba(0,0,0,0.9); border-bottom: 1px solid var(--gold); }
+        .navbar-brand { font-family: 'Orbitron', sans-serif; color: var(--gold) !important; font-weight: bold; }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(45deg, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.6)), url('your-professional-bg.jpg');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid var(--gold);
+        }
+
+        .hero h1 { font-family: 'Orbitron', sans-serif; font-size: 4.5rem; color: white; text-transform: uppercase; }
+        .hero .brand-tag { color: var(--gold); font-size: 1.5rem; letter-spacing: 5px; font-weight: bold; }
+
+        .profile-img-container {
+            position: relative;
+            display: inline-block;
+        }
+        .profile-img {
+            width: 300px; height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+        }
+
+        /* About Section */
+        .about-text { font-size: 1.1rem; line-height: 1.8; color: #ccc; }
+        .highlight { color: var(--gold); font-weight: bold; }
+
+        /* Skills Grid */
+		.skill-tag {
+			background: rgba(212, 175, 55, 0.05); /* ہلکا سنہرا بیک گراؤنڈ */
+			color: #ffffff !important;
+			border: 1px solid rgba(212, 175, 55, 0.3);
+			padding: 8px 18px;
+			font-size: 0.9rem;
+			border-radius: 50px; /* کیپسول نما ڈیزائن */
+			transition: all 0.3s ease;
+			display: inline-block;
+			cursor: default;
+		}
+
+		.skill-tag:hover {
+			background: var(--gold);
+			color: #000000 !important;
+			border-color: var(--gold);
+			transform: translateY(-3px);
+			box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+		}
+
+		.skill-container {
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+
+		
+        .skill-box {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            height: 100%;
+            transition: 0.4s;
+        }
+        .skill-box:hover { border-color: var(--gold); transform: translateY(-10px); }
+        .skill-badge {
+            display: inline-block;
+            background: #222;
+            color: #eee;
+            padding: 5px 12px;
+            margin: 4px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            border-left: 3px solid var(--gold);
+        }
+
+        /* Portfolio */
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+        .project-img { height: 200px; background: #333; display: flex; align-items: center; justify-content: center; }
+
+        /* Testimonials */
+        .testimonial-item {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 20px;
+            border-top: 4px solid var(--gold);
+        }
+
+        footer { border-top: 1px solid #222; padding: 40px 0; background: #000; }
+    </style>  
+
+
+</head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container navbar-container">
-       <a class="navbar-brand d-flex align-items-center" href="index.htm"><img src="images/logo.png" class="img-fluid me-2" alt="Legendary Freelancer"></a> 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-	  	
-		<div class="collapse navbar-collapse" id="navbarNav">
-		  <ul class="navbar-nav ms-auto">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">LEGENDARY FREELANCER</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-uppercase small">
+				<li class="nav-item"><a class="nav-link px-3" href="contact.htm">🏠 Home</a></li>
+				
+				<!-- About  -->
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					🛈 About
+				  </a>
+				  <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+					  <li><a class="dropdown-item" href="Allah.htm">🕋 Allah</a></li>
+					  <li><a class="dropdown-item" href="zeeshan.htm">☣ Zeeshan</a></li>
+					  <li><a class="dropdown-item" href="story.htm">📖 Story</a></li>
+					  <li><a class="dropdown-item" href="mission.htm">📜 Mission</a></li>          
+				  </ul>
+				</li>
 
+	 
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="journeyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  🗺️ Mission
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="journeyDropdown">
+					  <li><a class="dropdown-item" href="quests.htm">📜 Quests</a></li>
+					  <li><a class="dropdown-item" href="challenges.htm">⚔️ Challenges</a></li>
+					  <li><a class="dropdown-item" href="victories.htm">🏆 Victories</a></li>
+					</ul>
+				  </li>
 
-			<li class="nav-item"><a class="nav-link" href="contact.htm">🏠 Home</a></li>
-			  
-			<!-- About  -->
-			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				🛈 About
-			  </a>
-			  <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-				  <li><a class="dropdown-item" href="Allah.htm">🕋 Allah</a></li>
-				  <li><a class="dropdown-item" href="zeeshan.htm">☣ Zeeshan</a></li>
-				  <li><a class="dropdown-item" href="story.htm">📖 Story</a></li>
-				  <li><a class="dropdown-item" href="mission.htm">📜 Mission</a></li>          
-			  </ul>
-			</li>
-
-
-			  <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="journeyDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				  🗺️ Mission
-				</a>
-				<ul class="dropdown-menu" aria-labelledby="journeyDropdown">
-				  <li><a class="dropdown-item" href="quests.htm">📜 Quests</a></li>
-				  <li><a class="dropdown-item" href="challenges.htm">⚔️ Challenges</a></li>
-				  <li><a class="dropdown-item" href="victories.htm">🏆 Victories</a></li>
-				</ul>
-			  </li>
-
-			<li class="nav-item"><a class="nav-link" href="shop.htm">🛍️ Shop</a></li>
-			<li class="nav-item"><a class="nav-link" href="resources.htm">🛠️ Resources</a></li>
-		  </ul>
-		</div>		
-	  
+				<li class="nav-item"><a class="nav-link px-3" href="shop.htm">🛍️ Shop</a></li>
+				<li class="nav-item"><a class="nav-link px-3" href="resources.htm">🛠️ Resources</a></li>
+ 
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
 
-
-<img src="images/banner-legendary-freelancer.jpg" alt="" class="img-fluid" width="100%"/>
-<div class="container">
-  <section class="my-5">
-    <h1 class="display-4 fw-bold text-center">👑The King of Multiple Skills⚡</h1>
-    <div class="row">
-      <div class="col-md-4 offset-md-4 text-center mt-3">
-        <p><img src="images/zeeshan-arshad.jpg" class="img-fluid"/></p>
-    <p class="lead text-center">☣️ Legend Muhammad Zeeshan Arshad 🔥</p>
-      </div>
+ 
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <p class="brand-tag mb-0">LEGENDARY FREELANCER</p>
+                <h1 class="mb-4">Zeeshan <span style="color: var(--gold);">Arshad</span></h1>
+                <p class="lead text-light mb-5">The King of Multiple Skills</p>
+                <div class="d-flex gap-3">
+                    <a href="#work" class="btn btn-warning btn-lg rounded-0 px-5 fw-bold">MY WORK</a>
+                    <a href="#hire" class="btn btn-outline-light btn-lg rounded-0 px-5">HIRE ME</a>
+                </div>
+            </div>
+            <div class="col-lg-5 text-center d-none d-lg-block">
+                <div class="profile-img-container">
+                    <img src="images/zeeshan-arshad-legendary-freelancer.jpg" alt="Zeeshan Arshad" class="profile-img">
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
+
+<section id="about" class="py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold mb-4" style="color: var(--gold); font-family: 'Orbitron', sans-serif;">Legendary Freelancer</h2>
+                <div class="about-text" style="color: #ffffff !important;">
+                    <p>Defying the limits of the niche, I am a <span class="text-warning fw-bold">Multipotentialite Muslim Mentor</span>. 
+                I don’t just provide services; I teach multiple skills and guide beginners as well as use my 100+ skills to help clients.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="p-5 bg-dark border-start border-warning border-4 urdu shadow-lg" style="background: #111 !important;">
+                    <h3 class="text-warning mb-3 text-end">لیجنڈری فری لانسر</h3>
+                    <p class="text-end" style="color: #ffffff !important; font-size: 1.2rem;">میں کسی ایک فیلڈ میں رہنا پسند نہیں کرتا لہذا مختلف اسکلز کے ساتھ کام کرتا ہوں۔ میں صرف اپنی خدمات فراہم نہیں کرتا بلکہ میں مختلف اسکلز سکھاتا بھی ہوں ۔میں نئے فری لانسرز کی رہنمائی کرتا ہوں  اور اس کے ساتھ ساتھ اپنی 100+ سے اسکلز کے ساتھ اپنے کلائنٹس کی مدد کرتا ہوں۔</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="mission" class="py-5" style="background: linear-gradient(135deg, #050505 0%, #1a1a1a 100%); border-top: 2px solid var(--gold);">
+    <div class="container py-5">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-8">
+                <h2 class="display-4 fw-bold text-uppercase mb-3" style="color: var(--gold); font-family: 'Orbitron', sans-serif;">The Ultimate Mission</h2>
+                <p class="lead" style="color: #ffffff !important; opacity: 1;">Proved Truth of Islam through Gaming, Spirituality and Miracles</p>
+                <hr class="mx-auto bg-warning" style="width: 100px; height: 3px; opacity: 1;">
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="p-4 h-100 text-center shadow-lg" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 15px;">
+                    <i class="fas fa-atom fa-3x text-warning mb-4"></i>
+                    <h4 style="color: #ffffff !important;">Divine Miracles</h4>
+                    <p style="color: #ffffff !important; margin-top: 15px; line-height: 1.6;">
+                        With 100+ Miracles
+                    </p>
+					 <p class="urdu mt-3" style="font-size: 1.5rem; color: #ffffff !important;">سو سے زائد معجزات کے ساتھ</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-4 h-100 text-center shadow-lg" style="background: rgba(212, 175, 55, 0.05); border: 1px solid var(--gold); border-radius: 15px;">
+                    <i class="fas fa-shield-halved fa-3x text-warning mb-4"></i>
+                    <h4 style="color: #ffffff !important;">The Truth vs Falsehood</h4>
+                    <p style="color: #ffffff !important; margin-top: 15px; line-height: 1.6;">
+                        Defense of Islam
+					 <p class="urdu mt-3" style="font-size: 1.5rem; color: #ffffff !important;">اسلام کا دفاع</p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-4 h-100 text-center shadow-lg" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 15px;">
+                    <i class="fas fa-mosque fa-3x text-warning mb-4"></i>
+                    <h4 style="color: #ffffff !important;">Islamic Foundation</h4>
+                    <p style="color: #ffffff !important; margin-top: 15px; line-height: 1.6;">
+                        Multiple Technologies User
+					 <p class="urdu mt-3" style="font-size: 1.5rem; color: #ffffff !important;">ٹیکنالوجیز کو استعمال کرنے والا</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5 p-5 text-center bg-black rounded shadow-lg border border-warning">
+            <h3 class="urdu text-warning mb-5" style="font-size: 2.5rem; line-height: 1.4;">اب پتہ لگا محمد عربی ﷺ کے پیروکار کی طاقت کیا ہوتی ہے؟</h3>
+            <p class="lead mt-5" style="color: #ffffff !important; font-weight: 500;">ALLAH IS MY SUPERPOWER!</p>
+            <p class="urdu mt-3" style="font-size: 1.5rem; color: #ffffff !important;">میں اسلام کی سچائی کیمروں کے دور میں سائنس ، نیچر اور معجزات کے ذریعے ثابت کرچکا ہوں اللہ کے فضل و کرم سےہمیشہ کے لیے (اللہ اکبر)</p>
+        </div>
+    </div>
+</section>
+
+ 	
+<section id="skills" class="bg-black py-5">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold text-uppercase text-white" style="font-family: 'Orbitron', sans-serif;">Enter the Matrix</h2>
+            <p class="text-warning">Master of 100+ Skills</p>
+            <div class="mx-auto bg-warning" style="height: 3px; width: 80px;"></div>
+        </div>
+        
+        <div class="skill-container d-flex flex-wrap justify-content-center gap-2">
+
+
+            <span class="skill-tag">Core PHP</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">AJAX</span>
+            <span class="skill-tag">JSON</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MS-SQL Server</span>
+            <span class="skill-tag">MS-Access</span>
+            <span class="skill-tag">API Integration</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Web Hosting</span>
+            <span class="skill-tag">DNS</span>
+            <span class="skill-tag">HTTPS</span>
+            <span class="skill-tag">Mod_ReWrite</span>
+
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">XHTML</span>
+            <span class="skill-tag">DHTML</span>
+            <span class="skill-tag">XML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">Custom CMS</span>
+            <span class="skill-tag">Web Scrapping</span>
+            <span class="skill-tag">Responsive Design</span>
+
+            <!-- Classic -->
+            <span class="skill-tag">ColdFusion</span>
+            <span class="skill-tag">Flash</span>
+            <span class="skill-tag">ActionScript</span>
+            <span class="skill-tag">ASP</span>
+            <span class="skill-tag">ASP.NET</span>
+            <span class="skill-tag">vBulletin</span>
+            <span class="skill-tag">Invision Power Board</span>
+            <span class="skill-tag">OSCommerce</span>
+
+            <!-- Gaming -->
+            <span class="skill-tag">Gear VR</span>
+            <span class="skill-tag">HTC Vive</span>
+            <span class="skill-tag">VR Game Testing</span>
+            <span class="skill-tag">Gameplay Reviews</span>
+            <span class="skill-tag">Video Game Coaching</span>
+            <span class="skill-tag">Core Engine Game Development</span>
+
+            <span class="skill-tag">Interviews</span>
+            <span class="skill-tag">Podcasting</span>
+            <span class="skill-tag">Live Streaming</span>
+            <span class="skill-tag">YouTube SEO</span>
+
+            <span class="skill-tag">Holistic Healing</span>
+            <span class="skill-tag">Spiritual Healing</span>
+            <span class="skill-tag">Trauma Healing</span>
+            <span class="skill-tag">Mindset Transformation</span>
+            <span class="skill-tag">Confidence Coaching</span>
+            <span class="skill-tag">Islamic Therapy</span>
+            <span class="skill-tag">Grief Counseling</span>
+            <span class="skill-tag">Relationship Advice</span>
+            <span class="skill-tag">Insecurities Replacement</span>
+            <span class="skill-tag">Martial Arts</span>
+            <span class="skill-tag">Yoga</span>
+            <span class="skill-tag">Aerobics</span>
+            <span class="skill-tag">Life Coaching</span>
+            <span class="skill-tag">Career Counseling</span>
+
+            <span class="skill-tag">Course Curriculum Design</span>
+            <span class="skill-tag">Udemy Course Development</span>
+            <span class="skill-tag">Teaching</span>
+            <span class="skill-tag">Online Teaching</span>
+            <span class="skill-tag">Real Time Mentoring</span>
+            <span class="skill-tag">Public Speaking</span>
+
+            <span class="skill-tag">Copywriting</span>
+            <span class="skill-tag">Technical SEO</span>
+            <span class="skill-tag">Technical Hacks</span>
+            <span class="skill-tag">Research & Compilation</span>
+            <span class="skill-tag">Blogging</span>
+            <span class="skill-tag">Article Writing</span>
+            <span class="skill-tag">Technical Documentation</span>
+            <span class="skill-tag">Ghostwriting</span>
+            <span class="skill-tag">eBooks Writing & Publishing</span>
+            <span class="skill-tag">Translation (En/Ur)</span>
+            <span class="skill-tag">Proofreading & Editing</span>
+            <span class="skill-tag">Typing (100+ WPM)</span>
+
+            <span class="skill-tag">Online Marketing</span>
+            <span class="skill-tag">Growth Hacking</span>
+            <span class="skill-tag">E-commerce</span>
+            <span class="skill-tag">WooCommerce</span>
+            <span class="skill-tag">Payment Gateway Integration</span>
+            <span class="skill-tag">Lead Generation</span>
+            <span class="skill-tag">Strategic Thinking</span>
+            <span class="skill-tag">Client Handling</span>
+
+            <span class="skill-tag">AI Tools</span>
+            <span class="skill-tag">cPanel</span>
+            <span class="skill-tag">Web Hosting Management</span>
+            <span class="skill-tag">Local Area Networking (LAN)</span>
+            <span class="skill-tag">MS-Windows (XP, Vista, Server, 7, 11)</span>
+            <span class="skill-tag">MS-Office</span>
+            <span class="skill-tag">MS-DOS</span>
+            <span class="skill-tag">Philosophy</span>
+            <span class="skill-tag">Problem Solving</span>
+
+            <span class="skill-tag">Emotional Intelligence</span>
+            <span class="skill-tag">Stress Management</span>
+            <span class="skill-tag">Conflict Resolution</span>
+            <span class="skill-tag">Meditation</span>
+            <span class="skill-tag">Lucid Dreaming</span>
+            <span class="skill-tag">Psychology</span>
+            <span class="skill-tag">Anger Management</span>
+            <span class="skill-tag">Project Management</span>
+            <span class="skill-tag">Time Management</span>
+			
+			<!-- Creative & Content -->
+            <span class="skill-tag">Storytelling</span>
+            <span class="skill-tag">Creative Writing</span>
+            <span class="skill-tag">Creative Direction</span>
+            <span class="skill-tag">Film Making</span>
+            <span class="skill-tag">Thumbnail Design</span>
+            <span class="skill-tag">Video Editing</span>
+            <span class="skill-tag">Canva</span>
+            <span class="skill-tag">Adobe Fireworks</span>
+            <span class="skill-tag">Adobe Dreamweaver</span>
+            <span class="skill-tag">Logo Design</span>
+            <span class="skill-tag">Banner Design</span>
+            <span class="skill-tag">Cover Design</span>
+            <span class="skill-tag">Avatar Design</span>
+            <span class="skill-tag">Social Media Ad Design</span>
+			
+			<!-- Philosophy & Social -->
+            <span class="skill-tag">Critical Thinking</span>
+            <span class="skill-tag">Social Work</span>
+            <span class="skill-tag">Human Rights Advocacy</span>
+            <span class="skill-tag">Self-Defense</span>
+            <span class="skill-tag">Fitness</span>
+            <span class="skill-tag">Voice Over</span>
+            <span class="skill-tag">Lyricist</span>
+            <span class="skill-tag">Poetry</span>
+			
+        </div>
+    </div>
+</section>
+
+
+<section id="work"  class="py-5 container">
+    <div class="text-center mb-5">
+        <h2 class="display-6 fw-bold text-warning">Feedbacks & Testimonials</h2>
+    </div>
+    <div class="row g-4">
 	
-
-	
-	<!-- SERVICE = Web Development -->
-	<div class="bg-dark text-white text-center py-5"><h2 class="m-0 display-5"><strong>Web Development</strong></h2></div>
-	<div class="container">
-	<div class="row mt-3">	
-
-		<div class="col-md-3 mb-4">
-			<a href="https://www.rightfulreligion.com/" target="_blank" class="card-link">
-				<div class="card">
-					<img src="images/portfolio/rightful-religion-legendary-freelancer.jpg" class="card-img-top">
-					<div class="card-body">
-					<p class="lead card-title">This website was created for a Pakistani Muslim Scholar with neutral and observable evidences on truth of Islam.</p>
-					<p class="urdu">یہ ویب سائٹ ایک پاکستانی مسلم اسکالر کے لیے تیار کی گئی تھی دین اسلام کی سچائی کے حوالے سے غیر جانبدار اور قابل مشاہدہ ثبوتوں کے ساتھ</p>
-				</div>
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"I hired Zeeshan to develop a web platform for my website, which he worked on over a four year period. This amounted to over a hundred individual projects. I can say with certainty that he is excellent to work with, always maintains excellent communication, and best of all, he has a high standard for quality for all his work, a very rare thing to find today. He was a huge asset to have onboard."
+				</p>
+				<h5 class="mb-0 text-warning">- Mike Gordon | CEO & Senior Editor (USA)</h5>
+				<small class="text-secondary">YouTube Captions Management System (2016-2020)</small>
 			</div>
-			</a>
-		</div>
-			
-			
-		<div class="col-md-3 mb-4">
-			<a href="https://www.propwatch.org/" class="card-link">
-				<div class="card">
-					<img src="images/portfolio/propwatch-legendary-freelancer.jpg" class="card-img-top">
-					<div class="card-body">
-					<p class="lead card-title">Prop Watch (a custom youtube management system with portal and dynamic quiz, etc for an American Professor)</p>
-					<p class="urdu">امریکہ کے ایک پروفیسر کے لیے تیار کیا گیا کسٹم یوٹیوب مینجمنٹ سسٹم</p>
-				</div>
-			</div>
-			</a>
-		</div>
-			
-		<div class="col-md-3 mb-4">
-			<a href="https://www.rulesofthumb.org/" class="card-link">
-				<div class="card">
-					<img src="images/portfolio/rulesofthumb-legendary-freelancer.jpg" class="card-img-top">
-					<div class="card-body">
-					<p class="lead card-title">Rules of Thumb (a dynamic website with custom admin panel for an American Pilot and Author)</p>
-					<p class="urdu">ایک امریکی پائلٹ کے لیے اس کی کتاب کے ڈیٹا کو مینج کرنے کے لیے کسٹم ایڈمن پینل ویب سائٹ کے ساتھ تیار کیا گیا۔</p>
-				</div>
-			</div>
-			</a>
-		</div>
-			
-		<div class="col-md-3 mb-4">
-			<a href="https://www.dynamiclegalforms.com/" class="card-link">
-				<div class="card">
-					<img src="images/portfolio/dynamic-legal-forms-legendary-freelancer.jpg" class="card-img-top">
-					<div class="card-body">
-					<p class="lead card-title">Dynamic Legal Forms (a dynamic PHP-based website for a Canadian Lawyer)</p>
-					<p class="urdu">کینیڈا کے ایک وکیل کو اس کا بزنس مینج کرنے کے لیے ویب سائٹ ڈیولپمنٹ میں مدد کی گئی۔</p>
-				</div>
-			</div>
-			</a>
-		</div>
-			
-		<div class="col-md-3 mb-4">
-			<a href="https://www.lapulguilla.com" class="card-link">
-				<div class="card">
-					<img src="images/portfolio/lapulguilla-legendary-freelancer.jpg" class="card-img-top">
-					<div class="card-body">
-					<p class="lead card-title">La Pulguilla (a dyanmic php-based e-commerce portal with custom admin panel for an American Professor and Entrepreneur)</p>
-					<p class="urdu">ایک امریکی پروفیسر اور بزنس مین کو اس کا ای کامرس پلیٹ فارم چلانے کے لیے ڈیولپمنٹ، کسٹم ایڈمن پینل ،فرنٹ اینڈ ،بیک اینڈ اور مکمل سپورٹ فراہم کی گئی۔</p>
-				</div>
-			</div>
-			</a>
-		</div>
-			
-		<div class="col-md-3 mb-4">
-			<a href="https://www.lifetimetribute.com" class="card-link">
-				<div class="card">
-					<img src="images/portfolio/lifetime-tribute-membership-website-legendary-freelancer.jpg" class="card-img-top">
-					<div class="card-body">
-					<p class="lead card-title">Lifetime Tribute (a membership-based website with custom admin panel)</p>
-					<p class="urdu">کسٹم ایڈمن پینل کے ساتھ ممبرشپ ویب سائٹ ڈیویلپ کی گئی۔</p>
-				</div>
-			</div>
-			</a>
-		</div>
-			
-		<div class="col-md-3 mb-4">
-			<a href="https://www.stupidjokes.com" class="card-link">
-				<div class="card">
-					<img src="images/portfolio/stupid-jokes-legendary-freelancer.jpg" class="card-img-top">
-					<div class="card-body">
-					<p class="lead card-title">Stupid Jokes (a dynamic website of jokes with custom admin panel)</p>
-					<p class="urdu">مزاحیہ لطیفوں پر مشتمل ویب سائٹ کسٹم ایڈمن پینل کے ساتھ تیار کی گئی۔</p>
-				</div>
-			</div>
-			</a>
-		</div>
-			
-		<div class="col-md-3 mb-4">
-			<a href="https://www.everydayexcel.com/" class="card-link">
-				<div class="card">
-					<img src="images/portfolio/everyday-excel-legendary-freelancer.jpg" class="card-img-top">
-					<div class="card-body">
-					<p class="lead card-title">Everyday Excel (a static website with several sections for an Excel Instructor)</p>
-					<p class="urdu">ایک ایکسل انسٹرکٹر کے لیے کئی سیکشنز پر مشتمل سٹیٹک ویب سائٹ تیار کی گئی۔</p>
-				</div>
-			</div>
-			</a>
-		</div>
-
-	<div class="col-md-12 mb-4">
-		<img src="images/testimonials/web-development4.jpg" class="img-fluid card-img-top" alt="Zeeshan Arshaad is a great programmer, with great skill and good common sense. He is sure way to get your project done in best way possible.">
-	</div>
-
-	<div class="col-md-12 mb-4">
-		<img src="images/testimonials/web-development3.jpg" class="img-fluid card-img-top" alt="Zeeshan Arshaad is a great programmer, with great skill and good common sense. He is sure way to get your project done in best way possible.">
-	</div>
-
-	<div class="col-md-12 mb-4">
-		<img src="images/testimonials/web-development2.jpg" class="img-fluid card-img-top" alt="Zeeshan Arshaad is a great programmer, with great skill and good common sense. He is sure way to get your project done in best way possible.">
-	</div>
-
-
-	<div class="col-md-12 mb-4">
-		<img src="images/testimonials/web-development1.jpg" class="img-fluid card-img-top" alt="Zeeshan Arshaad is a great programmer, with great skill and good common sense. He is sure way to get your project done in best way possible.">
-	</div>	
-	</div><!-- row -->
-</div><!-- container -->
- 
- 
-	<!-- SERVICE = Mindset Transformation -->
-	<div class="bg-dark text-white text-center py-5"><h2 class="m-0 display-5"><strong>Mindset Transformation</strong></h2></div>
-	
-	<div class="container">
-	<div class="row mt-3">	
-
-		<div class="col-md-3 mb-4">
-			<a href="https://www.youtube.com/watch?v=iuudiswGH-0" class="card-link">
-				<div class="card">
-				<img src="https://img.youtube.com/vi/iuudiswGH-0/0.jpg" class="card-img-top">
-					<div class="card-body">
-						<p class="lead card-title">Mindset Improvement During Conversation with Me Within an Hour (Karachi, Pakistan)</p>
-						<p class="urdu">صرف ایک گھنٹے میں مائنڈسیٹ میں تبدیلی کا نتیجہ (کراچی، پاکستان)</p>
-					</div>
-				</div>
-			</a>
-		</div>
-
-		<div class="col-md-3 mb-4">
-			<a href="https://www.youtube.com/watch?v=o1ZuLH60ADs" class="card-link">
-				<div class="card">
-					<img src="https://img.youtube.com/vi/o1ZuLH60ADs/0.jpg" class="card-img-top">
-					<div class="card-body">
-						<p class="lead card-title">Solved 30-Days Stuck Issue in 3 Days (Karachi)</p>
-						<p class="urdu"> تیس دنوں سے اٹکا ہوا کام صرف تین دن کے اندر ہو گیا (کراچی)</p>
-					</div>
-				</div>
-			</a>
-		</div>
-			
-		<div class="col-md-3 mb-4">
-			<a href="https://www.youtube.com/watch?v=zy4HHVk5uRs" class="card-link">
-				<div class="card">
-					<img src="https://img.youtube.com/vi/zy4HHVk5uRs/0.jpg" class="card-img-top">
-					<div class="card-body">
-						<p class="lead card-title">Eliminated Fear of Speaking on Video for YouTube in 2 Hours (Lahore)</p>
-						<p class="urdu">صرف دو گھنٹے کے اندر یوٹیوب پر بولنے کا خوف ختم کر دیا (لاہور)</p>
-					</div>
-				</div>
-			</a>
-		</div>
-			
-		<div class="col-md-3 mb-4">
-			<a href="https://www.youtube.com/watch?v=zeihK6OgkQg" class="card-link">
-				<div class="card">
-					<img src="https://img.youtube.com/vi/zeihK6OgkQg/0.jpg" class="card-img-top">
-					<div class="card-body">
-						<p class="lead card-title">Healed 5 Years Old Depression in Just 5 Minutes (Karachi)</p>
-						<p class="urdu">پانچ سال پرانا ڈپریشن صرف پانچ منٹ میں ٹھیک کر دیا (کراچی)</p>
-					</div>
-				</div>
-			</a>
-		</div>		
-		
-
-		<p align="center"><img src="images/testimonials/mindset-transformation1.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation2.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation3.jpg"></p><hr>
-		<p align="center"><img src="mages/testimonials/mindset-transformation4.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation5.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation6.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation7.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation8.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation9.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation10.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation11.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation12.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation13.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation14.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation15.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation16.jpg"></p><hr>
-		<p align="center"><img src="images/testimonials/mindset-transformation17.jpg"></p>		
-	</div><!-- row -->
-	</div><!-- container -->
- 
-	<!-- SERVICE = Spiritual Healing -->
-	<div class="bg-dark text-white text-center py-5"><h2 class="m-0 display-5"><strong>Spiritual Healing</strong></h2></div>
-	
-	<div class="container">
-	<div class="row mt-3">	
-
-		<div class="col-md-3 mb-4">
-			<a href="https://www.youtube.com/watch?v=0QCMg6jWc_w" class="card-link">
-				<div class="card">
-					<img src="https://img.youtube.com/vi/0QCMg6jWc_w/0.jpg" class="card-img-top">
-					<div class="card-body">
-						<p class="lead card-title">Testimonial for Healing Closed Ear in 24 Hours (Karachi)</p>
-						<p class="urdu"> ایک ہفتے سے بند کان صرف چوبیس گھنٹے کے اندر ٹھیک کردیا (کراچی)</p>
-					</div>
-				</div>
-			</a>
-		</div>
-
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=g0VCdCvDOvI" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/g0VCdCvDOvI/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">From Fearful Mindset to Confident Mindset in 60 Minutes (Oct 19, 2023)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=v1to_BkjBQ0" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/v1to_BkjBQ0/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed & Stabilized Unstable ICU Patient in 7 Hours (Lahore)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=p0QyTpeMVCU" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/p0QyTpeMVCU/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Damaged Kidneys of ICU Corona Patient in 24 Hours (Peshawar)</p>
-				</div>
-			</div>
-		</a>
-	  </div>	  
-
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LyhRQ9RiKRx3cM9NVHAIK59" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/rNQAFmc04FY/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Cat through Power of ALLAH (June 9, 2023)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LwgwoMeVYXKPCVMailMn1WC" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/tK7Z6kCkv74/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Ant through Power of ALLAH (March 22, 2023)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-Lwduh_s04xsXWIB6RUXneO8" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/GYBQxSNsd7U/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Honey Bee through Power of ALLAH (Feb 19, 2022)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LzKvjLunSjJXJcYH2zRANgT" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/GmK7GojZR3M/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Insect through Power of ALLAH (Feb 13, 2022)</p>
-				</div>
-			</div>
-		</a>
-	  </div>	  
-
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LwHchfXYKpgplqi6wJp5Iwo" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/V0SN6O9BovM/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Incurable Moth Healed & Recovered through Power of ALLAH (April 24, 2024)</p>
-				</div>
-			</div>
-		</a>
-	  </div>	  
-
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=ZlJkq6VRjs8" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/ZlJkq6VRjs8/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Incurable Flightless Moth Healed and Repaired in 60 Minutes through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=efv8QsubuG8" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/efv8QsubuG8/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Pigeon in 4 Minutes through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=LJoAY3kmxXc" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/LJoAY3kmxXc/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Insect in 6 Minutes through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=cYKaTJxeBQA" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/cYKaTJxeBQA/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Moth in 2 Minutes through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=pi_NInqUjkE" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/pi_NInqUjkE/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Housefly in 3 Minutes through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=3KxW0Mc-4Vs" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/3KxW0Mc-4Vs/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Butterfly in 3 Min through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=aqoFv_Uart8" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/aqoFv_Uart8/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Worm in 7-Minutes by the Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=nr2sknSNQEU" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/nr2sknSNQEU/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Mosquito in 4 Minutes through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=ltEcC7CEBqE" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/ltEcC7CEBqE/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Insect in 5 Minutes by the Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=XOkcSJsa73c" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/XOkcSJsa73c/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Moth in 6 Minutes through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=6d94Vui6iv8" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/6d94Vui6iv8/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Ant in 5 Minutes through Power of ALLAH (اللہ) Oct ‎28, ‎2021</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=F0CfZViQw4U" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/F0CfZViQw4U/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Fly in 3 Minutes by the Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=LRdSMM7ly0k" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/LRdSMM7ly0k/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless House Fly in 4 Minutes by Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=20RTC5L91V0" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/20RTC5L91V0/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Beetle in 10 Minutes through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=0o-2piodqn8" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/0o-2piodqn8/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Moth in 8 Minutes through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=4GRqNlnqG7U" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/4GRqNlnqG7U/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Cockroach in 7 Minutes through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>	  
-
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=BRKE4RRbe8A" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/BRKE4RRbe8A/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Insect in 7 Minutes through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=XvT6p9o3IgI" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/XvT6p9o3IgI/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Insect in 1 Minute through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=mrh0jjc-hYU" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/mrh0jjc-hYU/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flying Insect in 8 Minutes through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=yGIRXW75-_c" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/yGIRXW75-_c/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Healed Incurable Flightless Fly in 4 Minutes through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=Xch3M7tb-RA" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/Xch3M7tb-RA/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Testimonial for Healing Unstable Incurable Ventilator Patient in 7 Hours | Legendary Freelancer</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=yfykuaQGlbM" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/yfykuaQGlbM/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Testimonial for Healing Incurable ICU Patient in Hospital in 24 Hours (Karachi)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=yaPHGRgNLjs" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/yaPHGRgNLjs/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Testimonial for Healing Incurable ICU Patient in Hospital in 7 Days (Dubai)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=-qpAkFyb3wc" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/-qpAkFyb3wc/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Testimonial for Healing Stress, Confusion and Fears in 2 Hours | Legendary Freelancer</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=9I-GypbynHE" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/9I-GypbynHE/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Testimonial for Healing Incurable Corona Patient in 7 Days | Legendary Freelancer</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=dLhHcyv9Xo0" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/dLhHcyv9Xo0/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Testimonial for Healing Incurable Brain Damage Patient by 50% in 30 Days</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=Kkplq5QVABw" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/Kkplq5QVABw/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Testimonial for Restoring 1-Week Lost Smell & Taste by Coronavirus | Legendary Freelancer</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=gf_3d7cPw6c" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/gf_3d7cPw6c/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Testimonial for Healing One Month Old Neck & Temple Pain in 60 Minutes | Legendary Freelancer</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=RP-fqAvXhbo" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/RP-fqAvXhbo/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Testimonial for Improving 6-Month Old Hand Sensation by 10-Seconds in 60 Min | Legendary Freelancer</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=9usrB6UU_CI" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/9usrB6UU_CI/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Testimonial for Healing Reducing 8-Years Chronic Back Pain by 50% in 60 Min | Legendary Freelancer</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=huGeqCvxHKc" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/huGeqCvxHKc/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Testimonial for Healing 2-Days Old Nasal Congestion & Dry Cough in Few Hours | Legendary Freelancer</p>
-				</div>
-			</div>
-		</a>
-	  </div>	  
-	</div><!-- row -->
-	</div><!-- container -->
- 
-	<!-- SERVICE = Prayers -->
-	<div class="bg-dark text-white text-center py-5"><h2 class="m-0 display-5"><strong>Prayers</strong></h2></div>
-	
-	<div class="container">
-	<div class="row mt-3">	
-
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=KA_TMKRct4E" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/KA_TMKRct4E/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Transformed Broken Love Relationship into Marriage (Karachi) </p>
-				</div>
-			</div>
-		</a>
-	  </div>		
-
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=GdcydPXk68c" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/GdcydPXk68c/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Transformed Broken Love Relationship into Marriage (Karachi) </p>
-				</div>
-			</div>
-		</a>
-	  </div>		
-	</div><!-- row -->
-	</div><!-- container -->
- 
-	<!-- SERVICE = Mentoring -->
-	<div class="bg-dark text-white text-center py-5"><h2 class="m-0 display-5"><strong>Mentoring</strong></h2></div>
-	
-	<div class="container">
-	<div class="row mt-3">
-	
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=idibxZenDNc" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/idibxZenDNc/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Running YouTube Channel</p>
-				</div>
-			</div>
-		</a>
 		</div>
 		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=jRwiBmfrxAI" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/jRwiBmfrxAI/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Career and Freelancing</p>
-				</div>
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">"Zeeshan Arshad is amazing. In less than an hour, he helped me dissect exactly my inner fears and how to blow them up for good. He revealed to me that all of the limiting beliefs I have told myself all my life were a lie.</p>
+				<p>In an hour, he made more progress with me and my insecurities than years of therapy. He knows how to ask questions and probe deep without being intrusive. The flow of dialogue is natural and I felt myself opening up as if I’d know Zeeshan for years.</p>
+				<p>The man has a gift. Highly recommend working with him if you feel blocked, fearful, or if there’s anything you’ve struggled with your whole life that’s holding you back from being the best version of yourself."</p>
+				<h5 class="mb-0 text-warning">- Robyn Kurdek | Copywriter (USA)</h5>
+				<small class="text-secondary">Mindset Transformation & Inner-Fear Analysis</small>
 			</div>
-		</a>
+		</div>
+				
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">"It was a very good experience. It helped me see clearly things I hadn't seen before. I am confident that after this discussion I will be able to have a healthy growth on my youtube channel. He knew very well how to adapt to the needs I had and was able to see some perspectives that I had"</p>
+				<h5 class="mb-0 text-warning">- Soffysticate | YouTuber & Teacher (USA)</h5>
+				<small class="text-secondary">YouTube Coaching</small>
+			</div>
 		</div>
 		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=aUYmHVZ8cuw" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/aUYmHVZ8cuw/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Allah Se Dua Mangna</p>
-				</div>
+				
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">"That is so amazing!! You are so nice. No one has ever been [so helpful]"</p>
+				<h5 class="mb-0 text-warning">- Kara O’Daniel (USA)</h5>
+				<small class="text-secondary">Online Course Outline & Coaching Program Strategy</small>
 			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=ncsR78FsutM" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/ncsR78FsutM/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Hijab for Female Freelancers</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=jjh3IqsQlL0" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/jjh3IqsQlL0/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Freelancing Career Guidance </p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=vzVGV4NS0_Q" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/vzVGV4NS0_Q/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Purchasing New Laptop</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=iFNObceGgJk" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/iFNObceGgJk/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">$100 Per Day Freelancing</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=NWUZJLUTauw" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/NWUZJLUTauw/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Reasons of Rape Cases</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=vRJyo2xOhC4" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/vRJyo2xOhC4/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Lahaula Walakuata Illabillah</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=UoMKoRiUczI" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/UoMKoRiUczI/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Identify Sincerity of Male</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=ccmDwEp4SP0" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/ccmDwEp4SP0/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Finding Your Interest in Career</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=FiSk0yTnI8k" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/FiSk0yTnI8k/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Common Mistake Professionals Do to Find Job on Facebook</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=fwSzxV-eNUw" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/fwSzxV-eNUw/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">E-Commerce Business Ideas & Strategy in Pakistan</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=cPjjEqh6Qc0" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/cPjjEqh6Qc0/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Mindset and Behavior of People If You Help Them Free</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=K5jZdC25Z9Q" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/K5jZdC25Z9Q/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Storytelling in Business for Manipulating People</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=_YATMfSqJp8" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/_YATMfSqJp8/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Gunah Ka Zimmedar Kon Ha, Insaan Ya Shaitan?</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=h_ndgde08uM" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/h_ndgde08uM/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Allah Har Kaam Khud Kyun Nahi Karta?</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=1gIGBkJiWx0" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/1gIGBkJiWx0/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Why Confidence Doesn't Come with Labels and Titles?</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=KQFwVZTMu-s" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/KQFwVZTMu-s/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">High Value Man Is NOT About Being Millionaire / Billionaire</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=I0d4u1I0RZw" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/I0d4u1I0RZw/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">I Have So Many Ideas - Your Ideas Are Useless Because...</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=xDCowjb8Stk" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/xDCowjb8Stk/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Business Ideas for Housewives or Working Women at Home</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=DQwbz30yVQQ" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/DQwbz30yVQQ/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Demand Salary With Confidence in Job Interview</p>
-				</div>
-			</div>
-		</a>
-		</div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=YTP1_o5kwwc" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/YTP1_o5kwwc/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Accepting Offer and Pricing Decision as Web Designer</p>
-				</div>
-			</div>
-		</a>
 		</div>	
-	
-	
-	</div>
+				
 
-	</div><!-- container -->
- 
-	<!-- SERVICE = Gaming -->
-	<div class="bg-dark text-white text-center py-5"><h2 class="m-0 display-5"><strong>Gaming</strong></h2></div>
-	
-	<div class="container">
-	<div class="row mt-3">
-
-		<div class="col-md-4 mb-4">
-			<a href="https://www.youtube.com/watch?v=EcmW-9TSMOU" class="card-link">
-				<div class="card">
-					<img src="https://img.youtube.com/vi/EcmW-9TSMOU/0.jpg" class="card-img-top">
-					<div class="card-body">
-						<p class="lead card-title">VR Squash 2017 (beta testing of vr game with ideas and suggestions for improvements)</p>
-					</div>
-				</div>
-			</a>
-		</div>
-			
-			
-		<div class="col-md-4 mb-4">
-			<a href="https://www.youtube.com/watch?v=LEZ370aisQo" class="card-link">
-				<div class="card">
-					<img src="https://img.youtube.com/vi/LEZ370aisQo/0.jpg" class="card-img-top">
-					<div class="card-body">
-						<p class="lead card-title">Cricket Club VR (beta testing of vr game with ideas and suggestions for improvements)</p>
-					</div>
-				</div>
-			</a>
-		</div>
-			
-			
-		<div class="col-md-4 mb-4">
-			<a href="https://www.youtube.com/watch?v=9_oQgE3XBqA" class="card-link">
-				<div class="card">
-					<img src="https://img.youtube.com/vi/9_oQgE3XBqA/0.jpg" class="card-img-top">
-					<div class="card-body">
-						<p class="lead card-title">Balls Virtual Reality Cricket (beta testing of vr game with ideas and suggestions for improvements)</p>
-					</div>
-				</div>
-			</a>
+				
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"I would like to thank you for your valuable advice, support, and help. With your in-depth understanding of what was causing me issues, you helped me saving my true connections with my loved ones. I really appreciate the effort and time you invested in me. Your concern and genuine desire to help me become a good influencer in other's lives was tremendously helpful.</p>
+					<p>Words can't express how thankful I am for your concern. You are the best counselor I have ever met and I'm so thankful for your help. What books and videos couldn't do for years to me, did it all in hours in your guidance.</p>
+					<p>I really wish all the people out there like me could get access to the ones like you. You are no less than a demigod for me! Thanks ❤️"
+				</p>
+				<h5 class="mb-0 text-warning">- Cezanne Lynn | Student (Kashmir)</h5>
+				<small class="text-secondary">Strategic Counseling & Life Guidance</small>
+			</div>
+		</div>	
+				
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					dard dard hi rba<br>
+					Ulta bhi likha seedha bhi likha<br>
+					hamasha sa ya jumla bolty howa sadiaaa<br>
+					guzar di phr ik insam ka kuch alfazo na baal<br>
+					dia ya missra<br><br>
+					<span class="urdu">
+					درد تو درد ہے اے کھلاڑی<br>
+					کیوں درد لیے بیٹھی ہو تم اذان ہو<br>
+					تم طاقت ہو تم ہی تو پرواز اب درد درد نہیں رہا اب درد اب<br>
+					درد کو الٹا گیا لیجنڈ<br>
+					درد درد سے اب بنا گیا د کو مٹا گیا رد کر گیا درد کو در<br>
+					امیدوں کا بنا گیا<br>
+					شکریہ شکریہ لیجنڈ</span>
+				</p>
+				<h5 class="mb-0 text-warning">- Shaheen | Teacher & Writer (Pakistan)</h5>
+				<small class="text-secondary">Poetic Tribute & Psychological Healing Response</small>
+			</div>
 		</div>		
-
-	</div><!-- row -->
-	</div><!-- container -->
-	
- 
-	<!-- SERVICE = Resurrection -->
-	<div class="bg-dark text-white text-center py-5"><h2 class="m-0 display-5"><strong>Resurrection</strong></h2></div>
-	
-	<div class="container">
-	
-	<div class="row mt-3">	
-
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LxiQbNZH9h_ppM-URZulCS6" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/XZQrNf8F5NU/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Resurrections of Dead Insects and Healings by ALLAH (Feb 24, 2024)</p>
-				</div>
+				
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="urdu fs-5">
+					"اللہ پاک آپکے علم میں برکت عطا فرمائے آمین ثم آمین۔ آپ کی ڈیوٹی بہت زبردست لگائی ہے میرے مالک نے۔ خوش رہیں۔"
+				</p>
+				<h5 class="mb-0 text-warning">- Female Client | Spiritualist & Counselor (Pakistan)</h5>
+				<small class="text-secondary">Mindset Transformation & Spiritual Guidance</small>
 			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LzmEnEa37i9FtW5Okf-S0du" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/4kVlP04RBtw/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Resurrection of Multiple Dead Insects by ALLAH (Jan 18, 2024)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LxNOXKfcbCLBfq6WFdN_cMQ" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/6_WLPCwQQxY/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Resurrection of Dead Insect by ALLAH (Jan 16, 2024) FULL-HD</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LyNiVu_HGKjN207W-_Cp3ZY" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/ldtPEpczvdU/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Multiple Dead Insects Revived by ALLAH (July 2, 2024)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LxykcHFfsysOXg2zhpz3TRf" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/zb79vfSoN_8/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">2 Dead Flies Revived by ALLAH (June 9, 2024)</p>
-				</div>
-			</div>
-		</a>
-	  </div>	  
-
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LzOEKI9T-f6OhwvEO1JJxqA" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/8ppFnkdbQgk/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">2 Resurrections 2 Healings Done by ALLAH WAHID AL-QAHAR (April 23, 2024)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-Lw1oSumwGp3bLsNoZh6KHGf" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/6cs7R3n4G1Y/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Resurrection of Dead on Hand by ALLAH (April 21, 2024)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LzcoBuYXyHdLrdyyVAVmy-F" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/NIqzQjFa6Gw/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Resurrection from Water by ALLAH (April 18, 2024)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LyYv68FHly4RpzgqL_4FSKx" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/nwIYVBfW9YI/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Resurrection from Milk by ALLAH (April 18, 2024)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LzgflBXrzZVJs06sLvv3Suq" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/7LBT_Nxt3HE/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Resurrection of Dead on Leaf by ALLAH (April 17, 2024)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LzAFvL3k-mgK8OZXvQyCGuE" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/J0VyKaQYK6U/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Resurrection on Hand Palm by ALLAH (April, 11, 2024)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LxuSVjvS41ARGjP0DnoE-N8" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/roK5gQdi9Qc/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">2 Dead Insects Revived by ALLAH  (April 6, 2024)</p>
-				</div>
-			</div>
-		</a>
-	  </div>
-		
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/playlist?list=PLhexqFNQ4-LwQGodTQe8kfQE4MYeORlfT" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/cSOBSyDMQcU/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Resurrection & Healing of Dead by ALLAH (March 25, 2024)</p>
-				</div>
-			</div>
-		</a>
-	  </div>	  
-
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=5NNqoAbiFnE" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/5NNqoAbiFnE/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Instant Resurrection of Dead Insect by ALLAH</p>
-				</div>
-			</div>
-		</a>
-	  </div>	  
-
-	  <div class="col-md-3 mb-4">
-		<a href="https://www.youtube.com/watch?v=tDq87pPiohw" class="card-link">
-			<div class="card">
-				<img src="https://img.youtube.com/vi/tDq87pPiohw/0.jpg" class="card-img-top">
-				<div class="card-body">
-					<p class="lead card-title">Resurrected Dead Insect in 10 Minutes through Power of ALLAH (اللہ)</p>
-				</div>
-			</div>
-		</a>
-	  </div>	  
-		
-	</div><!-- row -->		
-	</div><!-- container -->
-	
- 
-	<!-- SERVICE = Mentoring -->
-	<div class="bg-dark text-white text-center py-5"><h2 class="m-0 display-5"><strong>Guest Interviews</strong></h2></div>
-	
-	<div class="container">
-		<div class="row mt-3">
-			
-		  <div class="col-md-3 mb-4">
-			<a href="https://www.youtube.com/watch?v=pXvQTBNtbhQ" class="card-link">
-				<div class="card">
-					<img src="https://img.youtube.com/vi/pXvQTBNtbhQ/0.jpg" class="card-img-top">
-					<div class="card-body">
-						<p class="lead card-title">Legendary Freelancer on Wars & Peace in Hasnain Khan Show</p>
-					</div>
-				</div>
-			</a>
-		  </div>
-			
-		  <div class="col-md-3 mb-4">
-			<a href="https://www.youtube.com/watch?v=zjAqcQ5HhzE" class="card-link">
-				<div class="card">
-					<img src="https://img.youtube.com/vi/zjAqcQ5HhzE/0.jpg" class="card-img-top">
-					<div class="card-body">
-						<p class="lead card-title">Legendary Freelancer on COVID-19 in Umar Jani Show</p>
-					</div>
-				</div>
-			</a>
-		  </div>
-			
-		  <div class="col-md-3 mb-4">
-			<a href="https://www.youtube.com/watch?v=BdXxOI8Aou0" class="card-link">
-				<div class="card">
-					<img src="https://img.youtube.com/vi/BdXxOI8Aou0/0.jpg" class="card-img-top">
-					<div class="card-body">
-						<p class="lead card-title">Legendary Freelancer on Freelancing in Umair Jamshed Show</p>
-					</div>
-				</div>
-			</a>
-		  </div>
-			
-		  <div class="col-md-3 mb-4">
-			<a href="https://www.youtube.com/watch?v=ajkGZJPrQko" class="card-link">
-				<div class="card">
-					<img src="https://img.youtube.com/vi/ajkGZJPrQko/0.jpg" class="card-img-top">
-					<div class="card-body">
-						<p class="lead card-title">Interview of Legendary Freelancer for COMSATS University Pakistan</p>
-					</div>
-				</div>
-			</a>
-		  </div>
-			
-	  </div>    
-	</div><!-- container -->
-	
- 
-	<!-- SERVICE = Writing -->
-	<div class="bg-dark text-white text-center py-5"><h2 class="m-0 display-5"><strong>Writing & Publishing</strong></h2></div>
-	
-	<div class="container">
-	  <div class="row mt-3 text-center">
-				<div class="col-md-4">
-					<p><a href="https://archive.org/details/quran-aur-shaitan"><img src="https://cdn.kobo.com/book-images/65fea50c-3152-4dc8-843e-0e353fdc9086/353/569/90/False/life-after-death-fresh-dead-bodies.jpg" class="img-fluid"></a>
-				  </p>
-					<p><a href="https://archive.org/details/quran-aur-shaitan">Life After Death: Fresh Dead Bodies</a></p>
 		</div>
 
-		<div class="col-md-4">
-					<p><a href="https://archive.org/details/ahadees-aur-shaitan"><img src="https://archive.org/services/img/the-rightful-religion-crash-guide" class="img-fluid"></a>
-				  </p>
-			<p><a href="https://archive.org/details/ahadees-aur-shaitan">The Rightful Religion Crash Guide</a></p>
-		  </div>
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"Thanku so much sir ma hamsha kehti t k pata nae Ku sir zeshaan apny aksar post pa legend of Allah likhty han .... Akhr ASA kia ha k WO hmry zehni hallat ko ham sa behtr Jan paty han .... Per ap sa mari 1st conservation na mjy wazya kar dea ha k legend waqye powered by Allah hota ha ....."
+				</p>
+				<h5 class="mb-0 text-warning">- Female Client | Student (Pakistan)</h5>
+				<small class="text-secondary">Psychological Issues & Suicidal Condition</small>
+			</div>
+		</div>
 
-		<div class="col-md-4">
-		  <p><a href="https://archive.org/details/islam-aur-jadu"><img src="https://archive.org/services/img/durood-shareef-100k"  class="img-fluid"></a>
-		  </p>
-			<p><a href="https://archive.org/details/islam-aur-jadu">Durood Shreef 100K</a></p>
-		  </div>
-	  </div>
-	</div><!-- container -->
-	
+
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"Tahnks God he send me person like u to help me grow. Bs Allah apko asania naseeb farmae Aur internationl level p ap ka nam ho"
+				</p>
+				<h5 class="mb-0 text-warning">- Female Client | MBBS Student (Pakistan)</h5>
+				<small class="text-secondary">Personal Growth & Empowerment Mentorship</small>
+			</div>
+		</div>
+
+
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"Aksr Aurten kisi dr ya khaas kr mard ko Es lyay b approach nhi krteen q k kuch bhairyay en hi weaknesses aur jazbaat ka faaida utha k unhain mazeed jakar letay hain<br><br>
+					Mjhe sb se ziada sukoon hi Es baat ka ha k Alhmdulillah I openly shared my feelings with you aur ap ne mjhe kisi taur judge nhi kya blke mjhe ek umeed dikhaai h k zindagi mai Positive approach rkhna kitna zaruri ha en suicidal thoughts se hat k agr insaan sirf Allah aur kisi mulkhlis insaan se apne dil ki hr baat krle tou aadhi mushkilen khud hi Asaan hojati hain....<br><br>
+					Shayd humare lyay kbhi sirf lafzon ka sahara hi kafi hota ha... humari healing k lyay Apne aas paas ache logon ko talaash kren"
+				</p>
+				<h5 class="mb-0 text-warning">- Female Client | Housewife (Pakistan)</h5>
+				<small class="text-secondary">Crisis Support & Non-Judgmental Counseling</small>
+			</div>
+		</div>
+
+
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"I suggest to talk with legend if you think about suicide so that you can move on to life again..... he is a light of hope for thoes think about suside & fell failure ..... he also changes my mindset & now I fell peace full..... life is more beautiful if some one guides in right way..... thanku so much sir zeshan arshad. Allah beless you ....."
+				</p>
+				<h5 class="mb-0 text-warning">- Female Client | Student (Pakistan)</h5>
+				<small class="text-secondary">Mindset Transformation & Crisis Support (June 2021)</small>
+			</div>
+		</div>
+
+
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"thankyou very much for this❤️ it helped"
+				</p>
+				<h5 class="mb-0 text-warning">- Female Client (Anonymous)</h5>
+				<small class="text-secondary">Strategic Advice & Sincerity Assessment</small>
+			</div>
+		</div>
+
+
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"Before talking to you I was also working on myself....But somewhere some thoughts were stuck in me as a regret...But when you said 'pick up your bag n leave the street as a beggar n fulfill your dreams'....It changed something in me."
+				</p>
+				<h5 class="mb-0 text-warning">— Female Client | Student (India)</h5>
+				<small class="text-secondary">Counseling and Life Coaching</small>
+			</div>
+		</div>
+
+
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"Bro my problem Is I have low self esteem. Shyness and social anxiety... [After session] That's the way world is. I'm also the same. Ha ha. Any way good night brother."
+				</p>
+				<h5 class="mb-0 text-warning">- Client | Student (Anonymous)</h5>
+				<small class="text-secondary">Self-Esteem Building & Social Anxiety Mentorship</small>
+			</div>
+		</div>
+
+
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"I ain't afraid watching horror movies, I am afraid to sleep just that... [After session] I feel a little sleepy now, I think it's time to do the first step... Hi, I slept long hours."
+				</p>
+				<h5 class="mb-0 text-warning">- Client | Student (Anonymous)</h5>
+				<small class="text-secondary">Overcoming Phobias & Sleep Therapy</small>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"....Many but the all boil down to feeling like I'm not enough... My therapist says it doesn't matter [even after using them for a little over 1 yr]... [After session] Thank u."
+				</p>
+				<h5 class="mb-0 text-warning">— Female Client (Anonymous)</h5>
+				<small class="text-secondary">Mindset Transformation & Clarity</small>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"Are you a Dr, Psychiatrist, or Psychotherapist? I heard the word 'Legendary Freelancer' for the first time... [After 50 minutes] I am a brave lioness (Bahadur sherni). Thankyou."
+				</p>
+				<h5 class="mb-0 text-warning">— Female Client | Housewife (Pakistan)</h5>
+				<small class="text-secondary">Identity Coaching & Rapid Mindset Shift</small>
+			</div>
+		</div>
+		
+				
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"Last year my friend just left me without telling me what I did... I've been trying to get over her but I can't... [After session] Thanks I'll try moving on."
+				</p>
+				<h5 class="mb-0 text-warning">— Client (USA)</h5>
+				<small class="text-secondary">Emotional Closure & Moving Forward</small>
+			</div>
+		</div>
+		
+				
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"ma yaha sa 100% insan bn kr jana cahati hu... [After session] 40 % sa zyda badal dia to super man nhi to kia ha ap phr"
+				</p>
+				<h5 class="mb-0 text-warning">— Erum | Writer (Pakistan)</h5>
+				<small class="text-secondary">Rapid Transformation & Perspective Shift</small>
+			</div>
+		</div>
+				
+				
+		<div class="col-md-6">
+			<div class="testimonial-item">
+				<p class="fs-5">
+					"Who are hurting you the most? [Before session] My mother... [After session] You've helped me think of it differently I appreciate it."
+				</p>
+				<h5 class="mb-0 text-warning">— Female Client (Anonymous)</h5>
+				<small class="text-secondary">Emotional Perspective Realignment</small>
+			</div>
+		</div>	
+				
+		
+		
+    </div>
+</section>
+
+<section id="hire" class="py-5 bg-dark text-white">
+    <div class="container text-center py-5">
+        <h2 class="display-4 fw-bold mb-4 text-warning">Ready for Your Breakthrough?</h2>
+        
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <p class="lead mb-3 px-md-5">
+                    I don't like selling hours for conversations. I do my best to bring the transformation that helps my clients move forward like never before in their lives. Whether it takes me 5-minute or a whole day for the transformation, you only pay for the <strong>Result</strong> or you get 100% of your money back.
+                </p>
+                <div class="p-3 bg-secondary bg-opacity-10 border-start border-warning rounded-end">
+                    <p class="small fst-italic mb-0">
+                        <strong>Note:</strong> My premium fees from professional cases allow me to provide the same life-changing shifts to those in need who cannot afford it. By investing in your result, you fuel a cycle of <strong>free mindset transformation</strong> for the poor and deserving people.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-5 mb-4">
+                <div class="p-4 border border-warning rounded-3 h-100 bg-black">
+                    <h3 class="h2 text-warning">International</h3>
+                    <p class="display-6 fw-bold">$5,000</p>
+                    <p class="text-secondary">Per Result / Case</p>
+                </div>
+            </div>
+            <div class="col-md-5 mb-4">
+                <div class="p-4 border border-warning rounded-3 h-100 bg-black">
+                    <h3 class="h2 text-warning">Local (PK)</h3>
+                    <p class="display-6 fw-bold">500,000 PKR</p>
+                    <p class="text-secondary">Per Result / Case</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <a href="contact.htm" class="btn btn-warning btn-lg px-5 py-3 fw-bold text-uppercase shadow-lg mb-3">
+                Book Your Transformation
+            </a>
+            
+            <div class="mt-3">
+                <p class="mb-1 text-light">Can't afford a private meeting yet?</p>
+                <a href="https://www.youtube.com/playlist?list=PLvsYV8ab4kWEDCZ_wEg1no1kXQmV0X2RI" target="_blank" class="text-warning text-decoration-none fw-bold">
+                    <i class="fab fa-youtube"></i> Access My Free Personal Development Playlist →
+                </a>
+            </div>
+
+            <p class="mt-4 text-secondary small">
+                I am personally availabile for private clients only, serious inquiries please. <br>
+                <span class="text-warning fst-italic">For those in extreme financial hardship, mention it in your inquiry.</span>
+            </p>
+        </div>
+    </div>
+</section>
+
+
 
  
-	<!-- SERVICE = Writing -->
-	<div class="bg-dark text-white text-center py-5"><h2 class="m-0 display-5"><strong>Contact Legendary Freelancer</strong></h2></div>
-	
-	<div class="container py-3">	
-	  <p><strong>International Timings: </strong>10:00pm- 6:00am (night) 12:00pm - 8:00pm (day)<br>
-		<strong>International Form: </strong><a href="contact.htm">click here</a></p>
-
-    <p class="py-3 fw-bold">Ranks &amp; Achivements:</p>
-    <ul>
-      <li><strong>💻 Freelancing:</strong>
-        <ul>
-          <li>Top 1% Freelancer of vWorker.com (higher than 99.94% freelancers) </li>
-          <li>Top Contributing Freelancer of Freelancer.com </li>
-          <li>1000+ Projects</li>
-          <li>500+ 5-Star Reviews</li>
-        </ul>
-      </li>	
-      <li><strong>💻 Programming:</strong>
-        <ul>
-          <li>Developed WordPress/OS-Commerce Plugins<br>
-          Developed Custom Web Applications<br>
-          Developed E-Commerce Stores</li>
-          <li>Developed Warcraft III Gaming Maps </li>
-          <li>Developed Web-based 2D Games</li>
-        </ul>
-      </li>	
-      <li><strong>🕹️ Gaming:</strong>
-        <ul>
-          <li>2500+ Game Played</li>
-          <li>400+ VR Games Reviewed</li>
-          <li>Rogue of the Alliance (World of Warcraft)</li>
-          <li>Electrum Gideon (Heroes Evolved)</li>
-          <li>Platinum Ken (Street Fighter 6)</li>
-          <li>Pakistan Ranked #32 Valhein (Arena of Valor)</li>
-        </ul>
-      </li>
-	  
-      <li><strong>📚 Teaching:</strong>
-        <ul>
-          <li>25+ Courses: (3x Best-Selling)</li>
-          <li>51,000+ Students</li>
-          <li>2,300+ Reviews</li>
-        </ul>
-      </li>
-      <li><strong>🕋 Preaching:</strong>
-        <ul>
-          <li>100+ Miracles with ALLAH (اللہ)</li>
-          <li>10+ Crash Courses on Truth of Islam</li>
-          <li>Challenged & Defeated False Gods of Non-Muslims </li>
-		  <li>Defeated Countless Non-Muslims by the Mercy of Allah</li>
-		  <li>Helped Truth Seekers Enter in Islam by the Will of Allah</li>
-        </ul>
-      </li>	  
-      <li><strong>📚 Writing & Speaking</strong>
-        <ul>
-          <li>4000+ Videos </li>
-          <li>6K+ Answers</li>
-          <li>600+ Articles</li>
-          <li>2+ Books</li>
-        </ul>
-      </li>	  
-    </ul>
-
-    <section class="container my-5">
-    <h2 class="py-3 fw-bold"> About this Website</h2>	  
-      <p>This website is a platform where you will learn about gaming, freelancing, programming, spirituality, the truth of Islam, challenges, miracles and upgrade your character like a gamer. I want you to recognize your talents and do great things. Find the hidden treasures within yourself. We all have treasures given to us by Allah. Our superpowers, talents, skills, hobbies, intellect, consciousness, insight, courage, strength, courage, bravery, etc. - are you free? If not, then what are you waiting for in this world? You are a freelancer. Now you will become a legendary freelancer with the Powers of ALLAH WAHID AL-QAHAR<br>
-            Now it is time for you to step forward and show this world who you are!<br>
-      </p>
-      <p class="urdu">یہ ویب سائٹ وہ پلیٹ فارم ہے جہاں تم گیمنگ، فری لانسنگ، پروگرامنگ، روحانیت، اسلام کی سچائی، چیلنجز، معجزات کے بارے میں سیکھو گےاور ایک گیمر کی طرح اپنے کریکٹر کو اپ گریڈ کرو گے۔ اپنی صلاحیتوں کو پہچانو اور بڑے بڑے کام کرو۔اپنے اندر چھپے ہوئے خزانوں کو تلاش کرو۔ تمام انسانوں کے پاس اللہ کی عطا کردہ صلاحیتیں موجود ہیں۔سپر پاورز، ٹیلنٹس، اسکلز، مشغلے، عقل، شعور، بصیرت، ہمت، طاقت، حوصلہ، جرات، بہادری وغیرہ - کیا تم آزاد ہوچکے؟اگر نہیں تو پھر اس دنیا میں کس چیز کا انتظار کر رہے ہو؟ تم ایک مسلم گیمر ہو۔ اب تم بنو گے لیجنڈری فری لانسر اللہ واحد القہار کی طاقت کے ساتھ۔<br>
-        اب وقت آگیا ہے کہ تم آگے بڑھو اور اس دنیا کو دکھاو کہ تم کون ہو!<br>
-        تمہارے اندر بھی ایک لیجنڈ چھپا ہوا ہے، اسے باہر نکالو، مقابلہ پر کفار کھڑے ہیں۔<br>
-        دکھاو انہیں کہ محمد عربی صلی اللہ علیہ وسلم کے پیروکار کی طاقت کیا چیز ہے۔<br>
-        اللہ اکبر<br>
-      لیجنڈ</p>
-      <p align="center" class="urdu text-danger"><strong>اے اللہ! اے تمام جہان کے مالک! تو جسے چاہے بادشاہی دے اور جس سے چاہے سلطنت چھین لے</strong></p>
-    </section>	
-
-
+<footer class="text-center" style="border-top: 1px solid #222; padding: 60px 0; background: #000;">
+    <div class="container">
+        <h3 class="navbar-brand fs-2 mb-4" style="color: var(--gold) !important; font-family: 'Orbitron', sans-serif;">LEGENDARY FREELANCER</h3>
+        
+        <p style="color: #ffffff !important; font-size: 0.95rem; margin-bottom: 30px; opacity: 1;">
+           Powered by ALLAH (اللہ)
+        </p>
+        
+        <div class="my-4">
+            <a href="#" class="text-white mx-3 fs-4" style="transition: 0.3s;"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-white mx-3 fs-4" style="transition: 0.3s;"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-white mx-3 fs-4" style="transition: 0.3s;"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+        <p style="color: #bbbbbb !important; font-size: 0.85rem; margin-bottom: 20px;">
+            &copy; 2024 <span style="color: var(--gold);">Zeeshan Arshad</span>. All Rights Reserved.
+        </p>
+        
+        <p class="urdu text-warning" style="font-size: 2rem; margin-top: 20px; font-weight: bold;">اللہ اکبر</p>
+    </div>
+</footer>  
+  
  
-    <p align="center"><img src="images/story-legendary-freelancer.jpg" class="img-fluid"></p>
-
-    <p class="text-center">لا اله الا الله محمد رسول الله lkjajsdkjasdlkajswdsalkjd<br>
-      <em>There is no God Except Allahﷻ</em><br>
-    <em>Muhammadﷺ is Last Prophet of Allahﷻ</em></p>
-  </section>
-</div>
-
-
-     
-<footer id="footer" class="bg-dark text-white text-center py-3">
-
-	<div class="container footer-container">
-	<p class="small" style="font-size: 0.8rem;">Established Since 2018<br>
-	  &copy; Legendary Freelancer</p>
-  </div>	
-</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>	
 
 </body>
