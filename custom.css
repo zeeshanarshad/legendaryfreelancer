@@ -197,4 +197,184 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
 .urdu {
 	text-align:right;
+	font-family: 'Noto Nastaliq Urdu', serif;
+	line-height: 2.2;
+	direction: rtl;
 }
+
+.headline {
+	font-family: 'Orbitron', sans-serif;
+}
+
+
+
+        /* Navigation */
+        .navbar { background: rgba(0,0,0,0.9); border-bottom: 1px solid var(--gold); }
+        .navbar-brand { font-family: 'Orbitron', sans-serif; color: var(--gold) !important; font-weight: bold; }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(45deg, rgba(0,0,0,0.9) 30%, rgba(0,0,0,0.6)), url('your-professional-bg.jpg');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid var(--gold);
+        }
+
+        .hero h1 { font-family: 'Orbitron', sans-serif; font-size: 4.5rem; color: white; text-transform: uppercase; }
+        .hero .brand-tag { color: var(--gold); font-size: 1.5rem; letter-spacing: 5px; font-weight: bold; }
+
+        .profile-img-container {
+            position: relative;
+            display: inline-block;
+        }
+        .profile-img {
+            width: 300px; height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+        }
+
+        /* About Section */
+        .about-text { font-size: 1.1rem; line-height: 1.8; color: #ccc; }
+        .highlight { color: var(--gold); font-weight: bold; }
+
+        /* Skills Grid */
+		.skill-tag {
+			background: rgba(212, 175, 55, 0.05); /* ہلکا سنہرا بیک گراؤنڈ */
+			color: #ffffff !important;
+			border: 1px solid rgba(212, 175, 55, 0.3);
+			padding: 8px 18px;
+			font-size: 0.9rem;
+			border-radius: 50px; /* کیپسول نما ڈیزائن */
+			transition: all 0.3s ease;
+			display: inline-block;
+			cursor: default;
+		}
+
+		.skill-tag:hover {
+			background: var(--gold);
+			color: #000000 !important;
+			border-color: var(--gold);
+			transform: translateY(-3px);
+			box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+		}
+
+		.skill-container {
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+
+		
+        .skill-box {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            height: 100%;
+            transition: 0.4s;
+        }
+        .skill-box:hover { border-color: var(--gold); transform: translateY(-10px); }
+        .skill-badge {
+            display: inline-block;
+            background: #222;
+            color: #eee;
+            padding: 5px 12px;
+            margin: 4px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            border-left: 3px solid var(--gold);
+        }
+
+        /* Portfolio */
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+        .project-img { height: 200px; background: #333; display: flex; align-items: center; justify-content: center; }
+
+        /* Testimonials */
+        .testimonial-item {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 20px;
+            border-top: 4px solid var(--gold);
+        }
+		
+		/* FAQ Custom Styling */
+		.accordion-item {
+			background-color: var(--card-bg) !important;
+			border: 1px solid #333 !important;
+			margin-bottom: 10px;
+			border-radius: 10px !important;
+			overflow: hidden;
+		}
+
+		.accordion-button {
+			background-color: var(--card-bg) !important;
+			color: var(--gold) !important;
+			font-family: 'Orbitron', sans-serif;
+			font-size: 0.9rem;
+			box-shadow: none !important;
+		}
+
+		.accordion-button:not(.collapsed) {
+			background-color: rgba(212, 175, 55, 0.1) !important;
+			border-bottom: 1px solid var(--gold);
+		}
+
+		.accordion-button::after {
+			filter: sepia(100%) hue-rotate(10deg) saturate(500%); /* Turns arrow gold */
+		}
+
+		.accordion-body {
+			color: #ccc;
+			line-height: 1.8;
+			background-color: #0d0d0d;
+		}
+
+		.faq-highlight {
+			color: var(--gold);
+			font-weight: bold;
+		}	
+		
+		/* This CSS ensures buttons stay small on mobile to fit one line */
+			@media (max-width: 576px) {
+				.btn-sm {
+					padding: 8px 6px !important;
+					font-size: 10px !important;
+				}
+				.hero h1 {
+					font-size: 2.5rem;
+				}
+			}		
+
+        footer { border-top: 1px solid #222; padding: 40px 0; background: #000; }
+		
+		h3.navbar-brand {
+	 		color: #FFFF66;
+		}
+
+						
+		/* This handles the spacing of the list */
+		.row > ul {
+			padding-left: 5rem; 
+			line-height: 1.6; /* Add this line */			
+			
+		}
+
+		/* This targets the actual links to remove the underline */
+		.row > ul li a {
+			line-height: 2em;
+			text-decoration: none;
+			display: inline-block; /* Optional: makes the clickable area easier to manage */
+			margin-bottom: 0.5rem; /* Optional: adds a tiny bit of extra space between bullets */
+		}
+		
+		
+        footer { background: #212529; color: #fff; padding: 50px 0; }
+		
