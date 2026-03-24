@@ -173,6 +173,59 @@
 			line-height: 1.8;
 			background-color: #0d0d0d;
 		}
+
+    #services .card {
+        border-radius: 0;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+
+    #services .btn-warning {
+        border-radius: 0;
+        letter-spacing: 1px;
+    }
+    #services .card-img-top {
+        border-radius: 0;
+        filter: brightness(1);
+        transition: filter 0.3s ease;
+    }
+    #services .card:hover .card-img-top {
+        filter: brightness(1.2);
+    }
+
+/* Adding a subtle glow to the prayer block to make it stand out */
+    #services .card:has([data-service*="Prayer"]) {
+        border-color: rgba(255, 193, 7, 0.3) !important;
+    }
+    
+    .x-small {
+        line-height: 1.2;
+    }
+
+/* Define the breathing animation */
+@keyframes glow-pulse {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 215, 0, 0.2);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 25px 10px rgba(37, 171, 6, 0.925);
+        transform: scale(1.01); /* Subtle zoom in */
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 215, 0, 0.2);
+        transform: scale(1);
+    }
+}
+
+/* Apply the animation to the class */
+.breathing-glow {
+    border-radius: 10px;
+    animation: glow-pulse 3s infinite ease-in-out;
+    display: inline-block;
+}
+
+
     </style>  
  
  
@@ -187,57 +240,297 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto text-uppercase small">
-				<li class="nav-item"><a class="nav-link px-3" href="index.htm">🏠 Home</a></li>
-				<li class="nav-item"><a class="nav-link px-3" href="about.htm">🛈 About</a></li>
-				<li class="nav-item"><a class="nav-link px-3" href="mission.htm">📜 Mission</a></li>
-				<li class="nav-item"><a class="nav-link px-3" href="projects.htm">👨🏻‍💻 Projects</a></li>
-				<li class="nav-item"><a class="nav-link px-3" href="cases.htm">❤️‍🩹 Cases</a></li>
-				<li class="nav-item"><a class="nav-link px-3" href="testimonials.htm">💬️ Testimonials</a></li>
-				<li class="nav-item"><a class="nav-link px-3" href="resources.htm">🛠️ Resources</a></li>
+				<li class="nav-item"><a class="nav-link px-2" href="index.htm">🏠 Home</a></li>
+				<li class="nav-item"><a class="nav-link px-2" href="about.htm">🛈 About</a></li>
+				<li class="nav-item"><a class="nav-link px-2" href="mission.htm">📜 Mission</a></li>
+				<li class="nav-item"><a class="nav-link px-2" href="courses.htm">🎓 Courses</a></li>
+				<li class="nav-item"><a class="nav-link px-2" href="projects.htm">👨🏻‍💻 Projects</a></li>
+				<li class="nav-item"><a class="nav-link px-2" href="cases.htm">❤️‍🩹 Cases</a></li>
+				<li class="nav-item"><a class="nav-link px-2" href="testimonials.htm">💬️ Testimonials</a></li>
+				<li class="nav-item"><a class="nav-link px-2" href="resources.htm">🛠️ Resources</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
- 
-
 <section class="hero">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-7">
-                <p class="brand-tag mb-0">GAMER</p>
+                
+            <div class="col-lg-7 text-center text-lg-start">
+                <p class="brand-tag mb-0">Gamer</p>
                 <h1 class="mb-4">Zeeshan <span style="color: var(--gold);">Arshad</span></h1>
-                <p class="lead text-light mb-5">A Freelancer with Multiple Skills & Technologies</p>
-				<div class="d-flex flex-wrap gap-3">
-					<a href="#about" class="btn btn-primary btn-lg rounded-0 px-4 fw-bold flex-fill text-center">INTRODUCTION</a>
-					<a href="#skills" class="btn btn-danger btn-lg rounded-0 px-4 fw-bold flex-fill text-center">SKILLS</a>
-					<a href="#work" class="btn btn-warning btn-lg rounded-0 px-4 fw-bold flex-fill text-center">WORK</a>
-					<a href="contact.htm" class="btn btn-outline-light btn-lg rounded-0 px-4 flex-fill text-center">CONTACT</a>
-				</div>
+                <p class="lead text-light">I am a modern freelancer dedicated to serving Islam through my business. I work with my clients to get the results they desire. I also mentor students and provide quality products to my customers.</p>
+                <p><a href="story.htm" class="btn btn-danger">Read My Story &raquo;</a> &nbsp; <a href="Allah.htm" class="btn btn-primary">Know About ALLAH</a></p>
             </div>
-            <div class="col-lg-5 text-center d-none d-lg-block">
+
+            <div class="col-lg-5 text-center d-lg-block">
                 <div class="profile-img-container">
-                    <img src="images/zeeshan-arshad-legendary-freelancer-modern.jpg" alt="Zeeshan Arshad" width="310" height="280" class="profile-img">                </div>
+                    <img src="images/zeeshan-arshad-legendary-freelancer-modern.jpg" alt="Zeeshan Arshad - Legendary Freelancer and Global Educator" width="310" height="280" class="profile-img">
+                </div>
             </div>
         </div>
     </div>
 </section>
+ 
+<section id="services" class="bg-black py-5">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold text-uppercase text-white" style="font-family: 'Orbitron', sans-serif;">MY SERVICES</h2>
+            <p class="text-warning">Top 1% Rated Freelancer | Stronger Than Before</p>
+            <div class="mx-auto bg-warning" style="height: 3px; width: 80px;"></div>
+        </div>
 
+        <div class="row g-4">
+ 
+            <div class="col-md-4">
+                <a href="https://www.freelancer.com/service/game_development/paid-game-tester?frm=zeeshanarshad&sb=t" class="text-decoration-none">
+                    <div class="card h-100 bg-dark border-secondary text-white shadow-sm">
+                        <img src="https://www.freelancer.com/fileservice/v4/download/0449c193-9311-4245-88e6-3e21224237b7?signature=uCGvUvshu9Ih4OUGSnmxGTBrJhDRKLpWto82JUT_Abk=&issued=1773846358&expires=1774566358&disposition=attachment&signature_version=2" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-warning h5 fw-bold text-uppercase mb-3">Game Testing & Review Service</h4>
+                            <p class="card-text text-light small flex-grow-1">I will play your video game and provide you my honest feedback along with bugs and issues I'll encounter during gameplay. It's pure gameplay where I'll be deeply involved in playing your game and point out where and why I am feeling bored or disconnected so you can improve it from gamer's point of view.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-white fw-bold h4 mb-0">$500</span>
+                                <div class="btn btn-outline-warning fw-bold text-uppercase px-3">
+                                    View Details
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-md-4">
+                <a href="https://www.freelancer.com/service/personal_development/mindset-transformation-one-powerful-session?frm=zeeshanarshad&sb=t" class="text-decoration-none">
+                    <div class="card h-100 bg-dark border-secondary text-white shadow-sm">
+                        <img src="https://www.freelancer.com/fileservice/v4/download/00038503-90ac-4af9-a311-775a9b56a92c?signature=K0PIRKUhtyGpu8HHY6lrXfGCFDl-LT1n4n3E_QPI-WI=&issued=1773846359&expires=1774566359&disposition=attachment&signature_version=2" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-warning h5 fw-bold text-uppercase mb-3">Mindset Transformation Service</h4>
+                            <p class="card-text text-light small flex-grow-1">Experience a single, high‑impact one‑on‑one meeting designed to transform your mindset and eliminate limiting beliefs at the root level.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-white fw-bold h4 mb-0">$1,500</span>
+                                <div class="btn btn-outline-warning fw-bold text-uppercase px-3">
+                                    View Details
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-md-4">
+                <a href="https://www.freelancer.com/service/web_development/practical-web-development-in-hours?frm=zeeshanarshad&sb=t" class="text-decoration-none">
+                    <div class="card h-100 bg-dark border-secondary text-white shadow-sm">
+                        <img src="https://www.freelancer.com/fileservice/v4/download/214c3818-f496-4d2b-8ce9-9f35196ee758?signature=tBL4rc1ip4wNssAXoTRv08AzXcUlnxmaOxX2Tj4u3M8=&issued=1774381133&expires=1775101133&disposition=attachment&signature_version=2" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-warning h5 fw-bold text-uppercase mb-3">Practical Web Development in 24 Hours (International)</h4>
+                            <p class="card-text text-light small flex-grow-1">Learn real, hands-on web development from scratch to launch. By the end of this training, you will have a fully functional website live on your domain and hosting.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-white fw-bold h4 mb-0">$5,000</span>
+                                <div class="btn btn-outline-warning fw-bold text-uppercase px-3">
+                                    View Details
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+ 
+
+            <div class="col-md-4">
+                <a href="https://www.freelancer.com/service/life_coaching/one-on-one-mentoring-ask-me-anything?frm=zeeshanarshad&sb=t" class="text-decoration-none">
+                    <div class="card h-100 bg-dark border-secondary text-white shadow-sm">
+                        <img src="https://www.freelancer.com/fileservice/v4/download/87b88f88-cebb-40cb-a18f-33b444893bdd?signature=9s4SQMZYgEeoBDghI5v75rtU1xbn0c8DlmbZqFplqGc=&issued=1773846359&expires=1774566359&disposition=attachment&signature_version=2" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-warning h5 fw-bold text-uppercase mb-3">One-on-One Mentoring for Beginners</h4>
+                            <p class="card-text text-light small flex-grow-1">Get personalized one-on-one mentoring with me. During this session, you can ask any questions you want , whether about web development, freelancing, digital skills, or personal guidance.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-white fw-bold h4 mb-0">$500</span>
+                                <div class="btn btn-outline-warning fw-bold text-uppercase px-3">
+                                    View Details
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="https://www.freelancer.com/service/website_design/practical-web-development-in-hours?frm=zeeshanarshad&sb=t" class="text-decoration-none">
+                    <div class="card h-100 bg-dark border-secondary text-white shadow-sm">
+                        <img src="https://www.freelancer.com/fileservice/v4/download/30b43423-93d3-496e-867c-4d9d33119d1f?signature=8nSOwqfvL5F8YdDGbPe4IKjrP0mUihCrNXeg7JX3JxI=&issued=1774381522&expires=1775101522&disposition=attachment&signature_version=2" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-warning h5 fw-bold text-uppercase mb-3">Practical Web Development in 24 Hours (Pakistan Only)</h4>
+                            <p class="card-text text-light small flex-grow-1">Learn real, hands-on web development from scratch to launch. By the end of this training, you will have a fully functional website live on your domain and hosting .</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-white fw-bold h4 mb-0">$350</span>
+                                <div class="btn btn-outline-warning fw-bold text-uppercase px-3">
+                                    View Details
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>            
+ 
+            <div class="col-md-4">
+                <a href="contact.htm" class="text-decoration-none">
+                    <div class="card h-100 bg-dark border-secondary text-white shadow-sm">
+                        <img src="images/services/web-development-service-legendary-freelancer.jpg" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-warning h5 fw-bold text-uppercase mb-3">Web Development Services</h4>
+                            <p class="card-text text-light small flex-grow-1">I’ll create your professional website for your business whether you need it template-based, wordpress, shopify, joomla, or any other platform. I am all experienced in varieties of tools and scripts to create a full-fledged website for any purpose except where limitations occur due to technical issues.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-white fw-bold h4 mb-0"></span>
+                                <div class="btn btn-outline-warning fw-bold text-uppercase px-3">
+                                    Contact for Pricing
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>   
+
+
+            <div class="col-md-4">
+                <a href="contact.htm" class="text-decoration-none">
+                    <div class="card h-100 bg-dark border-secondary text-white shadow-sm">
+                        <img src="images/services/graphics-designing-legendary-freelancer.jpg" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-warning h5 fw-bold text-uppercase mb-3">Graphic Design Services</h4>
+                            <p class="card-text text-light small flex-grow-1">Helping business owners and professionals with logos, banners, social media cover designs, pamphlets, CVs, flyers, etc.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-white fw-bold h4 mb-0"></span>
+                                <div class="btn btn-outline-warning fw-bold text-uppercase px-3">
+                                    Contact for Pricing
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>              
+
+            <div class="col-md-4">
+                <a href="contact.htm" class="text-decoration-none">
+                    <div class="card h-100 bg-dark border-secondary text-white shadow-sm">
+                        <img src="images/services/custom-web-development-legendary-freelancer.jpg" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-warning h5 fw-bold text-uppercase mb-3">Custom Web Applications</h4>
+                            <p class="card-text text-light small flex-grow-1">Let me help you get your custom developed business web application for your business, clinic, restaurant or any other business online.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-white fw-bold h4 mb-0"></span>
+                                <div class="btn btn-outline-warning fw-bold text-uppercase px-3">
+                                    Contact for Pricing
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>  
+ 
+            <div class="col-md-4">
+                <a href="https://www.freelancer.com/service/life_coaching/mindset-and-life-coaching-on-going-support?frm=zeeshanarshad&sb=t" class="text-decoration-none">
+                    <div class="card h-100 bg-dark border-secondary text-white shadow-sm">
+                        <img src="https://www.freelancer.com/fileservice/v4/download/087f0dd6-579d-46f5-9f82-9c0a01a5a4ed?signature=CX8o7f6mYfNh-yiG4MURQ29zpwqbhv9Nk8Tdbn-dazs=&issued=1774383558&expires=1775103558&disposition=attachment&signature_version=2" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-warning h5 fw-bold text-uppercase mb-3">Mindset & Life Coaching (on-going support)</h4>
+                            <p class="card-text text-light small flex-grow-1">I'll personally remain available to serve you. Help you go through obstacles in your life. I'll provide manual feedback (no automated bots of course) and we'll hop over the call to do conversation about your daily life struggles, motivate you, keep you accountable and make you invincible against your fears and insecurities.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-white fw-bold h4 mb-0">$5,000/monthly</span>
+                                <div class="btn btn-outline-warning fw-bold text-uppercase px-3">
+                                    View Details
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>  
+ 
+            <div class="col-md-4">
+                <a href="https://www.freelancer.com/service/web_development/custom-admin-panel-development?frm=zeeshanarshad&sb=t" class="text-decoration-none">
+                    <div class="card h-100 bg-dark border-secondary text-white shadow-sm">
+                        <img src="https://www.freelancer.com/fileservice/v4/download/3adeff10-c496-45b2-ae92-8c2a5dce6b26?signature=KSgsswkK_sECFbXX8tqWXCAsyYBaX9zKlUYtI1BXAx8=&issued=1774384581&expires=1775104581&disposition=attachment&signature_version=2" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-warning h5 fw-bold text-uppercase mb-3">Custom Admin Panel Development</h4>
+                            <p class="card-text text-light small flex-grow-1">Take full control of your data with a bespoke management system. Built with Core PHP and MySQL, I develop secure, intuitive dashboards for user management, inventory tracking, and real-time analytics tailored to your business rules.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-white fw-bold h4 mb-0">$500/starts</span>
+                                <div class="btn btn-outline-warning fw-bold text-uppercase px-3">
+                                    View Details
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>  
+ 
+            <div class="col-md-4">
+                <a href="contact.htm" class="text-decoration-none">
+                    <div class="card h-100 bg-dark border-secondary text-white shadow-sm">
+                        <img src="images/services/prayers-worship-legendary-freelancer.jpg" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-warning h5 fw-bold text-uppercase mb-3">Prayer Service</h4>
+                            <p class="card-text text-light small flex-grow-1">I will pray to God for your purpose. It is just for prayer, not for acceptance of prayer. There is no guarantee of this service. This service solely depends on the decision of God. Charges are specifically for the time, effort, and service of performing the prayer.</p>
+                            <blockquote class="border-start border-warning ps-3 my-3">
+                                <p class="text-secondary x-small mb-0" style="font-size: 0.75rem; font-style: italic;">
+                                    Note: If God accepts my prayer in your case or situation, your task will be done. If God rejected my prayer in your case or situation, nothing will happen for you. So be sure to avoid any confusion later on. </p>
+                            </blockquote>
+
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-white fw-bold h4 mb-0">$100</span>
+                                <div class="btn btn-outline-warning fw-bold text-uppercase px-3">
+                                    Contact Now
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>  
+ 
+ 
+            <div class="col-md-4">
+                <a href="contact.htm" class="text-decoration-none">
+                    <div class="card h-100 bg-dark border-secondary text-white shadow-sm">
+                        <img src="images/services/ideas-suggestions-legendary-freelancer.jpg" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title text-warning h5 fw-bold text-uppercase mb-3">Listening Service</h4>
+                            <p class="card-text text-light small flex-grow-1">I will listen to you without any judgement, without any interruption and without any personal criticism. You will remain fully in peace while EXPRESSING YOURSELF IN FULL CONFIDENCE like never before. Once you are done, I'll provide my personal feedback and improve ideas based on your provided story and situation and also share with you my written feedback and sketch of your life design which I'll prepare during our call or chat conversation.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-white fw-bold h4 mb-0">$50</span>
+                                <div class="btn btn-outline-warning fw-bold text-uppercase px-3">
+                                    Contact Now
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>  
+
+
+
+        </div>
+    </div>
+</section>
+
+ 
 <section id="about" class="py-5">
     <div class="container py-5">
-        <div class="row g-5 align-items-center">
+        <div class="row g-5">
 		
  			<div class="col-lg-6">
 				<h2 class="display-5 fw-bold mb-4" style="color: var(--gold); font-family: 'Orbitron', sans-serif;">Introduction</h2>
 				<div class="about-text" style="color: #ffffff !important;">
-					<p>I am a gamer. I run my own business and do religious work. I work for clients, sell products to customers, and teach students. I live with freedom and do not like to be enslaved by anyone. I keep reading and writing. I record my thoughts, concerns, and ideas and share them with the world. Whether someone praises me or criticizes me, hates me or envies me, it does not matter much to me now because I have understood people. The one who is a friend today can be an enemy tomorrow, so it is important for a person to strengthen his relationship and connection only with Allah so that it does not break and fall apart. There is no more sincere friend and helper than Allah.</p>
+					<p>I am a gamer running my own freelancing business while spreading the message of Islam. My courses, services, and resources are all available on this website. If you need assistance, you can work with me through my professional services, purchase my products, or enroll in one-on-one training. My courses are also available on Udemy for students worldwide, and my free educational videos are recorded and shared online for the benefit of everyone.</p>
 				</div>
 			</div>			
 						
 			<div class="col-lg-6">
 				<div class="p-5 bg-dark border-start border-warning border-4 urdu shadow-lg" style="background: #111 !important;">
 					<h3 class="text-warning mb-3 text-end">تعارف</h3>
-					<p class="text-end" style="color: #ffffff !important; font-size: 1.2rem; line-height: 3;">میں ایک گیمر ہوں ۔میں اپنا بزنس کرتا ہوں اور دین کا کام کرتا ہوں۔کلائنٹس کے لیے کام کرتا ہوں، کسٹمرز کو پراڈکٹس سیل کرتا ہوں اور اسٹوڈنٹس کو پڑھاتا ہوں۔آزادی کے ساتھ جیتا ہوں اور کسی کی غلامی کرنا پسند نہیں کرتا۔میں پڑھتا لکھتا رہتا ہوں۔اپنی سوچ، فکر اور خیالات کو قلمبند کرتا ہوں اور دنیا والوں کے ساتھ شیئر کرتا ہوں۔کوئی میری تعریف کرے یا تنقید، نفرت کرے یا حسد، اب مجھے اس سے کوئی خاص فرق نہیں پڑتا کیونکہ میں لوگوں کو سمجھ چکا ہوں۔جو آج دوست ہے، وہ کل دشمن ہوسکتا ہے، لہذا انسان کو اپنا رشتہ اور تعلق صرف اللہ کے ساتھ مضبوط بنانا ضروری ہے تاکہ ٹوٹ کر بکھر نہ سکے۔اللہ سے زیادہ مخلص دوست اور مددگار کوئی نہیں ہے۔</p>
+					<p class="text-end" style="color: #ffffff !important; font-size: 1.2rem; line-height: 3;">ایک گیمر جو اپنا فری لانسنگ بزنس کررہا ہے اور دین اسلام کی تبلیغ کرتا ہے۔اس ویب سائٹ پر میرے کورسز، سروسز اور ریسورسز دستیاب ہیں۔اگر کسی بھی حوالے سے مجھ سے مدد درکار ہے تو ڈائریکٹ مجھ سے مدد لی جاسکتی ہے سروسز کے ذریعے یا میری پراڈکسٹس خرید کر ان کے ذریعے یا پھر میرے ساتھ ٹریننگ ون آن ون یا براہ راست میری ویڈیوز کے ذریعے فری ایجوکیشن حاصل کی جاسکتی ہے۔ میرے کورسز یوڈیمی پر دستیاب ہیں اور پوری دنیا سے اسٹوڈنٹس ان کے ذریعے تعلیم حاصل کرسکتے ہیں۔ باقی سب کچھ پبلک میں آن ریکارڈ عوام کے فائدے کے لیے دستیاب ہے۔</p>
 				</div>
 			</div>
         </div>
@@ -249,8 +542,8 @@
     <div class="container py-5">
         <div class="row justify-content-center text-center mb-5">
             <div class="col-lg-8">
-                <h2 class="display-4 fw-bold text-uppercase mb-3" style="color: var(--gold); font-family: 'Orbitron', sans-serif;">On Ultimate Mission</h2>
-                <p class="lead" style="color: #ffffff !important; opacity: 1;">Proving Truth of Islam and Spirituality of Islam through Miracles</p>
+                <h2 class="display-4 fw-bold text-uppercase mb-3" style="color: var(--gold); font-family: 'Orbitron', sans-serif;">The Mission</h2>
+                <p class="lead" style="color: #ffffff !important; opacity: 1;">Proving Truth of Islam and Spirituality Together!</p>
                 <hr class="mx-auto bg-warning" style="width: 100px; height: 3px; opacity: 1;">
             </div>
         </div>
@@ -259,9 +552,9 @@
             <div class="col-md-4">
                 <div class="p-4 h-100 text-center shadow-lg" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 15px;">
                     <i class="fas fa-atom fa-3x text-warning mb-4"></i>
-                    <h4 style="color: #ffffff !important;">The Witness</h4>
+                    <h4 style="color: #ffffff !important;">The Performer</h4>
                     <p style="color: #ffffff !important; margin-top: 15px; line-height: 1.6;">
-                        Recording Miracles
+                        I Perform Miracles by ALLAH
                     </p>
                 </div>
             </div>
@@ -271,7 +564,7 @@
                     <i class="fas fa-shield-halved fa-3x text-warning mb-4"></i>
                     <h4 style="color: #ffffff !important;">The Guardian</h4>
                     <p style="color: #ffffff !important; margin-top: 15px; line-height: 1.6;">
-                        Defending Islam
+                        I Defend Islam on Social Media
                     </p>
                 </div>
             </div>
@@ -279,180 +572,31 @@
             <div class="col-md-4">
                 <div class="p-4 h-100 text-center shadow-lg" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 15px;">
                     <i class="fas fa-mosque fa-3x text-warning mb-4"></i>
-                    <h4 style="color: #ffffff !important;">The Muslim</h4>
+                    <h4 style="color: #ffffff !important;">The Believer</h4>
                     <p style="color: #ffffff !important; margin-top: 15px; line-height: 1.6;">
-                        Mastering Technologies
+                        I Believe in ALLAH & Last Prophet (ﷺ)
                     </p>
                 </div>
             </div>
+			<p class="text-center">
+				<img src="images/women-empowerment-legendary-freelancer.jpg" class="img-fluid breathing-glow" alt="I AM LEGEND">
+			</p>			
+			
         </div>
 
         <div class="mt-5 p-5 text-center bg-black rounded shadow-lg border border-warning">
-            <h3 class="urdu text-warning text-center mb-5" style="font-size: 2.5rem; line-height: 1.4;">My Super Power is ALLAH</h3>
-            <p class="urdu mt-3" style="font-size: 1.5rem; color: #ffffff !important;">میں اللہ کی مدد سے اسلام کی سچائی کو ہمیشہ کے لیے سائنس اور ٹیکنالوجیز کا استعمال کرتے ہوئے حقیقی معجزات سے ثابت کرچکا ہوں۔الحمدللہ</p>
-        </div>
-    </div>
-</section>
-
- 	
-<section id="skills" class="bg-black py-5">
-    <div class="container py-5">
-        <div class="text-center mb-5">
-            <h2 class="display-6 fw-bold text-uppercase text-white" style="font-family: 'Orbitron', sans-serif;">THE LEGEND</h2>
-            <p class="text-warning">Master of Multiple Skills</p>
-            <div class="mx-auto bg-warning" style="height: 3px; width: 80px;"></div>
-        </div>
-        
-        <div class="skill-container d-flex flex-wrap justify-content-center gap-2">
-
-
-            <span class="skill-tag">Core PHP</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">AJAX</span>
-            <span class="skill-tag">JSON</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">MS-SQL Server</span>
-            <span class="skill-tag">MS-Access</span>
-            <span class="skill-tag">API Integration</span>
-            <span class="skill-tag">Git & GitHub</span>
-            <span class="skill-tag">Web Hosting</span>
-            <span class="skill-tag">DNS</span>
-            <span class="skill-tag">HTTPS</span>
-            <span class="skill-tag">Mod_ReWrite</span>
-
-            <span class="skill-tag">HTML</span>
-            <span class="skill-tag">XHTML</span>
-            <span class="skill-tag">DHTML</span>
-            <span class="skill-tag">XML</span>
-            <span class="skill-tag">CSS</span>
-            <span class="skill-tag">Bootstrap</span>
-            <span class="skill-tag">WordPress</span>
-            <span class="skill-tag">Custom CMS</span>
-            <span class="skill-tag">Web Scrapping</span>
-            <span class="skill-tag">Responsive Design</span>
-
-            <!-- Classic -->
-            <span class="skill-tag">ColdFusion</span>
-            <span class="skill-tag">Flash</span>
-            <span class="skill-tag">ActionScript</span>
-            <span class="skill-tag">ASP</span>
-            <span class="skill-tag">ASP.NET</span>
-            <span class="skill-tag">vBulletin</span>
-            <span class="skill-tag">Invision Power Board</span>
-            <span class="skill-tag">OSCommerce</span>
-
-            <!-- Gaming -->
-            <span class="skill-tag">Gear VR</span>
-            <span class="skill-tag">HTC Vive</span>
-            <span class="skill-tag">VR Game Testing</span>
-            <span class="skill-tag">Gameplay Reviews</span>
-            <span class="skill-tag">Video Game Coaching</span>
-            <span class="skill-tag">Core Engine Game Development</span>
-
-            <span class="skill-tag">Interviews</span>
-            <span class="skill-tag">Podcasting</span>
-            <span class="skill-tag">Live Streaming</span>
-            <span class="skill-tag">YouTube SEO</span>
-
-            <span class="skill-tag">Holistic Healing</span>
-            <span class="skill-tag">Spiritual Healing</span>
-            <span class="skill-tag">Trauma Healing</span>
-            <span class="skill-tag">Mindset Transformation</span>
-            <span class="skill-tag">Confidence Coaching</span>
-            <span class="skill-tag">Islamic Therapy</span>
-            <span class="skill-tag">Grief Counseling</span>
-            <span class="skill-tag">Relationship Advice</span>
-            <span class="skill-tag">Insecurities Replacement</span>
-            <span class="skill-tag">Martial Arts</span>
-            <span class="skill-tag">Yoga</span>
-            <span class="skill-tag">Aerobics</span>
-            <span class="skill-tag">Life Coaching</span>
-            <span class="skill-tag">Career Counseling</span>
-
-            <span class="skill-tag">Course Curriculum Design</span>
-            <span class="skill-tag">Udemy Course Development</span>
-            <span class="skill-tag">Teaching</span>
-            <span class="skill-tag">Online Teaching</span>
-            <span class="skill-tag">Real Time Mentoring</span>
-            <span class="skill-tag">Public Speaking</span>
-
-            <span class="skill-tag">Copywriting</span>
-            <span class="skill-tag">Technical SEO</span>
-            <span class="skill-tag">Technical Hacks</span>
-            <span class="skill-tag">Research & Compilation</span>
-            <span class="skill-tag">Blogging</span>
-            <span class="skill-tag">Article Writing</span>
-            <span class="skill-tag">Technical Documentation</span>
-            <span class="skill-tag">Ghostwriting</span>
-            <span class="skill-tag">eBooks Writing & Publishing</span>
-            <span class="skill-tag">Translation (En/Ur)</span>
-            <span class="skill-tag">Proofreading & Editing</span>
-            <span class="skill-tag">Typing (100+ WPM)</span>
-
-            <span class="skill-tag">Online Marketing</span>
-            <span class="skill-tag">Growth Hacking</span>
-            <span class="skill-tag">E-commerce</span>
-            <span class="skill-tag">WooCommerce</span>
-            <span class="skill-tag">Payment Gateway Integration</span>
-            <span class="skill-tag">Lead Generation</span>
-            <span class="skill-tag">Strategic Thinking</span>
-            <span class="skill-tag">Client Handling</span>
-
-            <span class="skill-tag">AI Tools</span>
-            <span class="skill-tag">cPanel</span>
-            <span class="skill-tag">Web Hosting Management</span>
-            <span class="skill-tag">Local Area Networking (LAN)</span>
-            <span class="skill-tag">MS-Windows (XP, Vista, Server, 7, 11)</span>
-            <span class="skill-tag">MS-Office</span>
-            <span class="skill-tag">MS-DOS</span>
-            <span class="skill-tag">Philosophy</span>
-            <span class="skill-tag">Problem Solving</span>
-
-            <span class="skill-tag">Emotional Intelligence</span>
-            <span class="skill-tag">Stress Management</span>
-            <span class="skill-tag">Conflict Resolution</span>
-            <span class="skill-tag">Meditation</span>
-            <span class="skill-tag">Lucid Dreaming</span>
-            <span class="skill-tag">Psychology</span>
-            <span class="skill-tag">Anger Management</span>
-            <span class="skill-tag">Project Management</span>
-            <span class="skill-tag">Time Management</span>
-			
-			<!-- Creative & Content -->
-            <span class="skill-tag">Storytelling</span>
-            <span class="skill-tag">Creative Writing</span>
-            <span class="skill-tag">Creative Direction</span>
-            <span class="skill-tag">Film Making</span>
-            <span class="skill-tag">Thumbnail Design</span>
-            <span class="skill-tag">Video Editing</span>
-            <span class="skill-tag">Canva</span>
-            <span class="skill-tag">Adobe Fireworks</span>
-            <span class="skill-tag">Adobe Dreamweaver</span>
-            <span class="skill-tag">Logo Design</span>
-            <span class="skill-tag">Banner Design</span>
-            <span class="skill-tag">Cover Design</span>
-            <span class="skill-tag">Avatar Design</span>
-            <span class="skill-tag">Social Media Ad Design</span>
-			
-			<!-- Philosophy & Social -->
-            <span class="skill-tag">Critical Thinking</span>
-            <span class="skill-tag">Social Work</span>
-            <span class="skill-tag">Human Rights Advocacy</span>
-            <span class="skill-tag">Self-Defense</span>
-            <span class="skill-tag">Fitness</span>
-            <span class="skill-tag">Voice Over</span>
-            <span class="skill-tag">Lyricist</span>
-            <span class="skill-tag">Poetry</span>
-			
+			<h2 class="display-4 fw-bold mb-3" style="color: var(--gold); font-family: 'Orbitron', sans-serif;">ALLAH is My Super Power</h2>		
+            <p align="center" style="font-size: 1.5rem; color: #ffffff !important;">I have defeated the concept of all false gods, false religions and falsehood of science fabricated against ALLAH the Master of Universe and King of Heavens and the Earth.</p>
+			<p align="center"><img src="images/retaliation-legendary-freelancer.jpg" class="img-fluid"></p>				
         </div>
     </div>
 </section>
 
 
+ 
 <section id="work"  class="py-5 container">
     <div class="text-center mb-5">
-        <h2 class="display-6 fw-bold text-warning">Feedback from People</h2>
+		<h2 class="display-4 fw-bold mb-3" style="color: var(--gold); font-family: 'Orbitron', sans-serif;">Feedback & Reviews</h2>			
     </div>
     <div class="row g-4">
 	
@@ -686,6 +830,173 @@
     </div>
 </section>
 
+ 	
+<section id="skills" class="bg-black py-5">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold text-uppercase text-white" style="font-family: 'Orbitron', sans-serif;">THE LEGEND of GOD (اللہ)</h2>
+            <p class="text-warning">The King of Multiple Skills (Powered by ALLAH)</p>
+            <div class="mx-auto bg-warning" style="height: 3px; width: 80px;"></div>
+        </div>
+        
+        <div class="skill-container d-flex flex-wrap justify-content-center gap-2">
+
+
+            <span class="skill-tag">ASP Classic</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">AJAX</span>
+            <span class="skill-tag">JSON</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MS-SQL Server</span>
+            <span class="skill-tag">MS-Access</span>
+            <span class="skill-tag">API Integration</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Web Hosting</span>
+            <span class="skill-tag">DNS</span>
+            <span class="skill-tag">HTTPS</span>
+            <span class="skill-tag">Mod_ReWrite</span>
+
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">XHTML</span>
+            <span class="skill-tag">DHTML</span>
+            <span class="skill-tag">XML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">Custom CMS</span>
+            <span class="skill-tag">Web Scrapping</span>
+            <span class="skill-tag">Responsive Design</span>
+
+            <!-- Classic -->
+            <span class="skill-tag">ColdFusion</span>
+            <span class="skill-tag">Flash</span>
+            <span class="skill-tag">ActionScript</span>
+            <span class="skill-tag">ASP.NET</span>
+            <span class="skill-tag">vBulletin</span>
+            <span class="skill-tag">Invision Power Board</span>
+            <span class="skill-tag">OSCommerce</span>
+
+            <!-- Gaming -->
+            <span class="skill-tag">Gear VR</span>
+            <span class="skill-tag">HTC Vive</span>
+            <span class="skill-tag">VR Game Testing</span>
+            <span class="skill-tag">Gameplay Reviews</span>
+            <span class="skill-tag">Video Game Coaching</span>
+            <span class="skill-tag">Core Engine Game Development</span>
+
+            <span class="skill-tag">Interviews</span>
+            <span class="skill-tag">Podcasting</span>
+            <span class="skill-tag">Live Streaming</span>
+			
+			<!-- Social Media -->
+            <span class="skill-tag">YouTube</span>
+            <span class="skill-tag">Facebook</span>
+            <span class="skill-tag">Instagram</span>
+            <span class="skill-tag">TikTok</span>
+            <span class="skill-tag">LinkedIn</span>
+            <span class="skill-tag">Twitter</span>
+
+
+            <span class="skill-tag">Holistic Healing</span>
+            <span class="skill-tag">Spiritual Healing</span>
+            <span class="skill-tag">Trauma Healing</span>
+            <span class="skill-tag">Mindset Transformation</span>
+            <span class="skill-tag">Confidence Coaching</span>
+            <span class="skill-tag">Islamic Therapy</span>
+            <span class="skill-tag">Grief Counseling</span>
+            <span class="skill-tag">Relationship Advice</span>
+            <span class="skill-tag">Insecurities Replacement</span>
+            <span class="skill-tag">Martial Arts</span>
+            <span class="skill-tag">Yoga</span>
+            <span class="skill-tag">Aerobics</span>
+            <span class="skill-tag">Life Coaching</span>
+            <span class="skill-tag">Career Counseling</span>
+
+            <span class="skill-tag">Course Curriculum Design</span>
+            <span class="skill-tag">Udemy Course Development</span>
+            <span class="skill-tag">Teaching</span>
+            <span class="skill-tag">Online Teaching</span>
+            <span class="skill-tag">Real Time Mentoring</span>
+            <span class="skill-tag">Public Speaking</span>
+
+            <span class="skill-tag">Copywriting</span>
+            <span class="skill-tag">Technical SEO</span>
+            <span class="skill-tag">Technical Hacks</span>
+            <span class="skill-tag">Research & Compilation</span>
+            <span class="skill-tag">Blogging</span>
+            <span class="skill-tag">Article Writing</span>
+            <span class="skill-tag">Technical Documentation</span>
+            <span class="skill-tag">Ghostwriting</span>
+            <span class="skill-tag">eBooks Writing & Publishing</span>
+            <span class="skill-tag">Translation (En/Ur)</span>
+            <span class="skill-tag">Proofreading & Editing</span>
+            <span class="skill-tag">Typing (100+ WPM)</span>
+
+            <span class="skill-tag">Online Marketing</span>
+            <span class="skill-tag">Growth Hacking</span>
+            <span class="skill-tag">E-commerce</span>
+            <span class="skill-tag">WooCommerce</span>
+            <span class="skill-tag">Payment Gateway Integration</span>
+            <span class="skill-tag">Lead Generation</span>
+            <span class="skill-tag">Strategic Thinking</span>
+            <span class="skill-tag">Client Handling</span>
+
+            <span class="skill-tag">AI Tools</span>
+            <span class="skill-tag">cPanel</span>
+            <span class="skill-tag">Web Hosting Management</span>
+            <span class="skill-tag">Local Area Networking (LAN)</span>
+            <span class="skill-tag">Microsoft Windows (All Versions)</span>
+            <span class="skill-tag">Microsoft Windows Server (2003)</span>
+            <span class="skill-tag">MS-Office</span>
+            <span class="skill-tag">MS-DOS</span>
+            <span class="skill-tag">Philosophy</span>
+            <span class="skill-tag">Problem Solving</span>
+
+            <span class="skill-tag">Emotional Intelligence</span>
+            <span class="skill-tag">Stress Management</span>
+            <span class="skill-tag">Conflict Resolution</span>
+            <span class="skill-tag">Meditation</span>
+            <span class="skill-tag">Lucid Dreaming</span>
+            <span class="skill-tag">Psychology</span>
+            <span class="skill-tag">Anger Management</span>
+            <span class="skill-tag">Project Management</span>
+            <span class="skill-tag">Time Management</span>
+			
+			<!-- Creative & Content -->
+            <span class="skill-tag">Storytelling</span>
+            <span class="skill-tag">Creative Writing</span>
+            <span class="skill-tag">Creative Direction</span>
+            <span class="skill-tag">Film Making</span>
+            <span class="skill-tag">Thumbnail Design</span>
+            <span class="skill-tag">Video Editing</span>
+            <span class="skill-tag">Canva</span>
+            <span class="skill-tag">Adobe Fireworks</span>
+            <span class="skill-tag">Adobe Dreamweaver</span>
+            <span class="skill-tag">Logo Design</span>
+            <span class="skill-tag">Banner Design</span>
+            <span class="skill-tag">Cover Design</span>
+            <span class="skill-tag">Avatar Design</span>
+            <span class="skill-tag">Social Media Ad Design</span>
+			
+			<!-- Philosophy & Social -->
+            <span class="skill-tag">Critical Thinking</span>
+            <span class="skill-tag">Social Work</span>
+            <span class="skill-tag">Human Rights Advocacy</span>
+            <span class="skill-tag">Self-Defense</span>
+            <span class="skill-tag">Fitness</span>
+            <span class="skill-tag">Voice Over</span>
+            <span class="skill-tag">Lyricist</span>
+            <span class="skill-tag">Poetry</span>
+			
+        </div>
+    </div>
+</section>
+
+
+
+
 </div>
  
 <footer class="text-center" style="border-top: 1px solid #222; padding: 60px 0; background: #000;">
@@ -700,7 +1011,7 @@
 
 <script>
 	/* open all links into blank browser window - best for youtube links */
-	document.querySelectorAll('a[href*="youtube.com"]').forEach(link => link.target = '_blank');
+	document.querySelectorAll('a[href*="freelancer.com"]').forEach(link => link.target = '_blank');
 </script>
 
 </body>
